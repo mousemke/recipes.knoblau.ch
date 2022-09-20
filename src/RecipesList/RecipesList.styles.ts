@@ -25,6 +25,9 @@ const useStyles = createUseStyles(
       fontSize: "0.7rem",
       margin: "10px 50px"
     },
+    filterHeader: {
+      paddingLeft: 30
+    },
     filterInput: {
       border: "1px solid #e5e5e5",
       borderTop: "2px solid #ee52ff",
@@ -34,7 +37,12 @@ const useStyles = createUseStyles(
       fontSize: 16,
       margin: "17px 50px 17px 10px",
       padding: 8,
-      width: 200
+      width: 200,
+
+      "&:hover": {
+        borderColor: "#e129f5",
+        boxShadow: "0 1px 4px #e129f5"
+      }
     },
     header: {
       display: "flex",
@@ -110,7 +118,12 @@ export const selectStyles = {
     width: 200,
     borderRadius: 0,
     borderTop: "2px solid #ee52ff",
-    boxShadow: "0 1px 4px #ee52ff"
+    boxShadow: "0 1px 4px #ee52ff",
+    cursor: "text",
+    "&:hover": {
+      borderColor: "#e129f5",
+      boxShadow: "0 1px 4px #e129f5"
+    }
   })
 };
 

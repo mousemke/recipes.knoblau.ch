@@ -10,3 +10,10 @@ export interface RecipesListProps {
   setWindowHash: (slug: string) => void;
   tags: Set<string>;
 }
+
+export interface FilteredRecipes {
+  summary: Recipe[];
+  title: Recipe[];
+  ingredients: Recipe[];
+  instructions: Recipe[];
+}

@@ -1379,7 +1379,7 @@ const recipes: Recipes = {
     cookTime: 120,
     ingredients: [
       {
-        name: "A brine recipe, originally suggested with \"Apple Cider Turkey Brine\""
+        name: 'A brine recipe, originally suggested with "Apple Cider Turkey Brine"'
       },
       {
         amount: 1,
@@ -1388,18 +1388,12 @@ const recipes: Recipes = {
       {
         name: "As many fresh herbs as will fit into cavity (sage, rosemary, thyme, marjoram, oregano, basil)"
       },
-      { amount: 2,
-        name: "cups chicken broth"
-      },
-      { amount: 2,
-        name: "tablespoons unsalted butter (melted)"
-      },
+      { amount: 2, name: "cups chicken broth" },
+      { amount: 2, name: "tablespoons unsalted butter (melted)" },
       {
         name: "freshly ground black pepper (divided)"
       },
-      { amount: 1,
-        name: "teaspoon salt"
-      }
+      { amount: 1, name: "teaspoon salt" }
     ],
     instructions: [
       "Remove giblets and neck from turkey, refrigerate until ready to use, and reserve for gravy. Rinse turkey with cold water and pat dry. Trim excess fat. Stuff body cavity with orange quarters. Place a turkey-sized oven bag inside a large stockpot. Place turkey inside bag. Add whatever brine you are using. Squeeze as much air out of bag as possible. twist top and secure with twist tie or tuck end so that it stays put. Refrigerate for 12 to 24 hours, turning occasionally.",
@@ -2305,7 +2299,7 @@ const recipes: Recipes = {
       {
         amount: 5,
         name: "ginger slices ,finely minced"
-      },
+      }
     ],
     instructions: [
       "Add a small pinch of salt and ground pepper. Mix well and set aside.",
@@ -2331,27 +2325,27 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 0.25,
-        name: "cup olive oil or non-dairy butter",
+        name: "cup olive oil or non-dairy butter"
       },
       {
         amount: 1,
-        name: "pound sliced mushrooms (white or baby bellas)",
+        name: "pound sliced mushrooms (white or baby bellas)"
       },
       {
         amount: 0.25,
-        name: "cup all-purpose flour, or as needed",
+        name: "cup all-purpose flour, or as needed"
       },
       {
         amount: 4,
-        name: "cups mushroom or vegetable broth",
+        name: "cups mushroom or vegetable broth"
       },
       {
         name: "mineral salt & fresh ground black pepper, to taste"
       },
       {
         amount: 0.5,
-        name: "teaspoons fresh thyme leaves, or to taste (optional)",
-      },
+        name: "teaspoons fresh thyme leaves, or to taste (optional)"
+      }
     ],
     instructions: [
       "Heat oil over medium heat, add mushrooms and season with a pinch of salt. Simmer mushrooms, stirring occasionally, until liquid is almost evaporated, about 15 minutes.",
@@ -2420,7 +2414,7 @@ const recipes: Recipes = {
       {
         amount: 2,
         name: "tablespoons chopped fresh parsley"
-      },
+      }
     ],
     instructions: [
       "Start by warming the chicken broth.  Either in a large bowl in the microwave or in a medium saucepan over medium heat bring to a simmer.",
@@ -2507,6 +2501,74 @@ const recipes: Recipes = {
     tags: ["vegetarian", "japanese"],
     title: "Onsen Tamago Sauce"
   },
+  Oyakodon: {
+    cookTime: 15,
+    ingredients: [
+      {
+        amount: 2,
+        name: "boneless, skinless chicken thighs"
+      },
+      {
+        amount: 0.5,
+        name: "onion"
+      },
+      {
+        amount: 2,
+        name: "large eggs"
+      },
+      {
+        amount: 0.5,
+        name: "cup dashi"
+      },
+      {
+        amount: 1.5,
+        name: "Tbsp mirin"
+      },
+      {
+        amount: 1.5,
+        name: "Tbsp sake"
+      },
+      {
+        amount: 1.5,
+        name: "Tbsp soy sauce"
+      },
+      {
+        amount: 1.5,
+        name: "tsp sugar"
+      },
+      {
+        amount: 2,
+        name: "servings cooked Japanese short-grain rice"
+      },
+      {
+        amount: 2,
+        name: "sprigs mitsuba or green onion/scallion"
+      },
+      {
+        name: "shichimi togarashi (optional)"
+      }
+    ],
+    instructions: [
+      "Combine the dashi, mirin, sake, and soy sauce in a bowl or a liquid measuring cup.",
+      "Add the sugar and mix all together until the sugar is dissolved. Depending on the size of your frying pan, you may not need all the broth. You can keep the leftovers in the refrigerator for 3 days.",
+      "Thinly slice the onion and chop the mitsuba (or green onions). Beat one egg in a small bowl (you will need to beat the other egg when you work on the second batch).",
+      "Slice the chicken thighs diagonally into pieces that are about 1½-inches (4 cm) long and ½-inch (1.3 cm) thick. I recommend using the “sogigiri” cutting technique so the chicken pieces will be of equal thickness and to create more surface area for fast cooking.",
+      "Typically, Oyakodon is made individually for each serving, using an oyakodon pan. This small pan lets you slide the finished dish onto the rice bowl easily while the egg is set but still runny. Divide the ingredients in half or, alternatively, you can cook 2 servings together in a bigger pan.",
+      "With the stove off, add 1 serving of the sliced onions to the pan in a single layer. Add roughly one-third to one-half of the seasonings mixture (the amount may vary depending on the size of your frying pan). Pour just enough on top to cover the onions.",
+      "Add 1 serving of the chicken on top of the onions. Make sure the onions and chicken are evenly distributed. Then, turn on the heat to medium and bring it to a boil.",
+      "Once boiling, lower the heat to medium low. Skim off any foam or scum that appears. Cover and cook for about 5 minutes or until the chicken is no longer pink and the onions are tender.",
+      "Taste the broth and see if you need to adjust. Slowly drizzle the beaten egg evenly over the chicken and onions. Cook covered on medium-low heat until the egg is done to your liking. Usually, oyakodon in Japan is served while the egg is almost set but still runny.",
+      "Add the mitsuba (or green onion) right before removing from the heat. Slide the cooked chicken and egg onto the steamed rice and drizzle the desired amount of remaining sauce on top."
+    ],
+    origin: "https://www.justonecookbook.com/oyakodon/",
+    prepTime: 15,
+    progressPics: 8,
+    servings: 2,
+    summary:
+      "Oyakodon is cooked in one pan where onions, chicken, and egg are simmered in an umami-rich, dashi-based sauce. It is then poured over a bowl of fluffy steamed rice. Simple, delicious, and utterly comforting, this is the kind of one-bowl meal you can cook in less than 30 minutes!",
+    tags: ["chicken", "japanese"],
+    title: "Oyakodon"
+  },
   RoastedThanksgivingTurkey: {
     cookTime: 300,
     ingredients: [
@@ -2541,12 +2603,12 @@ const recipes: Recipes = {
       "Using a vegetable peeler, shave off thick slices of orange peel and slice them very thin. Combine with butter, rosemary, salt and pepper.",
       "After the first stage of cooking, remove the turkey from the oven and remove the foil (turkey will still be pale.) Smear the butter mixture all over the skin, in crevices, etc so that it's totally covered. Insert a meat thermometer into the thigh, increase the oven temperature to 350, and return the turkey to the oven, basting every 30 minutes. Continue roasting the turkey until the thermometer reads 165 to 168, then remove the turkey from the oven. Cover loosely with clean aluminum foil until you're ready to carve!"
     ],
-    origin: "https://www.thepioneerwoman.com/food-cooking/recipes/a11883/roasted-thanksgiving-turkey/",
+    origin:
+      "https://www.thepioneerwoman.com/food-cooking/recipes/a11883/roasted-thanksgiving-turkey/",
     prepTime: 10,
     progressPics: 8,
     servings: 16,
-    summary:
-      "It turns out beautiful every time!",
+    summary: "It turns out beautiful every time!",
     tags: ["turkey", "thanksgiving"],
     title: "Roasted Thanksgiving Turkey"
   },
@@ -2691,7 +2753,8 @@ const recipes: Recipes = {
       "Add the miso paste to the simmering liquid and stir to dissolve. Simmer for a few minutes, correcting for taste. Depending on how salty your soy sauce and miso paste are, you may need to add a teaspoon or more of sugar. Serve hot.",
       "Note: The squares of konnyaku may be browned in a hot cast iron pan, or set under the broiler for a few minutes to recrisp the surface."
     ],
-    origin: "https://www.seriouseats.com/seriously-asian-simmered-konnyaku-with-beef-recipe",
+    origin:
+      "https://www.seriouseats.com/seriously-asian-simmered-konnyaku-with-beef-recipe",
     prepTime: 5,
     servings: 2,
     summary:

@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import Select from "react-select";
 
 import useStyles, { selectStyles } from "./RecipesList.styles";
 
 import type { Recipe } from "../recipes";
-import type { RecipesListProps } from "./RecipesList.types" ;
+import type { FilteredRecipes, RecipesListProps } from "./RecipesList.types";
+import type { Classes } from "jss";
 
 /**
  *
@@ -27,17 +28,63 @@ const filterByTag = (recipes: Recipe[], tag: string) => {
  * @returns
  */
 const filterByString = (recipes: Recipe[], filter: string) => {
-  return recipes.filter((r) => {
+  const filteredRecipes: FilteredRecipes = {
+    title: [],
+    summary: [],
+    ingredients: [],
+    instructions: []
+  };
+
+  recipes.filter((r) => {
     const { ingredients, instructions, summary, title } = r;
 
-    if (
-      summary.toLowerCase().includes(filter) ||
-      title.toLowerCase().includes(filter) ||
-      ingredients.some((i) => i.name.toLowerCase().includes(filter)) ||
-      instructions.some((i) => i.toLowerCase().includes(filter))
-    ) {
-      return true;
+    if (title.toLowerCase().includes(filter)) {
+      filteredRecipes.title.push(r);
     }
+
+    if (summary.toLowerCase().includes(filter)) {
+      filteredRecipes.summary.push(r);
+    }
+
+    if (ingredients.some((i) => i.name.toLowerCase().includes(filter))) {
+      filteredRecipes.ingredients.push(r);
+    }
+
+    if (instructions.some((i) => i.toLowerCase().includes(filter))) {
+      filteredRecipes.instructions.push(r);
+    }
+  });
+
+  return filteredRecipes;
+};
+
+/**
+ *
+ * @param recipes
+ * @param setActiveRecipe
+ * @param setWindowHash
+ * @returns
+ */
+const rendereRecipeLinks = (
+  recipes: Recipe[],
+  classes: Classes,
+  setActiveRecipe: React.Dispatch<React.SetStateAction<Recipe | null>>,
+  setWindowHash: (slug: string) => void
+) => {
+  return recipes.map((recipe, i) => {
+    return (
+      <a
+        key={i}
+        className={classes.recipeLink}
+        onClick={() => {
+          setWindowHash(recipe.title.replace(/ /g, ""));
+          setActiveRecipe(recipe);
+        }}
+        role="button"
+      >
+        <div>{recipe.title}</div>
+      </a>
+    );
   });
 };
 
@@ -57,25 +104,42 @@ const RecipesList = (props: RecipesListProps): JSX.Element => {
   } = props;
 
   const [visibleRecipes, setVisibleRecipes] = useState(Object.values(recipes));
+  const [filteredRecipes, setFilteredRecipes] =
+    useState<FilteredRecipes | null>(null);
 
   const classes = useStyles();
 
   /**
-   * on tag or filter change, this updates the visible recipes
+   * Built as a callback simply to keep the JSX cleaner, as it always
+   * takes the same 2nd, 3rd, and 4th parameters
+   */
+  const getRecipeLinks = useCallback(
+    (recipes: Recipe[]) =>
+      rendereRecipeLinks(recipes, classes, setActiveRecipe, setWindowHash),
+    [classes, setActiveRecipe, setWindowHash]
+  );
+
+  /**
+   * on tag change, this updates the visible recipes
    */
   useEffect(() => {
-    let filteredRecipes = Object.values(recipes);
+    let allRecipes = Object.values(recipes);
 
     if (activeTag) {
-      filteredRecipes = filterByTag(filteredRecipes, activeTag);
+      setVisibleRecipes(filterByTag(allRecipes, activeTag));
+    } else {
+      setVisibleRecipes(allRecipes);
     }
+  }, [activeTag]);
 
+  /**
+   * on filter change, breaks the visible recipes into relevant results
+   */
+  useEffect(() => {
     if (filter) {
-      filteredRecipes = filterByString(filteredRecipes, filter);
+      setFilteredRecipes(filterByString(visibleRecipes, filter));
     }
-
-    setVisibleRecipes(filteredRecipes);
-  }, [activeTag, filter]);
+  }, [filter, visibleRecipes]);
 
   return (
     <>
@@ -94,9 +158,7 @@ const RecipesList = (props: RecipesListProps): JSX.Element => {
             }
             id="tagFilterSelect"
             isClearable
-            onChange={(e) => {
-              setActiveTag(e?.value.toLowerCase() || null);
-            }}
+            onChange={(e) => setActiveTag(e?.value.toLowerCase() || null)}
             options={
               tags ? Array.from(tags).map((t) => ({ label: t, value: t })) : []
             }
@@ -122,21 +184,21 @@ const RecipesList = (props: RecipesListProps): JSX.Element => {
       <div className={classes.listWrapper}>
         <div className={classes.topFade} />
         <div className={classes.list}>
-          {visibleRecipes.map((recipe, i) => {
-            return (
-              <a
-                key={i}
-                className={classes.recipeLink}
-                onClick={() => {
-                  setWindowHash(recipe.title.replace(/ /g, ""));
-                  setActiveRecipe(recipe);
-                }}
-                role="button"
-              >
-                <div>{recipe.title}</div>
-              </a>
-            );
-          })}
+          {filter && filteredRecipes
+            ? Object.keys(filteredRecipes).map((rawCategory, i) => {
+                const category = rawCategory as keyof typeof filteredRecipes;
+                const foundRecipes = filteredRecipes[category] as Recipe[];
+
+                return foundRecipes.length === 0 ? null : (
+                  <div key={i}>
+                    <h3 className={classes.filterHeader}>
+                      {`${category[0].toUpperCase()}${category.slice(1)}`}
+                    </h3>
+                    {getRecipeLinks(foundRecipes)}
+                  </div>
+                );
+              })
+            : getRecipeLinks(visibleRecipes)}
         </div>
         <div className={classes.bottomFade} />
       </div>

@@ -45,13 +45,13 @@ const App = (): JSX.Element => {
   const tags = useMemo(() => {
     const newTags: string[] = [];
 
-    Object.values(recipes).forEach((r) => (
+    Object.values(recipes).forEach((r) =>
       r.tags.forEach((t) => {
         newTags.push(`${t[0].toUpperCase()}${t.slice(1)}`);
       })
-    ));
+    );
 
-    return new Set<string>(newTags.sort())
+    return new Set<string>(newTags.sort());
   }, []);
 
   return (
