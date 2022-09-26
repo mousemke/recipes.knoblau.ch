@@ -279,6 +279,105 @@ const recipes: Recipes = {
     tags: ["fish"],
     title: "Barramundi Fish and Bok Choy in Foil"
   },
+  BeefBrisketwithBBQSauce: {
+    cookTime: 600,
+    ingredients: [
+      {
+        amount: 2,
+        name: "kg beef brisket"
+      },
+      {
+        amount: 1,
+        name: "tbsp olive oil (or a neutral oil like vegetable, canola)"
+      },
+      {
+        amount: 1,
+        name: "tbsp brown sugar"
+      },
+      {
+        amount: 2,
+        name: "tsp paprika powder"
+      },
+      {
+        amount: 1,
+        name: "tsp onion powder"
+      },
+      {
+        amount: 1,
+        name: "tsp garlic powder"
+      },
+      {
+        amount: 0.5,
+        name: "tsp cumin powder"
+      },
+      {
+        amount: 0.75,
+        name: "tsp mustard powder"
+      },
+      {
+        amount: 1,
+        name: "tsp salt"
+      },
+      {
+        amount: 0.5,
+        name: "tsp black pepper"
+      },
+      {
+        amount: 2,
+        name: "garlic cloves , minced"
+      },
+      {
+        amount: 0.5,
+        name: "cup apple cider vinegar"
+      },
+      {
+        amount: 1.5,
+        name: "cups ketchup"
+      },
+      {
+        amount: 0.5,
+        name: "cup, packed"
+      },
+      {
+        amount: 2,
+        name: "tsp black pepper"
+      },
+      {
+        amount: 2,
+        name: "tsp onion powder"
+      },
+      {
+        amount: 2,
+        name: "tsp mustard powder"
+      },
+      {
+        amount: 1,
+        name: "tsp cayenne pepper"
+      },
+      {
+        amount: 1,
+        name: "tbsp Worcestershire sauce"
+      }
+    ],
+    instructions: [
+      "Mix brown sugar, paprika powder, onion powder, garlic powder, cumin powder, mustard powder, salt, and black pepper. Rub all over brisket. If time permits, leave for 30 minutes - 24 hours in the fridge, but I rarely do this.",
+      "Combine garlic cloves, apple cider vinegar, ketchup, brown sugar, black pepper, onion powder, mustard powder, cayenne pepper, and Worcestershire sauce in a slow cooker. Mix then add the brisket - squish it in if needed.",
+      "Slow cook in slow cooker for 10 hours.",
+      "Remove brisket onto a tray.",
+      "Pour liquid in slow cooker into a saucepan. Bring to simmer over medium high heat and reduce until it thickens to a syrup consistency (it thickens more as it cools).",
+      "Meanwhile, drizzle brisket with oil then roast in a 200C/390F oven for 15 minutes until brown spots appear. Remove then baste generously with Sauce, then return to oven for 5 minutes. Remove and baste again, then return to oven for 5 - 10 minutes until it caramelises and looks like the photos.",
+      "Slice brisket thinly across the grain and serve with remaining BBQ Sauce"
+    ],
+    prepTime: 15,
+    origin:
+      "https://www.recipetineats.com/slow-cooker-beef-brisket-with-bbq-sauce/",
+    progressPics: 2,
+    servings: 8,
+    summary:
+      "To-die-for Beef Brisket recipe that really makes the most out of this cut of beef! This Slow Cooker brisket is cooked in a simple homemade BBQ sauce until it's deliciously tender and infused with incredible flavour.",
+    tags: ["beef", "slow cooker"],
+    title: "Beef Brisket with BBQ Sauce"
+  },
   BeefEnchiladas: {
     cookTime: 120,
     ingredients: [
@@ -362,7 +461,7 @@ const recipes: Recipes = {
     servings: 4,
     summary:
       "These beef enchiladas are Mexican comfort food at its finest. Shredded beef simmers in a homemade red enchilada sauce for ultimate flavor, then is mixed with jalapenos, cheese, and cilantro. Rolled up in tortillas and topped with more sauce and cheese, these enchiladas are sheer perfection. It's a classic recipe that deserves a spot in everyone's dinner rotation.",
-    tags: ["beef"],
+    tags: ["beef", "mexican"],
     title: "Beef Enchiladas"
   },
   BeefStroganoff: {
@@ -768,7 +867,7 @@ const recipes: Recipes = {
     servings: 10,
     summary:
       "Every tortilla dreams of being stuffed with Carnitas. The best of the best of Mexican food, seasoned pork is slow cooked until tender before gently teasing apart with forks and pan frying to golden, crispy perfection. Pork Carnitas are that elusive combination of juicy and crispy with perfect seasoning - and this Carnitas recipe requires just 5 minutes prep!",
-    tags: ["pork"],
+    tags: ["pork", "slow cooker"],
     title: "Carnitas"
   },
   CheesyMushroomandWildRiceCasserole: {
@@ -926,7 +1025,7 @@ const recipes: Recipes = {
     servings: 12,
     summary:
       "Rich, hearty, easy cheesy white chicken enchiladas that ANYONE can master and fit everyone's tastes! You'll be rolling out and cranking up the Taco Tuesdays with this EASY and delicious dish! Have your entire family BEGGING for more!",
-    tags: ["chicken"],
+    tags: ["chicken", "mexican"],
     title: "Cheesy White Chicken Enchiladas"
   },
   ChickenPotPieswithPuffPastry: {
@@ -1007,6 +1106,55 @@ const recipes: Recipes = {
       "For those of us who LOVE pot pies, but don't have all day to make them! This quick pot pie recipe can be altered with as many vegetables and seasonings as your heart desires. Its only crust is a square of puff pastry placed over the top of the bowl, which rises and browns beautifully. Use leftover chicken, or store-bought prepared chicken breasts if you're in more of a hurry!",
     tags: ["chicken"],
     title: "Chicken Pot Pies with Puff Pastry"
+  },
+  ColdSobaNoodleswithDippingSauce: {
+    cookTime: 15,
+    ingredients: [
+      {
+        amount: 4,
+        name: "bundles buckwheat soba noodles about 19 oz of noodles"
+      },
+      {
+        amount: 0.5,
+        name: "cup mirin"
+      },
+      {
+        amount: 0.5,
+        name: "cup water"
+      },
+      {
+        amount: 0.5,
+        name: "cup loosely packed bonito flakes"
+      },
+      {
+        amount: 3,
+        name: "Tablespoon soy sauce"
+      },
+      {
+        name: "finely grated daikon"
+      },
+      {
+        name: "wasabi"
+      },
+      {
+        name: "shredded nori seaweed strips"
+      }
+    ],
+    instructions: [
+      "Bring a pot of water to a boil.  Add soba noodles and cook according to package directions, about 4-5 minutes.  Drain and cool with cold running water or ice.",
+      "For a traditional serving method, you can save the soba noodle cooking water.  Serve as tea after the meal or mix into the leftover sauce to drink as a soup.",
+      "Bring 1/2 c mirin and 1/2 c water to a boil.  Simmer for 30 seconds to remove the alcohol.  Turn off heat and add bonito flakes.  Let sit for 10 minutes.  Strain and add soy sauce.",
+      "Serve noodles and dipping sauce in separate dishes.  Add garnishes as desired.",
+    ],
+    origin:
+      "https://asiantestkitchen.com/soba-noodles-sauce/",
+    prepTime: 10,
+    progressPics: 3,
+    servings: 4,
+    summary:
+      "This cold soba noodle dish is eaten on special occasions such as New Year's Eve. As in other Asian cultures, the long, thin noodles represent a long life with extended happiness. These end of year noodles are called \"toshikoshi\" soba, which means \"cross the year\" soba noodles.",
+    tags: ["japanese"],
+    title: "Cold Soba Noodles with Dipping Sauce"
   },
   CranberrySauce: {
     cookTime: 15,
@@ -1559,7 +1707,7 @@ const recipes: Recipes = {
       "In a large skillet, cook the butter, onions, and garlic over medium heat, stirring occasionally. Cook until the onions are translucent and the butter is lightly browning. Whisk in the flour, salt, black pepper, thyme, chicken broth, and half-and-half. Cook and whisk until no flour lumps remain, then simmer over medium-low heat until thick. I simmer mine for 10 minutes. You want it to be a very thick gravy; simmer longer if necessary. Taste and add more seasonings if you prefer. Sometimes I add more thyme. Remove from heat and set aside.",
       "Preheat oven to 425°F (218°C).",
       "After the pie dough has chilled: On a floured work surface, roll out 1 half of the chilled pie dough. Turn the pie crust dough about a quarter turn after every few rolls until you have a circle 12 inches in diameter. Carefully place the dough into a 9-inch pie dish. Tuck it in with your fingers, making sure it is smooth. With a small and sharp knife, trim the extra overhang of dough and discard. Place the chicken mixture on top. Top with frozen peas. Pour gravy over top. Roll out 2nd half of pie crust dough just as you did the first. Cover the pie with the 2nd crust and trim the extra overhang off the sides. Seal the edges by crimping with a fork or your fingers. With a small and sharp knife, slice a few small slits in the top crust for steam to escape. Using a pastry brush, brush crust and edges with beaten egg.",
-      "Bake for 32 - 38 minutes, or until crust is golden brown. I use a pie crust shield to protect the edges from browning too much too soon. Cool for 10 minutes before serving. Makes amazing leftovers– the filling is so thick on the next day! Reheat as desired. Leftovers keep well in the refrigerator in an airtight container for up to 5 days."
+      "Bake for 32 - 38 minutes, or until crust is golden brown. I use a pie crust shield to protect the edges from browning too much too soon. Cool for 10 minutes before serving. Makes amazing leftovers - the filling is so thick on the next day! Reheat as desired. Leftovers keep well in the refrigerator in an airtight container for up to 5 days."
     ],
     origin: "https://sallysbakingaddiction.com/double-crust-chicken-pot-pie/",
     prepTime: 170,
@@ -1569,6 +1717,70 @@ const recipes: Recipes = {
       "If you're craving comfort food, homemade chicken pot pie is your answer! This completely from scratch recipe is simple to prepare, features a double crust, and nourishes the soul.",
     tags: ["chicken"],
     title: "Double Crust Chicken Pot Pie"
+  },
+  DropBiscuitswithCheddarandChives: {
+    cookTime: 14,
+    ingredients: [
+      {
+        amount: 6,
+        name: "tablespoons cold unsalted butter"
+      },
+      {
+
+        amount: 0.25,
+        name: "cup cold unsalted butter, separated"
+      },
+      {
+        amount: 2,
+        name: "cups All-Purpose flour"
+      },
+      {
+        amount: 2,
+        name: "teaspoons baking powder"
+      },
+      {
+        amount: 1,
+        name: "teaspoon baking soda"
+      },
+      {
+        amount: 0.5,
+        name: "teaspoon fine sea salt plus a pinch"
+      },
+      {
+        amount: 0.5,
+        name: "teaspoon garlic powder"
+      },
+      {
+        amount: 0.5,
+        name: "cup freshly grated cheddar cheese"
+      },
+      {
+        amount: 3,
+        name: "tablespoons freshly snipped chives"
+      },
+      {
+        amount: 1.25,
+        name: "cup buttermilk"
+      },
+      {
+        amount: 3,
+        name: "tablespoons honey"
+      }
+    ],
+    instructions: [
+      "Preheat oven to 400° and have ready two sheet pans lined with either parchment paper or silicone baking mats.",
+      "Cut 6 tablespoons of cold butter into tiny cubes and set aside until ready to use.",
+      "In a large mixing bowl, whisk together flour, baking powder, baking soda, salt and garlic powder. Using a pastry blender, cut the cubed butter into the dry ingredients until the mixture resembles coarse, small peas. Stir in the cheddar and chives. Using a sturdy spoon, stir in the buttermilk just until dough comes together. Do not over mix.",
+      "Drop heaping tablespoons of dough onto the sheet pans, spacing each 1 ½ - 2 inches apart and bake for 12 minutes.",
+      "In the meantime, add ¼ cup of butter to a small, microwave safe bowl. Heat until melted, 30-45 seconds. Remove from the microwave, stir in the honey and a pinch of salt. Once the biscuits have finished baking, brush them with the honey butter, return to the oven and bake 2-3 minutes more, until cooked through and golden brown. Serve and enjoy.il the biscuits are golden-brown. Serve and enjoy."
+    ],
+    origin: "https://www.theanthonykitchen.com/easy-drop-biscuits/",
+    prepTime: 12,
+    servings: 20,
+    summary:
+      "A quick and easy drop biscuit featuring a made-from-scratch dough, cheddar cheese, and fresh chives. Makes for a lovely brunch item, but also a great dinnertime side dish.",
+    tags: ["vegetarian"],
+    title: "Drop Biscuits with Cheddar and Chives"
   },
   EnchiladasVerdes: {
     cookTime: 35,
@@ -1642,7 +1854,7 @@ const recipes: Recipes = {
     servings: 4,
     summary:
       "These enchiladas are made with a fresh green salsa, just like you would find in a Mexican restaurant or better yet, in a Mexican home.",
-    tags: ["chicken"],
+    tags: ["chicken", "mexican"],
     title: "Enchiladas Verdes"
   },
   FrenchFries: {
@@ -1668,7 +1880,7 @@ const recipes: Recipes = {
       }
     ],
     instructions: [
-      "Skin the potato if desired and cut into ¼” strips.",
+      "Skin the potato if desired and cut into ¼\" strips.",
       "Add potato slices, vinegar and water to pot and bring to a boil. Boil for 10 minutes.",
       "While potatoes are boiling heat oil around 400 degrees. The ideal frying temperature is 360 so by heating it hotter the oil should drop into the proper range when frying.",
       "Once potatoes are done boiling let them sit out and dry on paper towels for 5 minutes to prevent a reaction with the oil.",
@@ -2552,7 +2764,7 @@ const recipes: Recipes = {
       "Combine the dashi, mirin, sake, and soy sauce in a bowl or a liquid measuring cup.",
       "Add the sugar and mix all together until the sugar is dissolved. Depending on the size of your frying pan, you may not need all the broth. You can keep the leftovers in the refrigerator for 3 days.",
       "Thinly slice the onion and chop the mitsuba (or green onions). Beat one egg in a small bowl (you will need to beat the other egg when you work on the second batch).",
-      "Slice the chicken thighs diagonally into pieces that are about 1½-inches (4 cm) long and ½-inch (1.3 cm) thick. I recommend using the “sogigiri” cutting technique so the chicken pieces will be of equal thickness and to create more surface area for fast cooking.",
+      "Slice the chicken thighs diagonally into pieces that are about 1½-inches (4 cm) long and ½-inch (1.3 cm) thick. I recommend using the \"sogigiri\" cutting technique so the chicken pieces will be of equal thickness and to create more surface area for fast cooking.",
       "Typically, Oyakodon is made individually for each serving, using an oyakodon pan. This small pan lets you slide the finished dish onto the rice bowl easily while the egg is set but still runny. Divide the ingredients in half or, alternatively, you can cook 2 servings together in a bigger pan.",
       "With the stove off, add 1 serving of the sliced onions to the pan in a single layer. Add roughly one-third to one-half of the seasonings mixture (the amount may vary depending on the size of your frying pan). Pour just enough on top to cover the onions.",
       "Add 1 serving of the chicken on top of the onions. Make sure the onions and chicken are evenly distributed. Then, turn on the heat to medium and bring it to a boil.",
@@ -2568,6 +2780,116 @@ const recipes: Recipes = {
       "Oyakodon is cooked in one pan where onions, chicken, and egg are simmered in an umami-rich, dashi-based sauce. It is then poured over a bowl of fluffy steamed rice. Simple, delicious, and utterly comforting, this is the kind of one-bowl meal you can cook in less than 30 minutes!",
     tags: ["chicken", "japanese"],
     title: "Oyakodon"
+  },
+  PennewitRadicchioSpinachandBacon: {
+    cookTime: 20,
+    ingredients: [
+      {
+        amount: 1,
+        name: "whole head of garlic (with about 12 to 14 cloves)"
+      },
+      {
+        amount: 6,
+        name: "teaspoons olive oil, divided"
+      },
+      {
+        amount: 1,
+        name: "pound penne"
+      },
+      {
+        amount: 8,
+        name: "ounces bacon (about 8 slices), cut crosswise into 1/3-inch-wide strips"
+      },
+      {
+        amount: 1,
+        name: "large onion, chopped (about 2 cups)"
+      },
+      {
+        amount: 1,
+        name: "cup chicken broth"
+      },
+      {
+        amount: 6,
+        name: "cups (packed) coarsely torn Treviso, Chioggia, or Tardivo radicchio leaves (from about 2 medium heads)"
+      },
+      {
+        amount: 3,
+        name: "cups (packed) baby spinach leaves, torn in half (about 10 ounces)"
+      },
+      {
+        amount: 1,
+        name: "cup (packed) fresh basil leaves, torn in half (about 10 ounces)"
+      },
+      {
+        amount: 1,
+        name: "cup freshly grated Parmesan cheese plus additional for serving"
+      },
+      {
+        amount: 0.25,
+        name: "teaspoon dried crushed red pepper"
+      }
+    ],
+    instructions: [
+      "Preheat oven to 375°F. Cut off top 1/2 inch of garlic head, exposing cloves. Place garlic head, cut side up, on sheet of foil and drizzle with 1/2 teaspoon olive oil. Wrap garlic in foil. Roast until garlic is soft, about 40 minutes. Let stand until cool enough to handle. Squeeze garlic into small bowl.",
+      "Cook pasta in large pot of boiling salted water until just tender but still firm to bite, stirring occasionally. Meanwhile, cook bacon strips and chopped onion in heavy large skillet over medium-high heat until golden brown, stirring occasionally, about 12 minutes. Add chicken broth, remaining 5 1/2 teaspoons olive oil, and roasted garlic. Bring mixture to simmer, stirring occasionally. Add radicchio, spinach, and basil and stir to combine. Simmer just until radicchio and spinach wilt, about 1 minute.",
+      "Drain pasta and return to same pot. Add radicchio-spinach mixture to pasta. Add 1 cup grated Parmesan cheese and crushed red pepper; toss to coat. Season pasta to taste with salt and pepper and serve, passing additional Parmesan cheese alongside."
+    ],
+    origin: "https://www.epicurious.com/recipes/food/views/penne-with-radicchio-spinach-and-bacon-241093",
+    prepTime: 40,
+    servings: 6,
+    summary:
+      "Wilted radicchio and spinach are a nice match for spicy red pepper flakes and smoky, salty bacon. Treviso—with its not-too-tough (but also not-too-tender) leaves—is the best choice for this recipe if you can find it.",
+    tags: ["bacon"],
+    title: "Penne with Radicchio, Spinach, and Bacon"
+  },
+  PicodeGallo: {
+    cookTime: 0,
+    ingredients: [
+      {
+        amount: 4,
+        name: "plum tomatoes seeded and diced"
+      },
+      {
+        amount: 1,
+        name: "white onion"
+      },
+      {
+        amount: 12,
+        name: "cilantro sprigs"
+      },
+      {
+        amount: 2,
+        name: "serrano chiles"
+      },
+      {
+        amount: 1,
+        name: "lime"
+      },
+      {
+        name: "Sea salt to taste"
+      }
+    ],
+    instructions: [
+      "Seed the tomatoes.",
+      "Seed the serrano chiles.",
+      "Remove the cilantro leaves and discard the stems.",
+      "Chop the tomatoes into ¼\" pieces.",
+      "Finely chop the onion.",
+      "Finey chop the onion, cilantro, and serrano chile.",
+      "Add all of the ingredients in a mixing bowl.",
+      "Add sea salt to taste.",
+      "Sprinkle with the juice of one lime.",
+      "Gently mix until the ingredients are evenly dispersed.",
+      "Serve immediately."
+    ],
+    origin: "https://mexicanfoodjournal.com/pico-de-gallo/",
+    prepTime: 15,
+    progressPics: 8,
+    servings: 4,
+    summary:
+      "Pico de gallo is a uncooked salsa known as a salsa fresca, or \"fresh salsa,\" in Spanish. It is a delicious combination of plum (Roma) tomatoes, white onion, cilantro, serrano peppers and a splash of lime juice.",
+    tags: ["vegetarian", "vegan", "mexican"],
+    title: "Pico de Gallo"
   },
   RoastedThanksgivingTurkey: {
     cookTime: 300,
@@ -2611,6 +2933,54 @@ const recipes: Recipes = {
     summary: "It turns out beautiful every time!",
     tags: ["turkey", "thanksgiving"],
     title: "Roasted Thanksgiving Turkey"
+  },
+  RomanParthianChicken: {
+    cookTime: 90,
+    ingredients: [
+      {
+        amount: 1,
+        name: "medium chicken"
+      },
+      {
+        amount: 0.5,
+        name: "tsp lovage (celery or ajwain seeds can substitute)"
+      },
+      {
+        amount: 1,
+        name: "tsp of caraway seed"
+      },
+      {
+        amount: 0.75,
+        name: "tsp of asfoetida powder "
+      },
+      {
+        amount: 1,
+        name: "cup medium sweet white wine"
+      },
+      {
+        amount: 1,
+        name: "tbsp olive oil"
+      },
+      {
+        amount: 3,
+        name: "tbsp garum (can be substituted with Thai Nam Pla or Vietnamese Nuoc Nam Mhi)"
+      },
+      {
+        name: "dash of pepper"
+      }
+    ],
+    instructions: [
+      "Prepare chicken and place in an oven dish.",
+      "Dry-roast seeds and asafoetida until they give off their aroma. Grind them to a powder with the pepper. If using garlic instead of asafoetida, add it to the liquid mixture later).",
+      "Mix the spices, wine, olive oil and fish sauce. Pour over the chicken.",
+      "Put it in the oven and roast as normal until crispy and well done and the juices run clear. Baste the chicken often during cooking."
+    ],
+    origin: "https://blog.crystalking.com/ancient-roman-food-parthian-chicken-recipe",
+    prepTime: 20,
+    servings: 8,
+    summary: "Apicius 6.8.3: Pullum Parthicum: pullum aperies a naui et in quadrato ornas. teres piper, ligusticum, carei modicum. suffunde liquamen. uino temperas. componis in Cumana pullum et condituram super pullum facies. laser et uinum interdas. dissolues et in pullum mittis simul et coques. piper aspersum inferes.",
+    tags: ["chicken"],
+    title: "Roman Parthian Chicken"
   },
   SavoryChickenMarinade: {
     cookTime: 10,
@@ -2675,6 +3045,102 @@ const recipes: Recipes = {
       "The Best Chicken Marinade Recipe makes chicken extra juicy and flavorful. This savory marinade makes grilled chicken mouthwatering!",
     tags: ["chicken"],
     title: "Savory Chicken Marinade"
+  },
+  SavoryHerbTurkeyGravy: {
+    cookTime: 30,
+    ingredients: [
+      {
+        amount: 4,
+        name: "cups turkey stock",
+      },
+      {
+        name: "Reserved turkey drippings"
+      },
+      {
+        amount: 4,
+        name: "tablespoons unsalted butter"
+      },
+      {
+        amount: 4,
+        name: "tablespoons all-purpose flour (amount may vary)"
+      },
+      {
+        name: "kosher salt and freshly ground pepper (to taste)"
+      }
+    ],
+    instructions: [
+      "Combine remaining drippings from the cooked turkey with the broth you cooked earlier.",
+      "In a medium sauce pan, melt butter over medium heat. Add flour and stir. Cook until mixture is golden brown and smells wonderful.",
+      "Add a ladle of your broth mixture and whisk until you have a thick paste and there are no lumps. Add another ladle and whisk again until smooth. Continue adding liquid and whisking until everything is combined and smooth.",
+      "Reduce heat to low and continue to cook if gravy needs thickening. Add salt and pepper, as desired. Amount of salt depends on how much of the turkey drippings you use, so be sure to taste. Transfer to gravy boat and serve hot."
+    ],
+    origin: "https://selfproclaimedfoodie.com/savory-herb-turkey-gravy/",
+    prepTime: 10,
+    servings: 8,
+    summary:
+      "Savory Herb Turkey Gravy is the absolute best homemade turkey gravy from turkey drippings that you can serve with your Thanksgiving dinner.",
+    tags: ["turkey", "thanksgiving"],
+    title: "Savory Herb Turkey Gravy"
+  },
+  SavoryHerbTurkeyStock: {
+    cookTime: 90,
+    ingredients: [
+      {
+        amount: 2,
+        name: "tablespoons olive oil"
+      },
+      {
+        name: "Reserved turkey neck and giblets"
+      },
+      {
+        amount: 1,
+        name: "yellow onion (peeled and quartered)"
+      },
+      {
+        amount: 1,
+        name: "carrot (peeled, cut into 2-inch pieces)"
+      },
+      {
+        amount: 1,
+        name: "celery stalk (cut into 2-inch pieces)"
+      },
+      {
+        amount: 3,
+        name: "cloves garlic (smashed)"
+      },
+      {
+        amount: 1,
+        name: "cup dry white wine"
+      },
+      {
+        amount: 4,
+        name: "cups water"
+      },
+      {
+        amount: 6,
+        name: "black peppercorns"
+      },
+      {
+        amount: 1,
+        name: "large handful fresh herb sprigs (parsley, rosemary, thyme marjoram (see note below))"
+      },
+      {
+        amount: 1,
+        name: "bay leaf"
+      }
+    ],
+    instructions: [
+      "Heat oil in large stockpot or dutch oven over medium high heat. Add turkey neck and giblets. Allow to cook a few minutes undisturbed to get nice and brown. Use tongs to flip and brown other side.",
+      "Add onion quarters, carrot, celery, and garlic. Allow to brown, stirring only occasionally, to brown all sides evenly. Add wine to pot and scrape bottom of pan to deglaze. Allow wine to boil and cook for a couple of minutes. Add water, peppercorns, herbs, and bay leaf to pot. Do not cover. Bring to a boil, then reduce heat to a simmer for at least one hour. The longer you cook the stock, the better it will taste.",
+      "Strain liquid into a container. Refrigerate until ready to use."
+    ],
+    origin: "https://selfproclaimedfoodie.com/savory-herb-turkey-gravy/",
+    prepTime: 20,
+    servings: 8,
+    summary:
+      "From Gourmet magazine. I use this stock as a base for my Turkey Gravy",
+    tags: ["turkey", "thanksgiving"],
+    title: "Savory Herb Turkey Stock"
   },
   ShiitakeDashi: {
     cookTime: 15,
@@ -2800,6 +3266,269 @@ const recipes: Recipes = {
       "Konnyaku is the Japanese term for the vegetable or plant also known as devil's tongue, konjac, konjak, konjaku, konnyaku potato, voodoo lily, or elephant yam. Konnyaku also refers to the prepared food where the root of the konjac plant is made into a rectangular block of jelly-like yam cake or noodles.",
     tags: ["vegetarian", "vegan", "fish", "japanese"],
     title: "Spicy Konnyaku"
+  },
+  SouthernBiscuits: {
+    cookTime: 15,
+    ingredients: [
+      {
+        amount: 2,
+        name: "cups all-purpose flour, plus extra for working with dough"
+      },
+      {
+        amount: 1,
+        name: "teaspoon baking powder"
+      },
+      {
+        amount: 1,
+        name: "teaspoon baking soda"
+      },
+      {
+        amount: 1,
+        name: "teaspoon fine sea salt"
+      },
+      {
+        amount: 6,
+        name: "tablespoons cold unsalted butter, cut into small cubes"
+      },
+      {
+        amount: 0.75,
+        name: "cup whole milk"
+      }
+    ],
+    instructions: [
+      "Preheat the oven to 400° and have ready a baking sheet lined with either parchment paper or a silicone baking mat.",
+      "In a large mixing bowl, combine 2 cups flour, baking powder, baking soda, and salt and whisk to combine.",
+      "Scatter the cubes of butter across dry mixture, and using a pastry blender, cut in the butter until the cubes are the size of peas.",
+      "Add the milk and stir with a wooden spoon until the dough comes together. Lightly knead the mixture a bit with your hands (only if necessary) to bring it all together.",
+      "Transfer the dough to a work surface dusted with flour and pat out so that it is 1\" thick. Cut into 2\" squares or use a biscuit cutter to form the biscuits. You can re-work the scraps up to two times to make more biscuits.",
+      "Transfer to the prepared baking sheet and bake for 15-18 minutes, or until the biscuits are golden-brown. Serve and enjoy."
+    ],
+    origin: "https://www.theanthonykitchen.com/5-steps-for-perfect-homemade-southern-biscuits/",
+    prepTime: 15,
+    progressPics: 2,
+    servings: 12,
+    summary:
+      "A quick and simple recipe for Southern Homemade Biscuits that bake up perfectly golden on the outside, and flaky and buttery on the inside.",
+    tags: ["vegetarian"],
+    title: "Southern Biscuits"
+  },
+  SpicyStirFrySauce: {
+    cookTime: 5,
+    ingredients: [
+      {
+        amount: 1,
+        name: "cup soy sauce"
+      },
+      {
+        amount: 0.25,
+        name: "cup rice wine"
+      },
+      {
+        amount: 0.25,
+        name: "cup white sugar"
+      },
+      {
+        amount: 2,
+        name: "tablespoons chile paste"
+      },
+      {
+        amount: 2,
+        name: "tablespoons sesame oil"
+      },
+      {
+        amount: 1,
+        name: "tablespoon crushed red pepper"
+      },
+      {
+        amount: 1,
+        name: "tablespoon chopped garlic"
+      },
+      {
+        amount: 1,
+        name: "tablespoon cornstarch"
+      },
+      {
+        amount: 2,
+        name: "teaspoons chopped ginger"
+      }
+    ],
+    instructions: [
+      "Whisk soy sauce, rice wine, sugar, chile paste, sesame oil, crushed red pepper, garlic, cornstarch, and ginger together in a bowl."
+    ],
+    origin: "https://www.allrecipes.com/recipe/261215/spicy-stir-fry-sauce/",
+    prepTime: 5,
+    servings: 6,
+    summary:
+      "Use this sauce to spice up any stir-fry. May bring a little sweat to your forehead. Marinate meat in sauce if desired. Stir-fry meat and veggies until almost cooked to desired doneness. Add sauce, toss to coat, and heat through. Adjust chile paste for more or less heat.",
+    tags: ["vegetarian", "vegan", "japanese"],
+    title: "Spicy Stir Fry Sauce"
+  },
+  SteamedCauliflowerwithLemonButterSauce: {
+    cookTime: 20,
+    ingredients: [
+      {
+        amount: 1,
+        name: "kg cauliflower"
+      },
+      {
+        amount: 2,
+        name: "tablespoons butter"
+      },
+      {
+        amount: 1,
+        name: "small lemon (juice and zest)"
+      },
+      {
+        amount: 1,
+        name: "tablespoon chopped parsley"
+      },
+      {
+        name: "salt, for steaming water"
+      }
+    ],
+    instructions: [
+      "Trim cauliflower: remove leaves and leaf stalks. Turn head over and trim out the center of the core, but not so much that the florets fall apart.",
+      "Heat about 2 inches salted water in the bottom of a steamer. Put whole head in the steamer basket and cook just until a sharp knife can pierce it with a slight resistance, 10-20 minutes, depending on the size of the head. Don't overcook; it will continue to cook from residual heat.",
+      "While the cauliflower cooks, heat butter in a small saucepan until it just begins to brown. This will not take very long--watch closely so it doesn't burn. Zest the lemon, then cut in half and squeeze out the juice. Add to browned butter. Chop parsley and add to butter.",
+      "When the cauliflower is done, remove to serving dish and spoon sauce over. Slice into quarters to serve."
+    ],
+    origin: "https://www.recipetips.com/recipe-cards/t--2446/steamed-cauliflower-with-lemon-butter-sauce.asp",
+    prepTime: 5,
+    servings: 4,
+    summary:
+      "This easy, attractive dish has a mild flavor and tastes as good as it looks.",
+    tags: ["vegetarian", "vegan"],
+    title: "Steamed Cauliflower with Lemon Butter Sauce"
+  },
+  TequilaLimeSalsa: {
+    cookTime: 30,
+    ingredients: [
+      {
+        amount: 10,
+        name: "roma tomatoes"
+      },
+      {
+        amount: 0.5,
+        name: "cup cilantro, chopped"
+      },
+      {
+        amount: 1,
+        name: "large onion diced"
+      },
+      {
+        amount: 1,
+        name: "jalapeño minced"
+      },
+      {
+        amount: 3,
+        name: "limes juiced"
+      },
+      {
+        amount: 1,
+        name: "lime, zest"
+      },
+      {
+        amount: 1,
+        name: "Tbsp 100% agave tequila"
+      },
+      {
+        amount: 1.5,
+        name: "tsp sea salt"
+      }
+    ],
+    instructions: [
+      "Halve the tomatoes with a sharp knife.",
+      "Scoop out the tomato halves with a spoon and discard the insides.",
+      "Dice the tomato halves and add to a medium-sized mixing bowl.",
+      "Finely mince the cilantro stems and then chop the leaves. Add cilantro to the bowl.",
+      "Add remaining ingredients and stir gently with a spatula to mix.",
+      "Cover and refrigerate for at least 30 minutes to let the flavors meld."
+    ],
+    origin: "https://kitskitchen.com/tequila-lime-salsa/",
+    prepTime: 10,
+    servings: 6,
+    summary:
+      "There is nothing better than fresh salsa at a party or family get-together. Especially during the summer.",
+    tags: ["vegetarian", "vegan"],
+    title: "Tequila Lime Salsa"
+  },
+  ThousandIslandDressing: {
+    cookTime: 0,
+    ingredients: [
+      {
+        amount: 1,
+        name: "cup mayonnaise"
+      },
+      {
+        amount: 0.25,
+        name: "cup yellow onion, minced"
+      },
+      {
+        amount: 2,
+        name: "tablespoons ketchup"
+      },
+      {
+        amount: 2,
+        name: "tablespoons sweet pickle relish"
+      },
+      {
+        amount: 1,
+        name: "teaspoon lemon juice"
+      },
+      {
+        amount: 0.5,
+        name: "teaspoon sweet paprika"
+      },
+      {
+        amount: 0.25,
+        name: "teaspoon kosher salt"
+      }
+    ],
+    instructions: [
+      "Combine all ingredients in a small mixing bowl",
+      "Transfer to a jar with a lid and store in the refrigerator until needed: For best flavor, wait 24 hours for the flavors to meld. The dressing will keep for about a week."
+    ],
+    origin: "https://www.simplyrecipes.com/recipes/thousand_island_dressing/",
+    prepTime: 10,
+    progressPics: 2,
+    servings: 8,
+    summary:
+      "Creamy, sweet and tangy—Thousand Island Dressing is so good made from scratch. Use it on burgers, Reubens, salads, and more.",
+    tags: ["vegetarian"],
+    title: "Thousand Island Dressing"
+  },
+  TonkotsuRamenBroth: {
+    cookTime: 720,
+    ingredients: [
+      {
+        amount: 6,
+        name: "lbs pork bones with a little meat on them. Pork neck bones work well."
+      },
+      {
+        amount: 4,
+        name: "oz white mushrooms sliced"
+      },
+      {
+        amount: 1,
+        name: "onion peeled and halved"
+      }
+    ],
+    instructions: [
+      "Place the pork bones in a large stock pot and cover with cold water.",
+      "Bring to a rolling boil over medium high heat. At this point a huge mess of scum will form.",
+      "Remove from heat. Dump the water and carefully rinse all the bones under cold running water.",
+      "Return the bones to the stock pot. Cover the bones with cold water and bring to a rolling boil.",
+      "Add the mushroom and onion and maintain a rolling boil for 12 hours, replenishing the water along the way. You want to keep the bones under water the whole time. It's best to cover the pot for this or you'll be adding water every 30 minutes.",
+      "After 12 hours, remove the stock from the heat and cool slightly. Remove the bones with a slotted spoon and strain the stock.",
+      "The stock will keep in the refrigerator for 2-3 days or can be frozen at this point."
+    ],
+    origin: "https://www.simplyrecipes.com/recipes/thousand_island_dressing/",
+    prepTime: 30,
+    servings: 6,
+    summary:
+      "Tonkotsu ramen broth is simply pork bones cooked at a rolling boil for 12 hours. The process extracts all the goodness of the pork and turns the broth creamy white.",
+    tags: ["japanese"],
+    title: "Tonkotsu Ramen Broth"
   }
 };
 

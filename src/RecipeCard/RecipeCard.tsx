@@ -31,7 +31,7 @@ const RecipeCard = (props: RecipeCardProps): JSX.Element => {
 
   const { multiplier, recipe, setMultiplier } = props;
 
-  const slug = recipe.title.replace(/ /g, "");
+  const slug = recipe.title.replace(/[ ,]/g, "");
 
   return (
     <div className={classes.cardWrapper} onClick={(e) => e.stopPropagation()}>

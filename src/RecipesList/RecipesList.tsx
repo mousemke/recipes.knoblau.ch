@@ -77,7 +77,7 @@ const rendereRecipeLinks = (
         key={i}
         className={classes.recipeLink}
         onClick={() => {
-          setWindowHash(recipe.title.replace(/ /g, ""));
+          setWindowHash(recipe.title.replace(/[ ,]/g, ""));
           setActiveRecipe(recipe);
         }}
         role="button"
@@ -133,11 +133,11 @@ const RecipesList = (props: RecipesListProps): JSX.Element => {
   }, [activeTag]);
 
   /**
-   * on filter change, breaks the visible recipes into relevant results
+   * given a filter string, breaks the visible recipes into relevant results
    */
   useEffect(() => {
     if (filter) {
-      setFilteredRecipes(filterByString(visibleRecipes, filter));
+      setFilteredRecipes(filterByString(visibleRecipes, filter.toLowerCase()));
     }
   }, [filter, visibleRecipes]);
 
