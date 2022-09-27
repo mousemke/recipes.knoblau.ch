@@ -19,6 +19,52 @@ const useStyles = createUseStyles(
         width: 50
       }
     },
+    closeIcon: {
+      display: "inline-block",
+      height: 26,
+      overflow: "hidden",
+      position: "relative",
+      width: 22,
+
+      "&:hover": {
+        "&::before, &::after": {
+          background: "#e129f5"
+        }
+      },
+
+      "&::before, &::after": {
+        background: "#ee52ff",
+        content: "''",
+        left: 0,
+        height: 4,
+        marginTop: -4,
+        position: "absolute",
+        top: "50%",
+        width: "100%"
+      },
+
+      "&:after": {
+        transform: "rotate(-45deg)"
+      },
+
+      "&:before": {
+        transform: "rotate(45deg)"
+      }
+    },
+    closeIconWrapper: {
+      backgroundColor: "#fff",
+      border: "4px solid #ee52ff",
+      borderRadius: 24,
+      cursor: "pointer",
+      height: 22,
+      marginLeft: -20,
+      marginTop: -20,
+      padding: 5,
+
+      "&:hover": {
+        border: "4px solid #e129f5"
+      }
+    },
     header: {
       background: "#ececec",
       display: "flex",

@@ -66,8 +66,8 @@ const recipes: Recipes = {
     progressPics: 1,
     servings: 8,
     summary:
-      "While this apple cider brine goes wonderfully with a tanksgiving turkey, it could be used as any other long marinade experiments!",
-    tags: ["vegetarian", "vegan", "thanksgiving", "turkey"],
+      "While this apple cider brine goes wonderfully with a thanksgiving turkey, it could be used as any other long marinade experiments!",
+    tags: ["thanksgiving", "turkey"],
     title: "Apple Cider Turkey Brine"
   },
   AwaseDashi: {
@@ -527,6 +527,74 @@ const recipes: Recipes = {
     tags: ["beef"],
     title: "Beef Stroganoff"
   },
+  BeerBatter: {
+    cookTime: 0,
+    ingredients: [
+      {
+        amount: 3.33,
+        name: "cup all-purpose flour"
+      },
+      {
+        amount: 0.75,
+        name: "cup rice flour"
+      },
+      {
+        amount: 2,
+        name: "teaspoon baking powder"
+      },
+      {
+        amount: 4,
+        name: "cup American lager"
+      },
+      {
+        amount: 0.5,
+        name: "cup vodka"
+      },
+      {
+        amount: 1,
+        name: "Tablespoon honey"
+      }
+    ],
+    instructions: [
+      "Beer Suggestions: New Glarus Two Women (New Glarus, Wisconsin), August Schell Pilsner (New Ulm, Minnesota), Guinness Blonde (Dublin, Ireland).",
+      "In a bowl, whisk together the flours and baking powder. In a separate bowl, whisk together the beer, vodka, and honey. Slowly whisk the dry ingredients into the wet ingredients to make a batter."
+    ],
+    origin: "https://beerandbrewing.com/wisconsin-beer-battered-fish-fry-recipe/",
+    prepTime: 5,
+    servings: 8,
+    summary:
+      "Adding beer to fish batter enhances the texture of the fried fish because when the fish hits the hot oil, carbon dioxide in the beer is released, creating air in the coating.",
+    tags: ["vegan", "wisconsin"],
+    title: "Beer Batter"
+  },
+  BeerBatteredFishFry: {
+    cookTime: 40,
+    ingredients: [
+      {
+        amount: 1,
+        name: "lb cod or haddock fillets, cut into serveable sizes"
+      },
+      {
+        name: "Seasoned flour Recipe"
+      },
+      {
+        name: "Beer Batter Recipe"
+      },
+      {
+        name: "Canola oil to fill a deep fat fryer"
+      }
+    ],
+    instructions: [
+      "Fill the fryer with oil and heat to 350°F (177°C) following the manufacturer's directions. Arrange the bowls of fish, seasoned flour, and batter with the fish farthest from the fryer, then the seasoned flour, and then the beer batter. With tongs or fingers, take one piece of fish at a time, dip the fish into the seasoned flour to coat, then into the beer batter, and then slowly drop the fish into the hot oil, avoiding splashes. Fry the fish for 3-4 minutes until cooked all the way through. Carefully remove the fish and drain on paper towels. Repeat with each piece of fish."
+    ],
+    origin: "https://beerandbrewing.com/wisconsin-beer-battered-fish-fry-recipe/",
+    prepTime: 5,
+    servings: 4,
+    summary:
+      "Adding beer to fish batter enhances the texture of the fried fish because when the fish hits the hot oil, carbon dioxide in the beer is released, creating air in the coating. Here a lager adds a nice light taste and crunch.",
+    tags: ["wisconsin", "fish"],
+    title: "Beer Battered Fish Fry"
+  },
   BeerCheeseSoup: {
     cookTime: 20,
     ingredients: [
@@ -869,6 +937,53 @@ const recipes: Recipes = {
       "Every tortilla dreams of being stuffed with Carnitas. The best of the best of Mexican food, seasoned pork is slow cooked until tender before gently teasing apart with forks and pan frying to golden, crispy perfection. Pork Carnitas are that elusive combination of juicy and crispy with perfect seasoning - and this Carnitas recipe requires just 5 minutes prep!",
     tags: ["pork", "slow cooker"],
     title: "Carnitas"
+  },
+  ChashuPorkBelly: {
+    cookTime: 660,
+    ingredients: [
+      {
+        amount: 2,
+        name: "lb pork belly, rolled and tied"
+      },
+      {
+        amount: 0.25,
+        name: "cup soy sauce"
+      },
+      {
+        amount: 0.5,
+        name: "cup sake"
+      },
+      {
+        amount: 0.5,
+        name: "cup mirin, sweet Japanese wine"
+      },
+      {
+        amount: 0.25,
+        name: "cup sugar"
+      },
+      {
+        amount: 3,
+        name: "cloves garlic, left whole"
+      },
+      {
+        amount: 2,
+        name: "green onions, coarsely chopped"
+      }
+    ],
+    instructions: [
+      "Combine the soy, sake, mirin, sugar, garlic and green onions in a ziploc bag large enough to hold the pork belly. Stick a straw in the bag and seal the ziploc bag up against it (so the straw is the only opening). Suck as much of the air out as you can and seal.",
+      "Sous vide the pork for 10-11 hours at 170F.",
+      "Remove pork from the ziploc bag. Discard the bag and marinade.",
+      "Let the chashu pork belly cool completely.",
+      "Slice across the chashu pork (so you get bacon like slices) - into 8-12 slices about 1/8 to 3/16 inches thick. Reserve. You won't need all the pork for 4 servings."
+    ],
+    origin: "https://glebekitchen.com/tonkotsu-ramen-home/#recipe",
+    prepTime: 15,
+    servings: 4,
+    summary:
+      "It's marinated pork belly and it's magic stuff.",
+    tags: ["pork", "japanese"],
+    title: "Chashu Pork Belly"
   },
   CheesyMushroomandWildRiceCasserole: {
     cookTime: 120,
@@ -2443,7 +2558,7 @@ const recipes: Recipes = {
     servings: 18,
     summary:
       "This is Dave's favorite brine for Thanksgiving turkey. It can be used on any kind of poultry and pork. It gives a sweet, maple flavor to meats.",
-    tags: ["vegetarian", "vegan", "turkey", "thanksgiving"],
+    tags: ["turkey", "thanksgiving"],
     title: "Maple Turkey Brine"
   },
   MapoTofu: {
@@ -2531,6 +2646,40 @@ const recipes: Recipes = {
       "Authentic Szechuan style mapo tofu is one of the branding dishes of Szechuan cuisine. Mapo tofu is one of the top ten famous Chinese dishes and enjoys a high popularity among not only Chinese people but also many western countries. Personally I like to cook this dish at home from time to time especially in cool seasons such as winter and fall. Do you love it?",
     tags: ["beef", "pork", "szechuan"],
     title: "Mapo Tofu"
+  },
+  MisoTare: {
+    cookTime: 5,
+    ingredients: [
+      {
+        amount: 0.5,
+        name: "cup shiro miso"
+      },
+      {
+        amount: 0.25,
+        name: "cup sake"
+      },
+      {
+        amount: 0.25,
+        name: "cup mirin"
+      },
+      {
+        name: "pinch shichimi togarashi (optional)"
+      },
+      {
+        amount: 1.5,
+        name: "tsp kosher salt - depending on how salty you like your ramen."
+      }
+    ],
+    instructions: [
+      "Combine all ingredients in a small sauce pan and simmer at the lowest setting for about 5 minutes."
+    ],
+    origin: "https://glebekitchen.com/tonkotsu-ramen-home/",
+    prepTime: 5,
+    servings: 4,
+    summary:
+      "The tare is the flavour base. This is where you take your ramen in your direction.",
+    tags: ["japanese"],
+    title: "Miso Tare"
   },
   MushroomGravy: {
     cookTime: 45,
@@ -2643,6 +2792,74 @@ const recipes: Recipes = {
       "Mushroom Risotto is soft short grained rice with flavorful button mushrooms, crunchy peas combined to make one of the Best side dishes your family will love! The flavor combination is amazing! ",
     tags: ["vegetarian", "vegan"],
     title: "Mushroom Risotto"
+  },
+  MushroomWellington: {
+    cookTime: 50,
+    ingredients: [
+      {
+        amount: 4,
+        name: "large portobello mushrooms stalks trimmed and cleaned"
+      },
+      {
+        amount: 3,
+        name: "large onions peeled and chopped"
+      },
+      {
+        amount: 3,
+        name: "tablespoon olive oil"
+      },
+      {
+        amount: 300,
+        name: "g baby spinach"
+      },
+      {
+        amount: 4,
+        name: "sprigs of thyme leaves picked"
+      },
+      {
+        amount: 1,
+        name: "Vegan Puff Pastry recipe"
+      },
+      {
+        amount: 1,
+        name: "tablespoon dijon mustard"
+      },
+      {
+        name: "salt and pepper to taste"
+      },
+      {
+        amount: 1,
+        name: "tablespoon aquafaba (chickpea water)"
+      },
+      {
+        amount: 1,
+        name: "tablespoon almond or cashew milk"
+      },
+      {
+        amount: 1,
+        name: "teaspoon neutral flavoured oil"
+      },
+      {
+        amount: 0.5,
+        name: "teaspoon maple syrup or brown rice syrup"
+      }
+    ],
+    instructions: [
+      "Place a large frying pan over a low to medium-low heat. Add the 1 /2 tbs of olive oil followed by onion and reduce heat to low. Season with salt and pepper and cook, stirring occasionally, for 15 to 20 minutes, until the onions are golden brown. Keep an eye on the onions to make sure they don't catch. ",
+      "Remove the onions from the pan and return the pan to the heat. Add the baby spinach and cook until wilted. Remove from the baby spinach from the pan and leave to cool.",
+      "Increase the heat to medium/high and return the pan to the heat. Add the remaining olive oil and place the mushrooms, top side down. Cook until lightly golden (about 5 minutes) before turning over and cooking for a further 5 minutes or until golden. Remove from the heat, and drain on paper towel top side up as they will release a lot of liquid as they cool. Transfer the onions, spinach and mushrooms to the refrigerator and cool completely. ",
+      "Preheat the oven to 200 degrees Celsius (390 Fahrenheit). Place a sheet of baking paper on the baking tray and then place the puff pastry sheet on top. Spread half the caramelised onions over the middle third of the pastry, making sure to leave an extra 2cm (¾ inch) border at the edge of the pastry. Top with half of the baby spinach. Spread the dijon mustard over the mushrooms and season well with salt and pepper. Place the mushrooms on top of the spinach. Top the mushrooms with thyme and the remaining baby spinach and onions.",
+      "Very carefully roll the pastry over the top of the mushroom mixture until you have a log. Press down to seal the edges. Roll over the log so that the seam is facing the bottom.",
+      "To make the vegan egg wash whisk all of the ingredients together in a bowl. Very lightly coat with the vegan egg wash. Place the pastry in the freezer for 10 minutes before repeating with another layer of vegan egg wash and freezing the pastry for a further 10 minutes.",
+      "Place the pastry back on the baking sheet and tray and place in the oven for 30 to 35 minutes, or until golden and flakey."
+    ],
+    origin: "https://www.deliciouseveryday.com/mushroom-wellington/",
+    prepTime: 10,
+    servings: 4,
+    summary:
+      "A fantastic vegan version of the classic beef wellington. Tender mushrooms wrapped up in a flaky vegan puff pastry. This recipe is a perfect for a vegan Christmas or Thanksgiving entree, or any time you need a dish that impresses",
+    tags: ["vegetarian", "vegan"],
+    title: "Mushroom Wellington"
   },
   OnsenTamago: {
     cookTime: 20,
@@ -2781,7 +2998,7 @@ const recipes: Recipes = {
     tags: ["chicken", "japanese"],
     title: "Oyakodon"
   },
-  PennewitRadicchioSpinachandBacon: {
+  PennewithRadicchioSpinachandBacon: {
     cookTime: 20,
     ingredients: [
       {
@@ -3142,6 +3359,45 @@ const recipes: Recipes = {
     tags: ["turkey", "thanksgiving"],
     title: "Savory Herb Turkey Stock"
   },
+  SeasonedFlour: {
+    cookTime: 0,
+    ingredients: [
+      {
+        amount: 3,
+        name: "cup all-purpose flour"
+      },
+      {
+        amount: 2,
+        name: "Tablespoon onion powder"
+      },
+      {
+        amount: 2,
+        name: "Tablespoon garlic powder"
+      },
+      {
+        amount: 2,
+        name: "teaspoon paprika"
+      },
+      {
+        amount: 2,
+        name: "teaspoon salt"
+      },
+      {
+        amount: 2,
+        name: "teaspoon white pepper"
+      }
+    ],
+    instructions: [
+      "Mix all the ingredients in a bowl with a dry whisk and reserve."
+    ],
+    origin: "https://beerandbrewing.com/wisconsin-beer-battered-fish-fry-recipe/",
+    prepTime: 5,
+    servings: 8,
+    summary:
+      "You can buy seasoned flour at the grocery store, but making your own is easy and allows you to customize the flavors to suit your palate. Learn how with this easy recip",
+    tags: ["vegan", "wisconsin"],
+    title: "Seasoned Flour"
+  },
   ShiitakeDashi: {
     cookTime: 15,
     ingredients: [
@@ -3311,6 +3567,42 @@ const recipes: Recipes = {
       "A quick and simple recipe for Southern Homemade Biscuits that bake up perfectly golden on the outside, and flaky and buttery on the inside.",
     tags: ["vegetarian"],
     title: "Southern Biscuits"
+  },
+  SoyBaconTare: {
+    cookTime: 60,
+    ingredients: [
+      {
+        amount: 2,
+        name: "slices bacon, use good quality bacon here"
+      },
+      {
+        amount: 0.25,
+        name: "cup soy sauce"
+      },
+      {
+        amount: 2,
+        name: "Tbsp mirin"
+      },
+      {
+        amount: 2,
+        name: "Tbsp sake"
+      },
+      {
+        amount: 4,
+        name: "Tbsp shiro miso"
+      }
+    ],
+    instructions: [
+      "Combine all the ingredients in a small sauce pan. Simmer at the lowest setting for about an hour. Top up with a bit of chicken stock if needed.",
+      "Remove the bacon."
+    ],
+    origin: "https://glebekitchen.com/tonkotsu-ramen-home/",
+    prepTime: 10,
+    servings: 4,
+    summary:
+      "The tare is the flavour base. This is where you take your ramen in your direction.",
+    tags: ["japanese"],
+    title: "Soy Bacon Tare"
   },
   SpicyStirFrySauce: {
     cookTime: 5,
@@ -3497,6 +3789,56 @@ const recipes: Recipes = {
     tags: ["vegetarian"],
     title: "Thousand Island Dressing"
   },
+  TonkotsuRamen: {
+    cookTime: 720,
+    ingredients: [
+      {
+        amount: 8,
+        name: "cups Tonkotsu Ramen Broth"
+      },
+      {
+        amount: 12,
+        name: "oz good quality dried ramen noodles"
+      },
+      {
+        amount: 4,
+        name: "large or extra large eggs"
+      },
+      {
+        amount: 3,
+        name: "oz enoki or other mushrooms"
+      },
+      {
+        name: "thinly sliced green onions"
+      },
+      {
+        amount: 1,
+        name: "recipe Chashu Pork Belly"
+      },
+      {
+        amount: 1,
+        name: "recipe Soy Bacon Tare or Miso Tare"
+      }
+    ],
+    instructions: [
+      "Bring enough water to cover the eggs to a boil. If you have a way to prick the eggshell do it. Boil large eggs for 6 minutes 30 seconds. If using extra large eggs boil them for 7 minutes 30 seconds. You may have to adjust your times slightly depending on the exact size of your eggs but this should get you pretty close.",
+      "Submerge the eggs in cold or ice water to chill. This stops the egg yolks from continuing to set up. Peel. Cut in half right before you serve your tonkotsu ramen.",
+      "Boil the ramen noodles in plenty of water as directed by the packaging. If there's no translation on the packaging usually its 4 minutes. You don't need to salt the water.",
+      "Cook the mushrooms along side the noodles - you just want them softened.",
+      "Gently fry the chashu pork in a non-stick skillet until lightly browned.",
+      "Place 1/4 of whichever tare you are using in the bottom of four bowls.",
+      "Ladle in about 1/2 cup of the tonkotsu broth into each of the bowls and stir to mix.",
+      "Add the noodles. Pour in another 1 1/2 cups of the tonkotsu broth per bowl.",
+      "Top with the egg, mushrooms, pork and green onions."
+    ],
+    origin: "https://glebekitchen.com/tonkotsu-ramen-home/",
+    prepTime: 30,
+    servings: 4,
+    summary:
+      "Making tonkotsu ramen at home is truly a labour of love. This isn't some 15 minute miracle insta-ramen recipe. This isn't even some one day recipe. Making authentic tonkotsu ramen takes time. It takes effort. You have to be a bit crazy to go there. But it's so good. It's totally worth it.",
+    tags: ["japanese", "pork"],
+    title: "Tonkotsu Ramen"
+  },
   TonkotsuRamenBroth: {
     cookTime: 720,
     ingredients: [
@@ -3522,13 +3864,137 @@ const recipes: Recipes = {
       "After 12 hours, remove the stock from the heat and cool slightly. Remove the bones with a slotted spoon and strain the stock.",
       "The stock will keep in the refrigerator for 2-3 days or can be frozen at this point."
     ],
-    origin: "https://www.simplyrecipes.com/recipes/thousand_island_dressing/",
+    origin: "https://glebekitchen.com/tonkotsu-ramen-broth-home/",
     prepTime: 30,
     servings: 6,
     summary:
       "Tonkotsu ramen broth is simply pork bones cooked at a rolling boil for 12 hours. The process extracts all the goodness of the pork and turns the broth creamy white.",
     tags: ["japanese"],
     title: "Tonkotsu Ramen Broth"
+  },
+  TurkeyBrine: {
+    cookTime: 5,
+    ingredients: [
+      {
+        amount: 1,
+        name: "gallon vegetable broth"
+      },
+      {
+        amount: 1,
+        name: "cup sea salt"
+      },
+      {
+        amount: 1,
+        name: "tablespoon crushed dried rosemary"
+      },
+      {
+        amount: 1,
+        name: "tablespoon dried sage"
+      },
+      {
+        amount: 1,
+        name: "tablespoon dried thyme"
+      },
+      {
+        amount: 1,
+        name: "tablespoon dried savory"
+      },
+      {
+        amount: 1,
+        name: "gallon ice water"
+      }
+    ],
+    instructions: [
+      "Combine vegetable broth, sea salt, rosemary, sage, thyme, and savory in a large stock pot. Bring to a boil, stirring frequently to be sure salt is dissolved. Remove from heat, and let cool to room temperature.",
+      "When the broth mixture is cool, pour it into a clean 5-gallon bucket. Stir in the ice water.",
+      "Rinse and dry your turkey. Make sure you have removed the innards. Place the turkey, breast down, into the brine. Make sure that the cavity gets filled. Place the bucket in the refrigerator for 8 hours, or overnight.",
+      "Remove the turkey carefully, draining off the excess brine and pat dry. Discard excess brine.",
+      "Cook the turkey as desired reserving the drippings for gravy. Keep in mind that brined turkeys cook 20 to 30 minutes faster so watch the temperature gauge."
+    ],
+    origin: "https://www.allrecipes.com/recipe/54614/turkey-brine/",
+    marinadeTime: 1440,
+    prepTime: 5,
+    servings: 6,
+    summary:
+      "This is a tasty turkey brine recipe for any poultry. It will make your bird very juicy, and gravy to die for! This is enough brine for a 10- to 18- pound turkey.",
+    tags: ["turkey", "thankgiving"],
+    title: "Turkey Brine"
+  },
+  VeganButter: {
+    cookTime: 5,
+    ingredients: [
+      {
+        amount: 3,
+        name: "tablespoon aquafaba (chickpea water)"
+      },
+      {
+        amount: 7,
+        name: "tablespoon coconut oil (I prefer virgin coconut oil but you will taste the coconut. Odourless coconut oil will make it VERY buttery))"
+      },
+      {
+        amount: 4,
+        name: "teaspoon cold pressed rapeseed oil, canola or olive oil (or a similar oil that you like the taste of. Or try a blend!)"
+      },
+      {
+        amount: 0.66,
+        name: "teaspoon apple cider vinegar (or freshly squeezed lemon juice)"
+      },
+      {
+        amount: 0.33,
+        name: "teaspoon salt"
+      }
+    ],
+    instructions: [
+      "Let the coconut oil melt gently until it's almost all liquid. Remove the pan from the heat and let the rest melt. Add your rapeseed or other preferred oil. Let the oil mixture cool to room temperature.",
+      "Pour the (just under room temperature cold) aquafaba in a narrow container with the salt and vinegar. Start blending it with an immersion blender/stick blender.",
+      "With the blender running, slowly pour the oils in, all while making sure all oil thoroughly incorporated before you add more. It should take a couple of minutes to add all the oil and achieve a thick mayo like consistancy. (If you live in a hot area I suggest you place the container on a bag of frozen peas when pouring in the oil, to help the process along)",
+      "IF you taste test it, know that it will taste pretty salty and tangy. This will be numbed a bit when it has chilled and remember, that you normally eat butter WITH something and not on it's own (right?) so it will be easier to make final judgements when spreading it on toast ... mmm ...",
+      "Pour it in a suitable container - DO NOT COVER IT - and put it in the fridge (or maybe a short while in freezer if you're in a hurry). It will take some hours for the butter to solidify, I recommend leaving it one night in the fridge.Store it in the fridge, especially if you live in a hot area. Depending on what blend of oils you used (unrefined coconut is softer then the refined one) you should be able to spread it directly from the fridge. Leave it on the counter for 15 minutes to make it even softer."
+    ],
+    origin: "https://plantepusherne.dk/vegan-aquafaba-butter/",
+    prepTime: 5,
+    progressPics: 1,
+    servings: 12,
+    summary:
+      "Simple vegan butter with no special ingredients. If you sterilize your utensils with boiling water first, you prolong the shelf life of the butter - which should be about 7 days (except first time you make it, then it will be around 5 minutes from taking the first bite). You want the aquafaba to be slightly chilled and the oil to be around room temperature when you mix them.",
+    tags: ["vegan"],
+    title: "Vegan Butter"
+  },
+  VeganPuffPastry: {
+    cookTime: 0,
+    ingredients: [
+      {
+        amount: 160,
+        name: "g pastry flour"
+      },
+      {
+        amount: 0.5,
+        name: "teaspoon fine sea salt"
+      },
+      {
+        amount: 160,
+        name: "g vegan butter"
+      },
+      {
+        amount: 95,
+        name: "ml cold water"
+      }
+    ],
+    instructions: [
+      "Place the flour in a medium bowl and add the salt and mix well to combine.",
+      "Break the butter into chunks and add to the flour and rub it into the flour. Be careful here as you don't want to rub the butter in too much. You still want to see chunks of buttery goodness as this is what will make your pastry lovely and flaky.",
+      "Add the water little by little and mix until you have a dough. Cover and refrigerate for 30 minutes.",
+      "Form the dough into a rectangle and roll it out until it is 3 times its original length. Fold the top third of the dough onto the middle of the dough and the bottom third on top of that.",
+      "Give the dough a quarter turn and roll it out again until it is 3 times its original length. Again fold the top third to the middle and the bottom third on top of that. Wrap in plastic wrap and refrigerate for 30 minutes. Repeat another 2 times and you're pastry is ready to use!"
+    ],
+    origin: "https://www.deliciouseveryday.com/vegan-puff-pastry/",
+    prepTime: 20,
+    progressPics: 1,
+    servings: 6,
+    summary:
+      "Don't buy store bought chemical laden rubbish. This recipe yields a wonderful golden flaky pastry. And below you'll find a video of complete step by step instructions to help ensure success at home!",
+    tags: ["vegan"],
+    title: "Vegan Puff Pastry"
   }
 };
 

@@ -71,20 +71,19 @@ const App = (): JSX.Element => {
             setMultiplier={setMultiplier}
           />
         </div>
-      ) : (
-        <div>
-          <RecipesList
-            activeTag={activeTag}
-            filter={filter}
-            recipes={recipes}
-            setActiveRecipe={setActiveRecipe}
-            setActiveTag={setActiveTag}
-            setFilter={setFilter}
-            setWindowHash={setWindowHash}
-            tags={tags}
-          />
-        </div>
-      )}
+      ) : null}
+      <div className={activeRecipe ? classes.hiddenList : undefined}>
+        <RecipesList
+          activeTag={activeTag}
+          filter={filter}
+          recipes={recipes}
+          setActiveRecipe={setActiveRecipe}
+          setActiveTag={setActiveTag}
+          setFilter={setFilter}
+          setWindowHash={setWindowHash}
+          tags={tags}
+        />
+      </div>
     </div>
   );
 };

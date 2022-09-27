@@ -24,10 +24,16 @@ const useStyles = createUseStyles(
         }
       ]
     },
+    hiddenList: {
+      position: "absolute",
+      left: -9999
+    },
     recipeCardWrapper: {
       backgroundColor: "rgba(0,0,0,0.3)",
+      boxSizing: "border-box",
       display: "flex",
       justifyContent: "center",
+      minHeight: "100vh",
       paddingTop: 50
     }
   },
