@@ -11,7 +11,8 @@ import type { Recipe } from "../recipes";
 
 /**
  *
- * @param slug
+ * @param param parameter to set in the query string
+ * @param slug value to set in the query string
  */
 const setQueryParam = (param: string, slug: string = "") => {
   const { pathname, search } = window.location;
@@ -27,13 +28,11 @@ const setQueryParam = (param: string, slug: string = "") => {
   }
 
   const newPath = `${pathname}${newQuery}`;
-  window.history.replaceState(null, document.title, newPath)
+  window.history.replaceState(null, document.title, newPath);
 };
 
 /**
- * An app placeholder to make sure our setup works
- *
- * @returns our example
+ * The main control app. Controls which view is visible as well as havig the states and setters
  */
 const App = (): JSX.Element => {
   const [activeRecipe, setActiveRecipe] = useState<Recipe | null>(null);
@@ -43,13 +42,19 @@ const App = (): JSX.Element => {
 
   const classes = useStyles();
 
+  /**
+   * on load, this takes query params, parses them, and sets appropriate states
+   */
   useEffect(() => {
     const query: { [param: string]: string } = {};
 
-    window.location.search.slice(1).split("&").forEach(q => {
-      const paramPair = q.split("=");
-      query[paramPair[0]] = paramPair[1];
-    });
+    window.location.search
+      .slice(1)
+      .split("&")
+      .forEach((q) => {
+        const paramPair = q.split("=");
+        query[paramPair[0]] = paramPair[1];
+      });
 
     if (query.t) {
       setActiveTag(query.t);

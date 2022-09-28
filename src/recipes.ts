@@ -288,39 +288,39 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "tbsp olive oil (or a neutral oil like vegetable, canola)"
+        name: "Tablespoon olive oil (or a neutral oil like vegetable, canola)"
       },
       {
         amount: 1,
-        name: "tbsp brown sugar"
+        name: "Tablespoon brown sugar"
       },
       {
         amount: 2,
-        name: "tsp paprika powder"
+        name: "teaspoon paprika powder"
       },
       {
         amount: 1,
-        name: "tsp onion powder"
+        name: "teaspoon onion powder"
       },
       {
         amount: 1,
-        name: "tsp garlic powder"
+        name: "teaspoon garlic powder"
       },
       {
         amount: 0.5,
-        name: "tsp cumin powder"
+        name: "teaspoon cumin powder"
       },
       {
         amount: 0.75,
-        name: "tsp mustard powder"
+        name: "teaspoon mustard powder"
       },
       {
         amount: 1,
-        name: "tsp salt"
+        name: "teaspoon salt"
       },
       {
         amount: 0.5,
-        name: "tsp black pepper"
+        name: "teaspoon black pepper"
       },
       {
         amount: 2,
@@ -340,23 +340,23 @@ const recipes: Recipes = {
       },
       {
         amount: 2,
-        name: "tsp black pepper"
+        name: "teaspoon black pepper"
       },
       {
         amount: 2,
-        name: "tsp onion powder"
+        name: "teaspoon onion powder"
       },
       {
         amount: 2,
-        name: "tsp mustard powder"
+        name: "teaspoon mustard powder"
       },
       {
         amount: 1,
-        name: "tsp cayenne pepper"
+        name: "teaspoon cayenne pepper"
       },
       {
         amount: 1,
-        name: "tbsp Worcestershire sauce"
+        name: "Tablespoon Worcestershire sauce"
       }
     ],
     instructions: [
@@ -559,7 +559,8 @@ const recipes: Recipes = {
       "Beer Suggestions: New Glarus Two Women (New Glarus, Wisconsin), August Schell Pilsner (New Ulm, Minnesota), Guinness Blonde (Dublin, Ireland).",
       "In a bowl, whisk together the flours and baking powder. In a separate bowl, whisk together the beer, vodka, and honey. Slowly whisk the dry ingredients into the wet ingredients to make a batter."
     ],
-    origin: "https://beerandbrewing.com/wisconsin-beer-battered-fish-fry-recipe/",
+    origin:
+      "https://beerandbrewing.com/wisconsin-beer-battered-fish-fry-recipe/",
     prepTime: 5,
     servings: 8,
     summary:
@@ -587,7 +588,8 @@ const recipes: Recipes = {
     instructions: [
       "Fill the fryer with oil and heat to 350°F (177°C) following the manufacturer's directions. Arrange the bowls of fish, seasoned flour, and batter with the fish farthest from the fryer, then the seasoned flour, and then the beer batter. With tongs or fingers, take one piece of fish at a time, dip the fish into the seasoned flour to coat, then into the beer batter, and then slowly drop the fish into the hot oil, avoiding splashes. Fry the fish for 3-4 minutes until cooked all the way through. Carefully remove the fish and drain on paper towels. Repeat with each piece of fish."
     ],
-    origin: "https://beerandbrewing.com/wisconsin-beer-battered-fish-fry-recipe/",
+    origin:
+      "https://beerandbrewing.com/wisconsin-beer-battered-fish-fry-recipe/",
     prepTime: 5,
     servings: 4,
     summary:
@@ -770,7 +772,7 @@ const recipes: Recipes = {
       "Sprinkle salt over the fish and set it aside for 30 minutes. The salt will draw out excess moisture and reduce the odor of the fish.",
       "In a bowl, add the saikyo miso, mirin, and sake (and sugar, if you are using regular white miso.)",
       "Mix it all together and pour the marinade into a flat-bottomed airtight container.",
-      "Pour 2 Tbsp sake over the fish to rinse off the salt. Gently pat dry with a paper towel to remove the moisture.",
+      "Pour 2 Tablespoon sake over the fish to rinse off the salt. Gently pat dry with a paper towel to remove the moisture.",
       "Place the fish in the container and coat both sides of the fish with the marinade.",
       "Slather the fillets with the marinade. Cover the container and keep it in the refrigerator for up to 2-3 days. If you prefer your fish less salty (and don't eat this dish with rice, for example), you can reduce the marination time to 1 day (or even several hours.) It depends on your preference.",
       "With your fingers, wipe the marinade off the fish completely. Do not leave any excess marinade on the fish; otherwise, it will burn easily. At this point, you can individually wrap the fish with plastic wrap and store it in a freezer bag for up to 2-3 weeks. Defrost in the refrigerator before cooking.",
@@ -981,7 +983,7 @@ const recipes: Recipes = {
       "Slow Cook on low for 10 hours or on high for 7 hours.",
       "Pork should be tender enough to shred. Remove from slow cooker and let cool slightly. Then shred using two forks.",
       "If you have a lot more than 2 cups of juice, then reduce it down to about 2 cups. The liquid will be salty, it is the seasoning for the pork. Set liquid aside - don't bother straining onion etc, it's super soft.",
-      "Heat 1 tbsp of oil in a large non stick pan or well seasoned skillet over high heat. Spread pork in the pan, drizzle over some juices. Wait until the juices evaporate and the bottom side is golden brown and crusty. Turn and just briefly sear the other side - you don't want to make it brown all over because then it's too crispy, need tender juicy bits.",
+      "Heat 1 Tablespoon of oil in a large non stick pan or well seasoned skillet over high heat. Spread pork in the pan, drizzle over some juices. Wait until the juices evaporate and the bottom side is golden brown and crusty. Turn and just briefly sear the other side - you don't want to make it brown all over because then it's too crispy, need tender juicy bits.",
       "Remove pork from skillet. Repeat in batches - don't crowd the pan.",
       "Just before serving, drizzle over more juices and serve hot, stuffed in tacos."
     ],
@@ -994,6 +996,91 @@ const recipes: Recipes = {
       "Every tortilla dreams of being stuffed with Carnitas. The best of the best of Mexican food, seasoned pork is slow cooked until tender before gently teasing apart with forks and pan frying to golden, crispy perfection. Pork Carnitas are that elusive combination of juicy and crispy with perfect seasoning - and this Carnitas recipe requires just 5 minutes prep!",
     tags: ["pork", "slow cooker"],
     title: "Carnitas"
+  },
+  CashewCreamSpinachArtichokeDip: {
+    cookTime: 20,
+    ingredients: [
+      {
+        amount: 1.5,
+        name: "cups raw cashews"
+      },
+      {
+        amount: 2,
+        name: "cups unsweetened coconut milk (from a carton, not canned)"
+      },
+      {
+        amount: 2,
+        name: "Tablespoon fresh lemon juice"
+      },
+      {
+        amount: 1.5,
+        name: "Tablespoon raw apple cider vinegar"
+      },
+      {
+        amount: 4,
+        name: "Tablespoon nutritional yeast"
+      },
+      {
+        amount: 1,
+        name: "teaspoon paprika"
+      },
+      {
+        amount: 1,
+        name: "teaspoon garlic powder"
+      },
+      {
+        amount: 1,
+        name: "teaspoon onion powder"
+      },
+      {
+        amount: 0.125,
+        name: "teaspoon nutmeg"
+      },
+      {
+        amount: 0.5,
+        name: "teaspoon salt (add more to taste)"
+      },
+      {
+        amount: 0.25,
+        name: "teaspoon black pepper (add more to taste)"
+      },
+      {
+        amount: 4,
+        name: "Tablespoon vegetable broth"
+      },
+      {
+        amount: 1,
+        name: "medium red onion diced"
+      },
+      {
+        amount: 3,
+        name: "medium garlic cloves minced"
+      },
+      {
+        amount: 28,
+        name: "oz artichoke hearts (in water) rinsed, drained, and roughly chopped"
+      },
+      {
+        amount: 20,
+        name: "oz frozen spinach"
+      }
+    ],
+    instructions: [
+      "Start by boiling the raw cashews in enough water to cover them by 1-inch for 10 minutes and then carefully drain the water out and discard it.",
+      "Put 1 ½ cups cashews, 2 cups unsweetened coconut milk, 2 tbsp lemon juice, 1 ½ tbsp apple cider vinegar, 4 tbsp nutritional yeast, 1 tsp paprika, 1 tsp garlic powder, 1 tsp onion powder, ⅛ tsp nutmeg, ½ tsp salt, and ¼ tsp black pepper into a high-powered blender. Blend on high until the cashew cream sauce is smooth and creamy. The sauce should be thick enough to coat the back of a spoon.",
+      "In a large pan over medium heat, saute the diced onions in 3-4 tbsp of vegetable broth until the onions are soft and translucent. Add the chopped artichokes and garlic and saute for 2-3 minutes. You may need to add more broth if the pan gets too dry.",
+      "Pour the cashew cream sauce into the pan and stir to combine.",
+      "Lastly, stir in the frozen spinach. Stir it together, and let it cook for 10-15 minutes or until the dip is hot and bubbly. The mixture will continue to thicken as it cooks. If it gets too dry, add a little bit more coconut milk so it's creamy and saucy."
+    ],
+    origin:
+      "https://www.staceyhomemaker.com/cashew-cream-spinach-artichoke-dip/",
+    prepTime: 10,
+    progressPics: 2,
+    servings: 10,
+    summary:
+      "This is the best vegan spinach artichoke dip ever! It's loaded with spinach, artichoke hearts, garlic, and a creamy cashew sauce! This gluten-free and oil-free vegan dip is loved by vegans and non-vegans alike and it's ready to eat in 30 minutes!",
+    tags: ["vegetartian", "vegan"],
+    title: "Cashew Cream Spinach Artichoke Dip"
   },
   ChashuPorkBelly: {
     cookTime: 660,
@@ -1037,8 +1124,7 @@ const recipes: Recipes = {
     origin: "https://glebekitchen.com/tonkotsu-ramen-home/#recipe",
     prepTime: 15,
     servings: 4,
-    summary:
-      "It's marinated pork belly and it's magic stuff.",
+    summary: "It's marinated pork belly and it's magic stuff.",
     tags: ["pork", "japanese"],
     title: "Chashu Pork Belly"
   },
@@ -1316,15 +1402,14 @@ const recipes: Recipes = {
       "Bring a pot of water to a boil.  Add soba noodles and cook according to package directions, about 4-5 minutes.  Drain and cool with cold running water or ice.",
       "For a traditional serving method, you can save the soba noodle cooking water.  Serve as tea after the meal or mix into the leftover sauce to drink as a soup.",
       "Bring 1/2 c mirin and 1/2 c water to a boil.  Simmer for 30 seconds to remove the alcohol.  Turn off heat and add bonito flakes.  Let sit for 10 minutes.  Strain and add soy sauce.",
-      "Serve noodles and dipping sauce in separate dishes.  Add garnishes as desired.",
+      "Serve noodles and dipping sauce in separate dishes.  Add garnishes as desired."
     ],
-    origin:
-      "https://asiantestkitchen.com/soba-noodles-sauce/",
+    origin: "https://asiantestkitchen.com/soba-noodles-sauce/",
     prepTime: 10,
     progressPics: 3,
     servings: 4,
     summary:
-      "This cold soba noodle dish is eaten on special occasions such as New Year's Eve. As in other Asian cultures, the long, thin noodles represent a long life with extended happiness. These end of year noodles are called \"toshikoshi\" soba, which means \"cross the year\" soba noodles.",
+      'This cold soba noodle dish is eaten on special occasions such as New Year\'s Eve. As in other Asian cultures, the long, thin noodles represent a long life with extended happiness. These end of year noodles are called "toshikoshi" soba, which means "cross the year" soba noodles.',
     tags: ["japanese"],
     title: "Cold Soba Noodles with Dipping Sauce"
   },
@@ -1553,11 +1638,11 @@ const recipes: Recipes = {
       },
       {
         amount: 2.5,
-        name: "tsp dry sherry"
+        name: "teaspoon dry sherry"
       },
       {
         amount: 1,
-        name: "tbsp salt"
+        name: "Tablespoon salt"
       },
       {
         amount: 10,
@@ -1898,7 +1983,6 @@ const recipes: Recipes = {
         name: "tablespoons cold unsalted butter"
       },
       {
-
         amount: 0.25,
         name: "cup cold unsalted butter, separated"
       },
@@ -2052,7 +2136,7 @@ const recipes: Recipes = {
       }
     ],
     instructions: [
-      "Skin the potato if desired and cut into ¼\" strips.",
+      'Skin the potato if desired and cut into ¼" strips.',
       "Add potato slices, vinegar and water to pot and bring to a boil. Boil for 10 minutes.",
       "While potatoes are boiling heat oil around 400 degrees. The ideal frying temperature is 360 so by heating it hotter the oil should drop into the proper range when frying.",
       "Once potatoes are done boiling let them sit out and dry on paper towels for 5 minutes to prevent a reaction with the oil.",
@@ -2312,15 +2396,15 @@ const recipes: Recipes = {
       },
       {
         amount: 3,
-        name: "Tbsp soy sauce"
+        name: "Tablespoon soy sauce"
       },
       {
         amount: 3,
-        name: "Tbsp mirin"
+        name: "Tablespoon mirin"
       },
       {
         amount: 3,
-        name: "Tbsp sugar"
+        name: "Tablespoon sugar"
       }
     ],
     instructions: [
@@ -2482,19 +2566,19 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "Tbsp mirin"
+        name: "Tablespoon mirin"
       },
       {
         amount: 1,
-        name: "tsp sugar"
+        name: "teaspoon sugar"
       },
       {
         amount: 1,
-        name: "Tbsp usukuchi (light-colored) soy sauce"
+        name: "Tablespoon usukuchi (light-colored) soy sauce"
       },
       {
         amount: 0.5,
-        name: "tsp kosher salt (Diamond Crystal; use half for table salt)"
+        name: "teaspoon kosher salt (Diamond Crystal; use half for table salt)"
       },
       {
         amount: 2,
@@ -2561,6 +2645,66 @@ const recipes: Recipes = {
       "Learn how to make Kombu Dashi, a vegan-friendly Japanese soup stock, at home and enhance your Japanese dishes with umami flavor!",
     tags: ["vegetarian", "vegan", "japanese"],
     title: "Kombu Dashi"
+  },
+  Kringle: {
+    cookTime: 15,
+    ingredients: [
+      {
+        amount: 1,
+        name: "cup sour cream"
+      },
+      {
+        amount: 1,
+        name: "teaspoon vanilla"
+      },
+      {
+        amount: 2,
+        name: "cups flour"
+      },
+      {
+        amount: 2,
+        name: "sticks unsalted butter, chilled"
+      },
+      {
+        amount: 1,
+        name: "egg"
+      },
+      {
+        amount: 1,
+        name: "tablespoon sugar"
+      },
+      {
+        amount: 1,
+        name: "cup sour cherry jam"
+      },
+      {
+        amount: 1,
+        name: "cup powdered sugar"
+      },
+      {
+        amount: 2,
+        name: "tablespoons milk"
+      },
+      {
+        amount: 1,
+        name: "teaspoon vanilla"
+      }
+    ],
+    instructions: [
+      "In a small bowl mix together sour cream and vanilla. Set aside.",
+      "Using a pastry blender or (several pulses with a food processor) cut together flour and butter so butter is reduced to small pea-sized bits. Stir in sour cream mixture. Blend well to form a dough. Divide into two disks. Flatten disks slightly, cover and chill at least 2 hours or overnight.",
+      "Preheat oven to 450°F. In a small bowl whisk together egg and sugar. Set aside. On a floured work surface, roll out each dough disk into a 12 by 6 inch rectangle. Spread filling down center in a thin strip leaving two inches clear on each side and an inch and a half at both ends. Fold sides over center then fold ends up, press lightly to seal. Brush with egg wash.",
+      "Mix together 1 cup powdered sugar, milk, and vanilla to make the icing",
+      "Bake on a parchment lined cookie sheet for 10 to 15 minutes or until golden brown. Drizzle icing over warm kringle. Cool on wire rack. Store in a covered container. Best within a day."
+    ],
+    origin:
+      "https://www.seriouseats.com/kringle-wisconsin-pastry-breakfast-recipe",
+    prepTime: 125,
+    servings: 12,
+    summary:
+      "Kringles can be filled with fruit or nuts. Cherry, apple and almond are popular and traditional fillings. Special thanks to Racine native MJ Diem for sharing her mother's Kringle recipe which has been adapted here.",
+    tags: ["vegetarian", "wisconsin"],
+    title: "Kringle"
   },
   MapleTurkeyBrine: {
     cookTime: 20,
@@ -2631,42 +2775,42 @@ const recipes: Recipes = {
       },
       {
         amount: 0.5,
-        name: "tbsp. sesame oil"
+        name: "Tablespoon sesame oil"
       },
       {
         amount: 0.5,
-        name: "tsp. salt"
+        name: "teaspoon. salt"
       },
       {
         amount: 3,
-        name: "tbsp. cooking oil , divided"
+        name: "Tablespoon cooking oil , divided"
       },
       {
         amount: 1.5,
-        name: "tbsp. Doubanjiang ,roughly chopped"
+        name: "Tablespoon Doubanjiang ,roughly chopped"
       },
       {
         amount: 0.5,
-        name: "tbsp. Dou-Chi, roughly chopped"
+        name: "Tablespoon Dou-Chi, roughly chopped"
       },
       {
         amount: 1,
-        name: "tbsp. pepper flakes or powder ,optional"
+        name: "Tablespoon pepper flakes or powder ,optional"
       },
       {
         amount: 0.5,
-        name: "tbsp. Sichuan pepper for making fresh ground powder"
+        name: "Tablespoon Sichuan pepper for making fresh ground powder"
       },
       {
         name: "water or broth for braising ,I use 400ml this time"
       },
       {
         amount: 1,
-        name: "tbsp. light soy sauce"
+        name: "Tablespoon light soy sauce"
       },
       {
         amount: 1,
-        name: "tsp. sugar, optional for reducing the spiciness"
+        name: "teaspoon. sugar, optional for reducing the spiciness"
       },
       {
         amount: 2,
@@ -2724,7 +2868,7 @@ const recipes: Recipes = {
       },
       {
         amount: 1.5,
-        name: "tsp kosher salt - depending on how salty you like your ramen."
+        name: "teaspoon kosher salt - depending on how salty you like your ramen."
       }
     ],
     instructions: [
@@ -2808,7 +2952,7 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "tbsp fresh thyme stems removed and minced"
+        name: "Tablespoon fresh thyme stems removed and minced"
       },
       {
         name: "salt and pepper"
@@ -2836,8 +2980,8 @@ const recipes: Recipes = {
     ],
     instructions: [
       "Start by warming the chicken broth.  Either in a large bowl in the microwave or in a medium saucepan over medium heat bring to a simmer.",
-      "In a large pot heat the olive oil.  Add the onion and cook until tender.  Add 1 tbsp butter, garlic, mushrooms and thyme.  Cook until the mushrooms have softened and are tender.  Season with salt and pepper.  Remove and set aside on a plate.",
-      "Melt the remaining 1 tbsp butter and add the arborio rice.  Stirring on medium heat, cook the grains until the are lightly brown and start to toast about 2 minutes.  Add the wine and cook until the wine has absorbed.",
+      "In a large pot heat the olive oil.  Add the onion and cook until tender.  Add 1 Tablespoon butter, garlic, mushrooms and thyme.  Cook until the mushrooms have softened and are tender.  Season with salt and pepper.  Remove and set aside on a plate.",
+      "Melt the remaining 1 Tablespoon butter and add the arborio rice.  Stirring on medium heat, cook the grains until the are lightly brown and start to toast about 2 minutes.  Add the wine and cook until the wine has absorbed.",
       "Add one cup of broth at a time to the rice and stir frequently until the rice absorbs the liquid.  Continue to add one cup of broth and allow the rice to absorb after each addition.  Stir often and cook until the risotto is al dente and not mushy.  You may not need all of the broth.",
       "Add the mushrooms, parmesan, and peas back to the rice and stir.  Garnish with fresh parsley.  Serve while warm."
     ],
@@ -2959,11 +3103,11 @@ const recipes: Recipes = {
       },
       {
         amount: 0.5,
-        name: "Tbsp mirin"
+        name: "Tablespoon mirin"
       },
       {
         amount: 1.5,
-        name: "Tbsp soy sauce"
+        name: "Tablespoon soy sauce"
       },
       {
         amount: 0.33,
@@ -3008,19 +3152,19 @@ const recipes: Recipes = {
       },
       {
         amount: 1.5,
-        name: "Tbsp mirin"
+        name: "Tablespoon mirin"
       },
       {
         amount: 1.5,
-        name: "Tbsp sake"
+        name: "Tablespoon sake"
       },
       {
         amount: 1.5,
-        name: "Tbsp soy sauce"
+        name: "Tablespoon soy sauce"
       },
       {
         amount: 1.5,
-        name: "tsp sugar"
+        name: "teaspoon sugar"
       },
       {
         amount: 2,
@@ -3038,7 +3182,7 @@ const recipes: Recipes = {
       "Combine the dashi, mirin, sake, and soy sauce in a bowl or a liquid measuring cup.",
       "Add the sugar and mix all together until the sugar is dissolved. Depending on the size of your frying pan, you may not need all the broth. You can keep the leftovers in the refrigerator for 3 days.",
       "Thinly slice the onion and chop the mitsuba (or green onions). Beat one egg in a small bowl (you will need to beat the other egg when you work on the second batch).",
-      "Slice the chicken thighs diagonally into pieces that are about 1½-inches (4 cm) long and ½-inch (1.3 cm) thick. I recommend using the \"sogigiri\" cutting technique so the chicken pieces will be of equal thickness and to create more surface area for fast cooking.",
+      'Slice the chicken thighs diagonally into pieces that are about 1½-inches (4 cm) long and ½-inch (1.3 cm) thick. I recommend using the "sogigiri" cutting technique so the chicken pieces will be of equal thickness and to create more surface area for fast cooking.',
       "Typically, Oyakodon is made individually for each serving, using an oyakodon pan. This small pan lets you slide the finished dish onto the rice bowl easily while the egg is set but still runny. Divide the ingredients in half or, alternatively, you can cook 2 servings together in a bigger pan.",
       "With the stove off, add 1 serving of the sliced onions to the pan in a single layer. Add roughly one-third to one-half of the seasonings mixture (the amount may vary depending on the size of your frying pan). Pour just enough on top to cover the onions.",
       "Add 1 serving of the chicken on top of the onions. Make sure the onions and chicken are evenly distributed. Then, turn on the heat to medium and bring it to a boil.",
@@ -3108,7 +3252,8 @@ const recipes: Recipes = {
       "Cook pasta in large pot of boiling salted water until just tender but still firm to bite, stirring occasionally. Meanwhile, cook bacon strips and chopped onion in heavy large skillet over medium-high heat until golden brown, stirring occasionally, about 12 minutes. Add chicken broth, remaining 5 1/2 teaspoons olive oil, and roasted garlic. Bring mixture to simmer, stirring occasionally. Add radicchio, spinach, and basil and stir to combine. Simmer just until radicchio and spinach wilt, about 1 minute.",
       "Drain pasta and return to same pot. Add radicchio-spinach mixture to pasta. Add 1 cup grated Parmesan cheese and crushed red pepper; toss to coat. Season pasta to taste with salt and pepper and serve, passing additional Parmesan cheese alongside."
     ],
-    origin: "https://www.epicurious.com/recipes/food/views/penne-with-radicchio-spinach-and-bacon-241093",
+    origin:
+      "https://www.epicurious.com/recipes/food/views/penne-with-radicchio-spinach-and-bacon-241093",
     prepTime: 40,
     servings: 6,
     summary:
@@ -3147,7 +3292,7 @@ const recipes: Recipes = {
       "Seed the tomatoes.",
       "Seed the serrano chiles.",
       "Remove the cilantro leaves and discard the stems.",
-      "Chop the tomatoes into ¼\" pieces.",
+      'Chop the tomatoes into ¼" pieces.',
       "Finely chop the onion.",
       "Finey chop the onion, cilantro, and serrano chile.",
       "Add all of the ingredients in a mixing bowl.",
@@ -3161,7 +3306,7 @@ const recipes: Recipes = {
     progressPics: 8,
     servings: 4,
     summary:
-      "Pico de gallo is a uncooked salsa known as a salsa fresca, or \"fresh salsa,\" in Spanish. It is a delicious combination of plum (Roma) tomatoes, white onion, cilantro, serrano peppers and a splash of lime juice.",
+      'Pico de gallo is a uncooked salsa known as a salsa fresca, or "fresh salsa," in Spanish. It is a delicious combination of plum (Roma) tomatoes, white onion, cilantro, serrano peppers and a splash of lime juice.',
     tags: ["vegetarian", "vegan", "mexican"],
     title: "Pico de Gallo"
   },
@@ -3217,15 +3362,15 @@ const recipes: Recipes = {
       },
       {
         amount: 0.5,
-        name: "tsp lovage (celery or ajwain seeds can substitute)"
+        name: "teaspoon lovage (celery or ajwain seeds can substitute)"
       },
       {
         amount: 1,
-        name: "tsp of caraway seed"
+        name: "teaspoon of caraway seed"
       },
       {
         amount: 0.75,
-        name: "tsp of asfoetida powder "
+        name: "teaspoon of asfoetida powder "
       },
       {
         amount: 1,
@@ -3233,11 +3378,11 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "tbsp olive oil"
+        name: "Tablespoon olive oil"
       },
       {
         amount: 3,
-        name: "tbsp garum (can be substituted with Thai Nam Pla or Vietnamese Nuoc Nam Mhi)"
+        name: "Tablespoon garum (can be substituted with Thai Nam Pla or Vietnamese Nuoc Nam Mhi)"
       },
       {
         name: "dash of pepper"
@@ -3249,10 +3394,12 @@ const recipes: Recipes = {
       "Mix the spices, wine, olive oil and fish sauce. Pour over the chicken.",
       "Put it in the oven and roast as normal until crispy and well done and the juices run clear. Baste the chicken often during cooking."
     ],
-    origin: "https://blog.crystalking.com/ancient-roman-food-parthian-chicken-recipe",
+    origin:
+      "https://blog.crystalking.com/ancient-roman-food-parthian-chicken-recipe",
     prepTime: 20,
     servings: 8,
-    summary: "Apicius 6.8.3: Pullum Parthicum: pullum aperies a naui et in quadrato ornas. teres piper, ligusticum, carei modicum. suffunde liquamen. uino temperas. componis in Cumana pullum et condituram super pullum facies. laser et uinum interdas. dissolues et in pullum mittis simul et coques. piper aspersum inferes.",
+    summary:
+      "Apicius 6.8.3: Pullum Parthicum: pullum aperies a naui et in quadrato ornas. teres piper, ligusticum, carei modicum. suffunde liquamen. uino temperas. componis in Cumana pullum et condituram super pullum facies. laser et uinum interdas. dissolues et in pullum mittis simul et coques. piper aspersum inferes.",
     tags: ["chicken"],
     title: "Roman Parthian Chicken"
   },
@@ -3325,7 +3472,7 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 4,
-        name: "cups turkey stock",
+        name: "cups turkey stock"
       },
       {
         name: "Reserved turkey drippings"
@@ -3447,13 +3594,65 @@ const recipes: Recipes = {
     instructions: [
       "Mix all the ingredients in a bowl with a dry whisk and reserve."
     ],
-    origin: "https://beerandbrewing.com/wisconsin-beer-battered-fish-fry-recipe/",
+    origin:
+      "https://beerandbrewing.com/wisconsin-beer-battered-fish-fry-recipe/",
     prepTime: 5,
     servings: 8,
     summary:
-      "You can buy seasoned flour at the grocery store, but making your own is easy and allows you to customize the flavors to suit your palate. Learn how with this easy recip",
+      "You can buy seasoned flour at the grocery store, but making your own is easy and allows you to customize the flavors to suit your palate. Learn how with this easy recipe.",
     tags: ["vegan", "wisconsin"],
     title: "Seasoned Flour"
+  },
+  SheetPanMapleSalmon: {
+    cookTime: 25,
+    ingredients: [
+      {
+        amount: 2,
+        name: "tablespoons maple syrup"
+      },
+      {
+        amount: 0.5,
+        name: "teaspoon Dijon mustard"
+      },
+      {
+        amount: 2,
+        name: "tablespoons olive oil"
+      },
+      {
+        amount: 0.5,
+        name: "teaspoon salt, plus extra for sprinkling"
+      },
+      {
+        amount: 0.25,
+        name: "teaspoon black pepper, plus extra for sprinkling"
+      },
+      {
+        amount: 1,
+        name: "sweet potato, peeled and cut into 1/4-inch slices"
+      },
+      {
+        amount: 8,
+        name: "spears fresh asparagus, ends trimmed"
+      },
+      {
+        amount: 2,
+        name: "fresh salmon fillets"
+      }
+    ],
+    instructions: [
+      "Preheat the oven to 425 degrees F. Coat a rimmed baking sheet with cooking spray.",
+      "In a small bowl, combine syrup and mustard; mix well and set aside.",
+      "In a large bowl, combine oil, 1/2 teaspoon salt and 1/4 teaspoon pepper; mix well. Add potato slices and toss until evenly coated. Place in a single layer on a baking sheet. Bake 10 minutes, then turn potato slices over and move to one side of tray (overlapping is fine).",
+      "Toss asparagus in remaining oil mixture, then place on baking sheet. Add salmon to baking sheet, lightly sprinkle with salt and pepper. Drizzle syrup mixture on salmon and potato slices.",
+      "Return to oven and bake 10 to 15 minutes or until salmon flakes easily with fork. Serve immediately."
+    ],
+    origin: "https://www.mrfood.com/Fish/sheet-pan-maple-salmon",
+    prepTime: 5,
+    servings: 2,
+    summary:
+      "Sheet Pan Maple Salmon is an easy all-in-one recipe that's got something for the whole family. Plus, because it's all-in-one, cleanup is a breeze. After all, nothing's better than a fast and delicious dinner without the fuss.",
+    tags: ["fish"],
+    title: "Sheet Pan Maple Salmon"
   },
   ShiitakeDashi: {
     cookTime: 15,
@@ -3541,6 +3740,88 @@ const recipes: Recipes = {
     tags: ["beef", "japanese"],
     title: "Simmered Konnyaku with Beef"
   },
+  SouthernBiscuits: {
+    cookTime: 15,
+    ingredients: [
+      {
+        amount: 2,
+        name: "cups all-purpose flour, plus extra for working with dough"
+      },
+      {
+        amount: 1,
+        name: "teaspoon baking powder"
+      },
+      {
+        amount: 1,
+        name: "teaspoon baking soda"
+      },
+      {
+        amount: 1,
+        name: "teaspoon fine sea salt"
+      },
+      {
+        amount: 6,
+        name: "tablespoons cold unsalted butter, cut into small cubes"
+      },
+      {
+        amount: 0.75,
+        name: "cup whole milk"
+      }
+    ],
+    instructions: [
+      "Preheat the oven to 400° and have ready a baking sheet lined with either parchment paper or a silicone baking mat.",
+      "In a large mixing bowl, combine 2 cups flour, baking powder, baking soda, and salt and whisk to combine.",
+      "Scatter the cubes of butter across dry mixture, and using a pastry blender, cut in the butter until the cubes are the size of peas.",
+      "Add the milk and stir with a wooden spoon until the dough comes together. Lightly knead the mixture a bit with your hands (only if necessary) to bring it all together.",
+      'Transfer the dough to a work surface dusted with flour and pat out so that it is 1" thick. Cut into 2" squares or use a biscuit cutter to form the biscuits. You can re-work the scraps up to two times to make more biscuits.',
+      "Transfer to the prepared baking sheet and bake for 15-18 minutes, or until the biscuits are golden-brown. Serve and enjoy."
+    ],
+    origin:
+      "https://www.theanthonykitchen.com/5-steps-for-perfect-homemade-southern-biscuits/",
+    prepTime: 15,
+    progressPics: 2,
+    servings: 12,
+    summary:
+      "A quick and simple recipe for Southern Homemade Biscuits that bake up perfectly golden on the outside, and flaky and buttery on the inside.",
+    tags: ["vegetarian"],
+    title: "Southern Biscuits"
+  },
+  SoyBaconTare: {
+    cookTime: 60,
+    ingredients: [
+      {
+        amount: 2,
+        name: "slices bacon, use good quality bacon here"
+      },
+      {
+        amount: 0.25,
+        name: "cup soy sauce"
+      },
+      {
+        amount: 2,
+        name: "Tablespoon mirin"
+      },
+      {
+        amount: 2,
+        name: "Tablespoon sake"
+      },
+      {
+        amount: 4,
+        name: "Tablespoon shiro miso"
+      }
+    ],
+    instructions: [
+      "Combine all the ingredients in a small sauce pan. Simmer at the lowest setting for about an hour. Top up with a bit of chicken stock if needed.",
+      "Remove the bacon."
+    ],
+    origin: "https://glebekitchen.com/tonkotsu-ramen-home/",
+    prepTime: 10,
+    servings: 4,
+    summary:
+      "The tare is the flavour base. This is where you take your ramen in your direction.",
+    tags: ["japanese"],
+    title: "Soy Bacon Tare"
+  },
   SpicyKonnyaku: {
     cookTime: 10,
     ingredients: [
@@ -3579,87 +3860,6 @@ const recipes: Recipes = {
       "Konnyaku is the Japanese term for the vegetable or plant also known as devil's tongue, konjac, konjak, konjaku, konnyaku potato, voodoo lily, or elephant yam. Konnyaku also refers to the prepared food where the root of the konjac plant is made into a rectangular block of jelly-like yam cake or noodles.",
     tags: ["vegetarian", "vegan", "fish", "japanese"],
     title: "Spicy Konnyaku"
-  },
-  SouthernBiscuits: {
-    cookTime: 15,
-    ingredients: [
-      {
-        amount: 2,
-        name: "cups all-purpose flour, plus extra for working with dough"
-      },
-      {
-        amount: 1,
-        name: "teaspoon baking powder"
-      },
-      {
-        amount: 1,
-        name: "teaspoon baking soda"
-      },
-      {
-        amount: 1,
-        name: "teaspoon fine sea salt"
-      },
-      {
-        amount: 6,
-        name: "tablespoons cold unsalted butter, cut into small cubes"
-      },
-      {
-        amount: 0.75,
-        name: "cup whole milk"
-      }
-    ],
-    instructions: [
-      "Preheat the oven to 400° and have ready a baking sheet lined with either parchment paper or a silicone baking mat.",
-      "In a large mixing bowl, combine 2 cups flour, baking powder, baking soda, and salt and whisk to combine.",
-      "Scatter the cubes of butter across dry mixture, and using a pastry blender, cut in the butter until the cubes are the size of peas.",
-      "Add the milk and stir with a wooden spoon until the dough comes together. Lightly knead the mixture a bit with your hands (only if necessary) to bring it all together.",
-      "Transfer the dough to a work surface dusted with flour and pat out so that it is 1\" thick. Cut into 2\" squares or use a biscuit cutter to form the biscuits. You can re-work the scraps up to two times to make more biscuits.",
-      "Transfer to the prepared baking sheet and bake for 15-18 minutes, or until the biscuits are golden-brown. Serve and enjoy."
-    ],
-    origin: "https://www.theanthonykitchen.com/5-steps-for-perfect-homemade-southern-biscuits/",
-    prepTime: 15,
-    progressPics: 2,
-    servings: 12,
-    summary:
-      "A quick and simple recipe for Southern Homemade Biscuits that bake up perfectly golden on the outside, and flaky and buttery on the inside.",
-    tags: ["vegetarian"],
-    title: "Southern Biscuits"
-  },
-  SoyBaconTare: {
-    cookTime: 60,
-    ingredients: [
-      {
-        amount: 2,
-        name: "slices bacon, use good quality bacon here"
-      },
-      {
-        amount: 0.25,
-        name: "cup soy sauce"
-      },
-      {
-        amount: 2,
-        name: "Tbsp mirin"
-      },
-      {
-        amount: 2,
-        name: "Tbsp sake"
-      },
-      {
-        amount: 4,
-        name: "Tbsp shiro miso"
-      }
-    ],
-    instructions: [
-      "Combine all the ingredients in a small sauce pan. Simmer at the lowest setting for about an hour. Top up with a bit of chicken stock if needed.",
-      "Remove the bacon."
-    ],
-    origin: "https://glebekitchen.com/tonkotsu-ramen-home/",
-    prepTime: 10,
-    servings: 4,
-    summary:
-      "The tare is the flavour base. This is where you take your ramen in your direction.",
-    tags: ["japanese"],
-    title: "Soy Bacon Tare"
   },
   SpicyStirFrySauce: {
     cookTime: 5,
@@ -3741,7 +3941,8 @@ const recipes: Recipes = {
       "While the cauliflower cooks, heat butter in a small saucepan until it just begins to brown. This will not take very long--watch closely so it doesn't burn. Zest the lemon, then cut in half and squeeze out the juice. Add to browned butter. Chop parsley and add to butter.",
       "When the cauliflower is done, remove to serving dish and spoon sauce over. Slice into quarters to serve."
     ],
-    origin: "https://www.recipetips.com/recipe-cards/t--2446/steamed-cauliflower-with-lemon-butter-sauce.asp",
+    origin:
+      "https://www.recipetips.com/recipe-cards/t--2446/steamed-cauliflower-with-lemon-butter-sauce.asp",
     prepTime: 5,
     servings: 4,
     summary:
@@ -3821,11 +4022,11 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "Tbsp 100% agave tequila"
+        name: "Tablespoon 100% agave tequila"
       },
       {
         amount: 1.5,
-        name: "tsp sea salt"
+        name: "teaspoon sea salt"
       }
     ],
     instructions: [

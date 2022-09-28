@@ -7,7 +7,7 @@ export interface RecipesListProps {
   setActiveRecipe: React.Dispatch<React.SetStateAction<Recipe | null>>;
   setActiveTag: React.Dispatch<React.SetStateAction<string | null>>;
   setFilter: React.Dispatch<React.SetStateAction<string | null>>;
-  setQueryParam: (param: string, slug: string) => void
+  setQueryParam: (param: string, slug: string) => void;
   tags: Set<string>;
 }
 

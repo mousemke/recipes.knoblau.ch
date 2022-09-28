@@ -103,7 +103,9 @@ const RecipesList = (props: RecipesListProps): JSX.Element => {
     tags
   } = props;
 
-  const [visibleRecipes, setVisibleRecipes] = useState(Object.values(recipes));
+  const [visibleRecipes, setVisibleRecipes] = useState(
+    Object.values(recipes).sort((a, b) => (a.title > b.title ? 1 : -1))
+  );
   const [filteredRecipes, setFilteredRecipes] =
     useState<FilteredRecipes | null>(null);
 
@@ -142,7 +144,10 @@ const RecipesList = (props: RecipesListProps): JSX.Element => {
   }, [filter, visibleRecipes]);
 
   const defaultValue = useMemo(() => {
-    const tag = window.location.search.slice(1).split("&").filter(q => q[0] === "t")[0];
+    const tag = window.location.search
+      .slice(1)
+      .split("&")
+      .filter((q) => q[0] === "t")[0];
 
     if (tag) {
       const defaultTag = tag.split("=")[1];

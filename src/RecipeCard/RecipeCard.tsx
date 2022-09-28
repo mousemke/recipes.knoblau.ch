@@ -24,6 +24,47 @@ const minutesHoursDays = (minutes: number) => {
 };
 
 /**
+ * Parses decimal into easier to read fractions when possible
+ *
+ * @param rawAmount initial amount + multiplier
+ */
+const parseIngredientAmount = (rawAmount: number) => {
+  /**
+   * converts commonly used measurements from float to fractions
+   * @paran integer
+   * @param fraction
+   */
+  const getFraction = (rawInteger: number, fraction: number) => {
+    const integer = rawInteger === 0 ? "" : `${rawInteger} `;
+
+    switch (fraction) {
+      case 875:
+        return `${integer}7/8 `;
+      case 750:
+        return `${integer}3/4 `;
+      case 625:
+        return `${integer}5/8 `;
+      case 500:
+        return `${integer}1/2 `;
+      case 375:
+        return `${integer}3/8 `;
+      case 250:
+        return `${integer}1/4 `;
+      case 125:
+        return `${integer}1/8 `;
+      case 0:
+        return `${rawInteger} `;
+      default:
+        return `${rawInteger}.${fraction} `;
+    }
+  };
+
+  const amountArray = rawAmount.toFixed(3).split(".");
+
+  return getFraction(parseInt(amountArray[0]), parseInt(amountArray[1]));
+};
+
+/**
  * A generalized recipe card
  */
 const RecipeCard = (props: RecipeCardProps): JSX.Element => {
@@ -113,7 +154,7 @@ const RecipeCard = (props: RecipeCardProps): JSX.Element => {
             {recipe.ingredients.map((ingredient, i) => (
               <li key={i}>
                 {ingredient.amount
-                  ? `${parseFloat((ingredient.amount * multiplier).toFixed(2))} `
+                  ? parseIngredientAmount(ingredient.amount * multiplier)
                   : ""}
                 {ingredient.name}
               </li>
