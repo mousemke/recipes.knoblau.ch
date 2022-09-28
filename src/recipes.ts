@@ -28,7 +28,7 @@ const recipes: Recipes = {
         name: "cups apple cider"
       },
       {
-        amount: 0.66,
+        amount: 0.6666666666,
         name: "cup kosher salt"
       },
       {
@@ -434,7 +434,7 @@ const recipes: Recipes = {
         name: "ounces sharp cheddar cheese, shredded, divided"
       },
       {
-        amount: 0.33,
+        amount: 0.3333333333,
         name: "cup chopped fresh cilantro"
       },
       {
@@ -531,7 +531,7 @@ const recipes: Recipes = {
     cookTime: 0,
     ingredients: [
       {
-        amount: 3.33,
+        amount: 3.3333333333,
         name: "cup all-purpose flour"
       },
       {
@@ -682,7 +682,7 @@ const recipes: Recipes = {
         name: "bay leaf"
       },
       {
-        amount: 0.33,
+        amount: 0.3333333333,
         name: "cup all-purpose flour"
       },
       {
@@ -905,7 +905,7 @@ const recipes: Recipes = {
         name: "Tablespoons unsalted butter, chilled and cubed"
       },
       {
-        amount: 0.66,
+        amount: 0.6666666666,
         name: "cup vegetable shortening, chilled"
       },
       {
@@ -1459,7 +1459,7 @@ const recipes: Recipes = {
         name: "tablespoons crawfish butter, divided"
       },
       {
-        amount: 0.33,
+        amount: 0.3333333333,
         name: "cup chopped onion"
       },
       {
@@ -1471,7 +1471,7 @@ const recipes: Recipes = {
         name: "cups crawfish broth"
       },
       {
-        amount: 0.33,
+        amount: 0.3333333333,
         name: "cup rice"
       },
       {
@@ -1923,7 +1923,7 @@ const recipes: Recipes = {
         name: "teaspoon minced garlic"
       },
       {
-        amount: 0.33,
+        amount: 0.3333333333,
         name: "cup all-purpose flour"
       },
       {
@@ -1943,7 +1943,7 @@ const recipes: Recipes = {
         name: "cups chicken broth"
       },
       {
-        amount: 0.66,
+        amount: 0.6666666666,
         name: "cup half-and-half"
       },
       {
@@ -2112,6 +2112,101 @@ const recipes: Recipes = {
       "These enchiladas are made with a fresh green salsa, just like you would find in a Mexican restaurant or better yet, in a Mexican home.",
     tags: ["chicken", "mexican"],
     title: "Enchiladas Verdes"
+  },
+  EpicBBQSauce: {
+    cookTime: 40,
+    ingredients: [
+      {
+        amount: 1,
+        name: "medium onion, peeled and quartered"
+      },
+      {
+        amount: 10,
+        name: "cloves garlic, peeled"
+      },
+      {
+        amount: 2,
+        name: "fresh red chillies, stalks removed"
+      },
+      {
+        name: "olive oil"
+      },
+      {
+        amount: 10,
+        name: "sprigs fresh thyme or lemon thyme, leaves picked"
+      },
+      {
+        amount: 10,
+        name: "sprigs fresh rosemary, leaves picked"
+      },
+      {
+        amount: 1,
+        name: "small bunch fresh coriander"
+      },
+      {
+        amount: 10,
+        name: "bay leaves"
+      },
+      {
+        amount: 1,
+        name: "teaspoon cumin seeds"
+      },
+      {
+        amount: 2,
+        name: "tablespoons fennel seeds"
+      },
+      {
+        amount: 2,
+        name: "tablespoons smoked paprika"
+      },
+      {
+        amount: 6,
+        name: "cloves"
+      },
+      {
+        amount: 2,
+        name: "oranges, zest and juice"
+      },
+      {
+        amount: 200,
+        name: "g soft brown sugar"
+      },
+      {
+        amount: 6,
+        name: "tablespoons balsamic vinegar"
+      },
+      {
+        amount: 200,
+        name: "ml tomato ketchup"
+      },
+      {
+        amount: 2,
+        name: "tablespoons Worcestershire sauce"
+      },
+      {
+        amount: 2,
+        name: "teaspoons English mustard"
+      },
+      {
+        amount: 200,
+        name: "ml apple juice"
+      }
+    ],
+    instructions: [
+      "Blitz the onion, garlic and chillies together in a food processor until you've got a really fine paste. Pour a lug of olive oil into a pan and gently fry this paste for 5 minutes on a low heat to really get the flavours going.",
+      "While that's happening, add all your herbs and spices to the food processor, then peel in strips of orange zest using a speed peeler (you don't want any white pith) and blitz up really well. Add this puréed mixture to the pan and cook for another minute. Add the sugar, stir in well and cook for a few more minutes, until it begins to dissolve and you get a thick brown paste. Pour in 285ml of water and cook for 2 more minutes, then squeeze in the juice of both your oranges and add all the remaining ingredients along with 1 teaspoon each of sea salt and black pepper. Stir well and bring everything to the boil, then turn down the heat a touch and simmer for 5 to 10 minutes, until the mixture starts to thicken slightly.",
+      "Pour the sauce slowly through a fine sieve into a large bowl and get rid of any larger bits left behind in the sieve. Rinse the sieve and pass the sauce through the sieve again so it's really silky.",
+      "Leave to cool completely, then either divide the sauce between jars or get marinating straight away. Once it's in the fridge, you'll have about a week or so to use up the rest of the sauce. If you want to keep it for longer, you'll have to sterilize some jars. It's dead easy. Either put them in the sink along with their lids and cover them completely with boiling water from the kettle; or fill a really large pan with water, bring it to the boil, then immerse the jars and lids and continue to boil for 10 minutes; or, if you've got a good dishwasher with a really hot cycle, run them through that.",
+      "Pour the sauce into your sterilized jar, screw the lid on tightly, and immerse the jar completely in a pan of boiling water for 10 minutes. Let it cool, then put it into the fridge or a cool dark cupboard until you need it. It should keep for about 6 months, no problem."
+    ],
+    origin:
+      "https://www.jamieoliver.com/recipes/pork-recipes/my-epic-bbq-sauce/",
+    prepTime: 5,
+    servings: 20,
+    summary:
+      "Trust me, this easy BBQ sauce recipe packs the most amazing flavour punch - it'll blow your mind!",
+    tags: ["vegetarian", "vegan"],
+    title: "Epic BBQ Sauce"
   },
   FrenchFries: {
     cookTime: 60,
@@ -2351,7 +2446,7 @@ const recipes: Recipes = {
         name: "tablespoons dashi broth granules"
       },
       {
-        amount: 0.33,
+        amount: 0.3333333333,
         name: "cup soy sauce"
       },
       {
@@ -3110,7 +3205,7 @@ const recipes: Recipes = {
         name: "Tablespoon soy sauce"
       },
       {
-        amount: 0.33,
+        amount: 0.3333333333,
         name: "cup katsuobushi (dried bonito flakes) (skip for vegetarian)"
       },
       {
@@ -3688,7 +3783,7 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 1,
-        name: "block konnyaku or 1 package shirataki"
+        name: "block konnyaku or shirataki"
       },
       {
         amount: 4,
@@ -4221,6 +4316,59 @@ const recipes: Recipes = {
     tags: ["turkey", "thankgiving"],
     title: "Turkey Brine"
   },
+  TwiceBakedPotatoes: {
+    cookTime: 100,
+    ingredients: [
+      {
+        amount: 4,
+        name: "russet potatoes, scrubbed, dried, and rubbed lightly with vegetable oil"
+      },
+      {
+        amount: 0.5,
+        name: "cup sour cream"
+      },
+      {
+        amount: 0.5,
+        name: "cup buttermilk"
+      },
+      {
+        amount: 2,
+        name: "tablespoons unsalted butter"
+      },
+      {
+        amount: 4,
+        name: "strips bacon"
+      },
+      {
+        amount: 3,
+        name: "medium scallions, white and green parts sliced thin"
+      },
+      {
+        amount: 0.5,
+        name: "teaspoon salt"
+      },
+      {
+        name: "black pepper"
+      },
+      {
+        amount: 6,
+        name: "oz sharp cheddar cheese"
+      }
+    ],
+    instructions: [
+      "Preheat the oven to 400F. Scrub the potatoes and clean under running water. Poke each potato in several places with a fork. Rub the potatoes all over with a little vegetableoil. Bake for 1 hour on a foil lined baking sheet. Set the baked sheet aside and transfer the potatoes to a wire rack and let cool enough to handle (about 10 minutes).",
+      "While the potatoes are baking, cook the bacon in a skillet until crispy. Set aside onto a paper towel lined plate.",
+      "Once the potatoes have cooled enough to handle, cut each potato in half so that the blunt sides will rest on the work surface. Use a small dinner spoon to scoop out the flesh from each half of the potatoes into a medium bowl, leaving 1/8″ to 1/4″ thickness of flesh in each shell. Arrange the shells on the lined baking sheet and return to the oven until dry and slightly crisped (about 10 minutes). Meanwhile, mash the potato flesh with a fork until smooth. Crumble the bacon in, and stir in the remaining ingredients except for half the cheese until combined.",
+      "Remove the shells from the oven and increase the setting to broil. Holding the shells steady on the pan with an oven mitt, spoon the mixture into each crisp shell, mounding slightly at the center. Spread the remaining cheese evenly over the potatoes then return to the oven and broil until spotty brown and crisp on top (10 to 15 minutes). Let cool 10 minutes before serving."
+    ],
+    origin: "https://12tomatoes.com/side-recipe-twice-baked-potatoes/",
+    prepTime: 15,
+    servings: 4,
+    summary:
+      "Baked potatoes are already so good, why not bake them twice? Twice baked potatoes are a great way to elevate this simple side into a more exciting meal for your family",
+    tags: ["bacon"],
+    title: "Twice Baked Potatoes"
+  },
   UnagiChazuke: {
     cookTime: 10,
     ingredients: [
@@ -4275,7 +4423,7 @@ const recipes: Recipes = {
     progressPics: 8,
     servings: 2,
     summary:
-      "Unagi Chazuke (Hitsumabushi) is a popular rice bowl from Nagoya which features broiled eel on top of the steamed rice. Piping hot broth is poured on the rice to enjoy. It’s perfect comfort food on a busy weeknight!",
+      "Unagi Chazuke (Hitsumabushi) is a popular rice bowl from Nagoya which features broiled eel on top of the steamed rice. Piping hot broth is poured on the rice to enjoy. It's perfect comfort food on a busy weeknight!",
     tags: ["japanese", "eel"],
     title: "Unagi Chazuke"
   },
@@ -4330,11 +4478,11 @@ const recipes: Recipes = {
         name: "teaspoon cold pressed rapeseed oil, canola or olive oil (or a similar oil that you like the taste of. Or try a blend!)"
       },
       {
-        amount: 0.66,
+        amount: 0.6666666666,
         name: "teaspoon apple cider vinegar (or freshly squeezed lemon juice)"
       },
       {
-        amount: 0.33,
+        amount: 0.3333333333,
         name: "teaspoon salt"
       }
     ],
@@ -4389,7 +4537,73 @@ const recipes: Recipes = {
       "Don't buy store bought chemical laden rubbish. This recipe yields a wonderful golden flaky pastry. And below you'll find a video of complete step by step instructions to help ensure success at home!",
     tags: ["vegan"],
     title: "Vegan Puff Pastry"
-  }
+  },
+  YoshinoyaGyudonBeefBowls: {
+    cookTime: 15,
+    ingredients: [
+      {
+        amount: 0.5,
+        name: "onion"
+      },
+      {
+        amount: 1,
+        name: "green onion/scallion"
+      },
+      {
+        amount: 0.5,
+        name: "cup Awase Dashi"
+      },
+      {
+        amount: 1,
+        name: "Tablespoon sake"
+      },
+      {
+        amount: 2,
+        name: "Tablespoon mirin"
+      },
+      {
+        amount: 1,
+        name: "Tablespoon sugar"
+      },
+      {
+        amount: 2,
+        name: "Tablespoon soy sauce"
+      },
+      {
+        amount: 0.75,
+        name: "pound thinly sliced beef (chuck or rib eye), komagire, or shabu shabu"
+      },
+      {
+        amount: 2,
+        name: "Tablespoon pickled red ginger (beni shoga or kizami beni shoga)"
+      },
+      {
+        amount: 2,
+        name: "servings cooked Japanese short-grain rice"
+      },
+      {
+        amount: 2,
+        name: "onsen tamago (optional)"
+      }
+    ],
+    instructions: [
+      "If you cannot find sliced beef in your local grocery store, freeze a block of fresh chuck or rib eye for 1-2 hours and slice. See this post for detailed instructions. If the pieces are too large after slicing, then cut them in half. I use sliced beef labeled \"komagire\" from my local Japanese market and cut the slices further into smaller pieces.",
+      "Cut the onion into thin slices and slice the green onion into thin rounds. Set aside.",
+      "Heat a large frying pan over medium-high heat and add the dashi, sake, sugar, mirin, and soy sauce.",
+      "Cover the pan with a lid and bring the sauce to a boil. Once the sauce is boiling, add the sliced onions and spread them out in a single layer. Cover to cook until tender (make sure you cover the pan, otherwise the sauce will evaporate).",
+      "When the onions are tender, add the beef and cook until it's no longer pink. Remove the foam and fat with a fine-mesh skimmer.",
+      "Divide the steamed rice into individual serving bowls. Serve the simmered meat and sauce over the steamed rice.",
+      "Top with the sliced green onions and pickled red ginger. If you'd like to add an egg, serve with an onsen tamago on top. Alternatively, you can pour beaten egg over the meat when it's almost finished cooking in the pan"
+    ],
+    origin: "https://www.justonecookbook.com/yoshinoya-beef-bowl-gyudon/",
+    prepTime: 5,
+    progressPics: 7,
+    servings: 2,
+    summary:
+      "With savory and juicy sliced beef served over steamed rice, this delicious Yoshinoya Beef Bowl (Gyudon) is a keeper for a weeknight meal!",
+    tags: ["beef", "japanese"],
+    title: "Yoshinoya Gyudon Beef Bowls"
+  },
 };
 
 export default recipes;

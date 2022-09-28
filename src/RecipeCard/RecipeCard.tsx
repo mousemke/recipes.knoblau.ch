@@ -42,12 +42,16 @@ const parseIngredientAmount = (rawAmount: number) => {
         return `${integer}7/8 `;
       case 750:
         return `${integer}3/4 `;
+      case 667:
+        return `${integer}2/3 `;
       case 625:
         return `${integer}5/8 `;
       case 500:
         return `${integer}1/2 `;
       case 375:
         return `${integer}3/8 `;
+      case 333:
+        return `${integer}1/3 `;
       case 250:
         return `${integer}1/4 `;
       case 125:
