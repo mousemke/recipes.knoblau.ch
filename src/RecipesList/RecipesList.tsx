@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import Select from "react-select";
 
 import useStyles, { selectStyles } from "./RecipesList.styles";
@@ -62,14 +62,14 @@ const filterByString = (recipes: Recipe[], filter: string) => {
  *
  * @param recipes
  * @param setActiveRecipe
- * @param setWindowHash
+ * @param setQueryParam
  * @returns
  */
 const rendereRecipeLinks = (
   recipes: Recipe[],
   classes: Classes,
   setActiveRecipe: React.Dispatch<React.SetStateAction<Recipe | null>>,
-  setWindowHash: (slug: string) => void
+  setQueryParam: (param: string, slug: string) => void
 ) => {
   return recipes.map((recipe, i) => {
     return (
@@ -77,7 +77,7 @@ const rendereRecipeLinks = (
         key={i}
         className={classes.recipeLink}
         onClick={() => {
-          setWindowHash(recipe.title.replace(/[ ,]/g, ""));
+          setQueryParam("r", recipe.title.replace(/[ ,]/g, ""));
           setActiveRecipe(recipe);
         }}
         role="button"
@@ -99,7 +99,7 @@ const RecipesList = (props: RecipesListProps): JSX.Element => {
     setActiveRecipe,
     setActiveTag,
     setFilter,
-    setWindowHash,
+    setQueryParam,
     tags
   } = props;
 
@@ -115,8 +115,8 @@ const RecipesList = (props: RecipesListProps): JSX.Element => {
    */
   const getRecipeLinks = useCallback(
     (recipes: Recipe[]) =>
-      rendereRecipeLinks(recipes, classes, setActiveRecipe, setWindowHash),
-    [classes, setActiveRecipe, setWindowHash]
+      rendereRecipeLinks(recipes, classes, setActiveRecipe, setQueryParam),
+    [classes, setActiveRecipe, setQueryParam]
   );
 
   /**
@@ -141,6 +141,21 @@ const RecipesList = (props: RecipesListProps): JSX.Element => {
     }
   }, [filter, visibleRecipes]);
 
+  const defaultValue = useMemo(() => {
+    const tag = window.location.search.slice(1).split("&").filter(q => q[0] === "t")[0];
+
+    if (tag) {
+      const defaultTag = tag.split("=")[1];
+
+      return {
+        label: `${defaultTag[0].toUpperCase()}${defaultTag.slice(1)}`,
+        value: defaultTag
+      };
+    } else {
+      return undefined;
+    }
+  }, []);
+
   return (
     <>
       <div className={classes.header}>
@@ -153,12 +168,15 @@ const RecipesList = (props: RecipesListProps): JSX.Element => {
             Filter By Tag
           </label>
           <Select
-            defaultValue={
-              activeTag ? { label: activeTag, value: activeTag } : undefined
-            }
+            defaultValue={defaultValue}
             id="tagFilterSelect"
             isClearable
-            onChange={(e) => setActiveTag(e?.value.toLowerCase() || null)}
+            onChange={(e) => {
+              const tag = e?.value.toLowerCase() || "";
+
+              setQueryParam("t", tag);
+              setActiveTag(tag);
+            }}
             options={
               tags ? Array.from(tags).map((t) => ({ label: t, value: t })) : []
             }
@@ -175,7 +193,11 @@ const RecipesList = (props: RecipesListProps): JSX.Element => {
             className={classes.filterInput}
             defaultValue={filter || ""}
             id={classes.filterInput}
-            onChange={(e) => setFilter(e.target.value.toLowerCase())}
+            onChange={(e) => {
+              const filter = e.target.value.toLowerCase();
+              setQueryParam("f", filter);
+              setFilter(filter);
+            }}
             placeholder="Filter by Text"
             type="text"
           />

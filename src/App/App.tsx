@@ -13,8 +13,21 @@ import type { Recipe } from "../recipes";
  *
  * @param slug
  */
-const setWindowHash = (slug: string = "") => {
-  window.location.hash = slug;
+const setQueryParam = (param: string, slug: string = "") => {
+  const { pathname, search } = window.location;
+
+  let newQuery: string;
+  const paramRegex = new RegExp(`\\??\\&?${param}=[\\w\\d]+`);
+  const query = search.replace(paramRegex, "");
+
+  if (query.length === 0) {
+    newQuery = slug ? `?${param}=${slug}` : "";
+  } else {
+    newQuery = slug ? `${query}&${param}=${slug}` : query;
+  }
+
+  const newPath = `${pathname}${newQuery}`;
+  window.history.replaceState(null, document.title, newPath)
 };
 
 /**
@@ -31,11 +44,23 @@ const App = (): JSX.Element => {
   const classes = useStyles();
 
   useEffect(() => {
-    const hash = window.location.hash.slice(1);
+    const query: { [param: string]: string } = {};
 
-    if (hash && hash.length > 1) {
-      const recipe = recipes[hash];
-      recipe && setActiveRecipe(recipe);
+    window.location.search.slice(1).split("&").forEach(q => {
+      const paramPair = q.split("=");
+      query[paramPair[0]] = paramPair[1];
+    });
+
+    if (query.t) {
+      setActiveTag(query.t);
+    }
+
+    if (query.f) {
+      setFilter(query.f);
+    }
+
+    if (query.r) {
+      setActiveRecipe(recipes[query.r]);
     }
   }, []);
 
@@ -61,7 +86,7 @@ const App = (): JSX.Element => {
           className={classes.recipeCardWrapper}
           onClick={() => {
             setActiveRecipe(null);
-            setWindowHash();
+            setQueryParam("r");
             setMultiplier(1);
           }}
         >
@@ -80,7 +105,7 @@ const App = (): JSX.Element => {
           setActiveRecipe={setActiveRecipe}
           setActiveTag={setActiveTag}
           setFilter={setFilter}
-          setWindowHash={setWindowHash}
+          setQueryParam={setQueryParam}
           tags={tags}
         />
       </div>

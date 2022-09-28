@@ -595,6 +595,63 @@ const recipes: Recipes = {
     tags: ["wisconsin", "fish"],
     title: "Beer Battered Fish Fry"
   },
+  BeerBratSauce: {
+    cookTime: 10,
+    ingredients: [
+      {
+        amount: 1,
+        name: "cup chili sauce (such as Heinz brand)"
+      },
+      {
+        amount: 1,
+        name: "cup ketchup"
+      },
+      {
+        amount: 0.5,
+        name: "cup Amber ale (though any beer of your choice will work)"
+      },
+      {
+        amount: 2,
+        name: "tablespoon cider vinegar"
+      },
+      {
+        amount: 2,
+        name: "tablespoon brown sugar"
+      },
+      {
+        amount: 1,
+        name: "tablespoon Worcestershire Sauce"
+      },
+      {
+        amount: 1,
+        name: "teaspoon prepared horseradish"
+      },
+      {
+        amount: 0.5,
+        name: "teaspoon paprika"
+      },
+      {
+        amount: 0.5,
+        name: "teaspoon salt"
+      },
+      {
+        amount: 0.25,
+        name: "teaspoon ground black pepper"
+      }
+    ],
+    instructions: [
+      "Add all ingredients to a small sauce pan and simmer for 10 minutes, or until sauce has thickened back into ketchup like consistency. Let cool slightly.",
+      "Yields 2 cups.",
+      "Serve on top of grilled bratwurst."
+    ],
+    origin: "https://www.foxvalleyfoodie.com/wisconsin-beer-brat-sauce/",
+    prepTime: 3,
+    servings: 16,
+    summary:
+      "This Wisconsin Beer Brat Sauce is the perfect condiment for slathering on your Johnsonville brats at your Fourth of July cookout! It is robust, tangy, and sweet with mellow flavor of beer carried throughout each bite!",
+    tags: ["wisconsin", "vegetarian", "vegan"],
+    title: "Beer Brat Sauce"
+  },
   BeerCheeseSoup: {
     cookTime: 20,
     ingredients: [
@@ -3692,6 +3749,49 @@ const recipes: Recipes = {
     tags: ["vegetarian", "vegan"],
     title: "Steamed Cauliflower with Lemon Butter Sauce"
   },
+  TartarSauce: {
+    cookTime: 0,
+    ingredients: [
+      {
+        amount: 1,
+        name: "cup mayonnaise"
+      },
+      {
+        amount: 0.25,
+        name: "cup finely chopped sweet pickles"
+      },
+      {
+        amount: 1,
+        name: "tablespoon finely chopped onion"
+      },
+      {
+        amount: 1,
+        name: "teaspoon sugar"
+      },
+      {
+        amount: 0.25,
+        name: "teaspoon salt"
+      },
+      {
+        amount: 0.25,
+        name: "teaspoon black pepper"
+      },
+      {
+        amount: 2,
+        name: "teaspoons white vinegar"
+      }
+    ],
+    instructions: [
+      "In a medium bowl, combine mayonnaise, pickles, onion, sugar, salt, pepper and vinegar; mix well.  Refrigerate at least one hour or until ready to serve."
+    ],
+    origin: "https://www.mrfood.com/Fish/fish-fry-tartar-sauce",
+    prepTime: 5,
+    servings: 6,
+    summary:
+      "We're having a fish fry! And that means we need to make our Fish Fry Tartar Sauce to tie it all together. This easy tartar sauce recipe is the perfect topping for your fried fish because its got a sweet and tangy flavor that just won't quit! Plus, when a sauce is this easy to make, you'll want to make it again and again.",
+    tags: ["vegetarian", "wisconsin"],
+    title: "TartarSauce"
+  },
   TequilaLimeSalsa: {
     cookTime: 30,
     ingredients: [
@@ -3919,6 +4019,99 @@ const recipes: Recipes = {
       "This is a tasty turkey brine recipe for any poultry. It will make your bird very juicy, and gravy to die for! This is enough brine for a 10- to 18- pound turkey.",
     tags: ["turkey", "thankgiving"],
     title: "Turkey Brine"
+  },
+  UnagiChazuke: {
+    cookTime: 10,
+    ingredients: [
+      {
+        amount: 2,
+        name: "cups Awase dashi"
+      },
+      {
+        amount: 2,
+        name: "teaspoon kombucha"
+      },
+      {
+        amount: 1,
+        name: "fillet unagi (eel) (precooked)"
+      },
+      {
+        amount: 3,
+        name: "tablespoon Unagi Sauce Recipe"
+      },
+      {
+        amount: 2,
+        name: "serving cooked Japanese short-grain rice"
+      },
+      {
+        amount: 1,
+        name: "green onion/scallion (optional)"
+      },
+      {
+        amount: 1,
+        name: "sprig mitsuba (Japanese parsley, optional)"
+      },
+      {
+        amount: 1,
+        name: "teaspoon toasted white sesame seeds"
+      },
+      {
+        name: "Japanese sansho pepper (optional)"
+      }
+    ],
+    instructions: [
+      "In a small saucepan, combine dashi and konbucha.",
+      "Heat the broth over medium heat and whisk well. Taste the broth and adjust with more konbucha or salt if necessary.",
+      "Cut unagi in half (or maybe third) to fit inside your serving bowls.",
+      "Line the baking sheet with parchment paper. Place unagi on top. WITHOUT preheating, put the baking sheet in the middle rack of your oven, and broil on high for 7 minutes (no need to flip).",
+      "After 7 minutes or so, take it out and brush the unagi Sauce over the fillet. Broil for another 30 to 60 seconds until you see bubbles on top of unagi.",
+      "Cut the mitsuba and green onion into small pieces.",
+      "Serve steamed rice in bowls and brush unagi sauce on the rice. Place unagi on top. You can cut Unagi into 1-inch pieces (easier to eat with chopsticks). Pour/brush more unagi sauce, if you like.",
+      "Right before you serve, pour the broth over the unagi and garnish with green onions, mitsuba, and sesame seeds. You can sprinkle Japanese sansho pepper which gives more peppery, citrus flavor. Enjoy!"
+    ],
+    origin: "https://www.justonecookbook.com/unagi-chazuke/",
+    prepTime: 5,
+    progressPics: 8,
+    servings: 2,
+    summary:
+      "Unagi Chazuke (Hitsumabushi) is a popular rice bowl from Nagoya which features broiled eel on top of the steamed rice. Piping hot broth is poured on the rice to enjoy. It’s perfect comfort food on a busy weeknight!",
+    tags: ["japanese", "eel"],
+    title: "Unagi Chazuke"
+  },
+  UnagiSauce: {
+    cookTime: 15,
+    ingredients: [
+      {
+        amount: 0.25,
+        name: "cup mirin"
+      },
+      {
+        amount: 1.5,
+        name: "Tablespoon sake"
+      },
+      {
+        amount: 2.5,
+        name: "Tablespoon sugar"
+      },
+      {
+        amount: 0.25,
+        name: "cup soy sauce"
+      }
+    ],
+    instructions: [
+      "In a small saucepan, add the mirin, sake, and sugar. Turn on the heat to medium and whisk all the ingredients together.",
+      "Then, add the soy sauce and bring it to a boil. Once boiling, reduce the heat to low and continue simmering for 10 minutes. Toward the end of cooking, you will see more bubbles.",
+      "Turn off the heat and let it cool. The sauce will thicken as it cools. It's now ready to use.",
+      "You can store the sauce in an airtight jar and keep in the refrigerator for up to 2-3 months."
+    ],
+    origin: "https://www.justonecookbook.com/unagi-sauce-2/",
+    prepTime: 5,
+    progressPics: 3,
+    servings: 6,
+    summary:
+      "Sweet, savory, and full of flavor, this delicious Homemade Eel Sauce is the dream sauce for unagi and BBQ dishes!",
+    tags: ["vegan", "japanese", "eel"],
+    title: "Unagi Sauce"
   },
   VeganButter: {
     cookTime: 5,
