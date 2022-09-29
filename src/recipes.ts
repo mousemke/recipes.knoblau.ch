@@ -70,6 +70,38 @@ const recipes: Recipes = {
     tags: ["thanksgiving", "turkey"],
     title: "Apple Cider Turkey Brine"
   },
+  AppleMintYogurtSalsa: {
+    cookTime: 0,
+    ingredients: [
+      {
+        amount: 1,
+        name: "liter vegan yogurt"
+      },
+      {
+        amount: 4,
+        name: "Apple, diced"
+      },
+      {
+        amount: 0.75,
+        name: "cups Mint"
+      },
+      {
+        amount: 4,
+        name: "Tablespoons Lemon Juice"
+      },
+      {
+        name: "Lemon zest"
+      }
+    ],
+    instructions: ["Combine all ingredients", "Chill"],
+    origin: "The Book",
+    prepTime: 5,
+    progressPics: 1,
+    servings: 12,
+    summary: "Great as a side to a lighter meal",
+    tags: ["vegetarian", "vegan", "the-book"],
+    title: "Apple Mint Yogurt Salsa"
+  },
   AwaseDashi: {
     cookTime: 15,
     ingredients: [
@@ -1412,6 +1444,67 @@ const recipes: Recipes = {
       'This cold soba noodle dish is eaten on special occasions such as New Year\'s Eve. As in other Asian cultures, the long, thin noodles represent a long life with extended happiness. These end of year noodles are called "toshikoshi" soba, which means "cross the year" soba noodles.',
     tags: ["japanese"],
     title: "Cold Soba Noodles with Dipping Sauce"
+  },
+  CranberryAppleSpicedTea: {
+    cookTime: 5,
+    ingredients: [
+      {
+        amount: 1,
+        name: "liter Cranberry Juice"
+      },
+      {
+        amount: 1,
+        name: "liter Apple Juice"
+      },
+      {
+        amount: 125,
+        name: "ml Pineapple Juice"
+      },
+      {
+        amount: 25,
+        name: "ml Honey"
+      },
+      {
+        amount: 350,
+        name: "ml water"
+      },
+      {
+        amount: 1,
+        name: "small orange, studded with cloves"
+      },
+      {
+        amount: 2,
+        name: "Cinnamon sticks"
+      },
+      {
+        name: "cardamon"
+      },
+      {
+        name: "ginger"
+      },
+      {
+        name: "nutmeg"
+      },
+      {
+        name: "allspice"
+      },
+      {
+        amount: 10,
+        name: "shots rum"
+      }
+    ],
+    instructions: [
+      "Combine all ingredients except rum. Bring to a boil, turn down heat, and simmer for at least 10 minutes.",
+      "To serve, remove from heat and add rum."
+    ],
+    origin: "The Book",
+    prepTime: 5,
+    progressPics: 1,
+    servings: 10,
+    summary:
+      "An easy to prepare spiced drink for Thanksgiving, Christmas, or any cold winter's day.",
+    tags: ["vegetarian", "vegan", "thanksgiving", "christmas", "the-book"],
+    title: "Cranberry Apple Spiced Tea"
   },
   CranberrySauce: {
     cookTime: 15,
@@ -4587,7 +4680,7 @@ const recipes: Recipes = {
       }
     ],
     instructions: [
-      "If you cannot find sliced beef in your local grocery store, freeze a block of fresh chuck or rib eye for 1-2 hours and slice. See this post for detailed instructions. If the pieces are too large after slicing, then cut them in half. I use sliced beef labeled \"komagire\" from my local Japanese market and cut the slices further into smaller pieces.",
+      'If you cannot find sliced beef in your local grocery store, freeze a block of fresh chuck or rib eye for 1-2 hours and slice. See this post for detailed instructions. If the pieces are too large after slicing, then cut them in half. I use sliced beef labeled "komagire" from my local Japanese market and cut the slices further into smaller pieces.',
       "Cut the onion into thin slices and slice the green onion into thin rounds. Set aside.",
       "Heat a large frying pan over medium-high heat and add the dashi, sake, sugar, mirin, and soy sauce.",
       "Cover the pan with a lid and bring the sauce to a boil. Once the sauce is boiling, add the sliced onions and spread them out in a single layer. Cover to cook until tender (make sure you cover the pan, otherwise the sauce will evaporate).",
@@ -4603,7 +4696,7 @@ const recipes: Recipes = {
       "With savory and juicy sliced beef served over steamed rice, this delicious Yoshinoya Beef Bowl (Gyudon) is a keeper for a weeknight meal!",
     tags: ["beef", "japanese"],
     title: "Yoshinoya Gyudon Beef Bowls"
-  },
+  }
 };
 
 export default recipes;

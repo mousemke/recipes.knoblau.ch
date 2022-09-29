@@ -18,7 +18,7 @@ const setQueryParam = (param: string, slug: string = "") => {
   const { pathname, search } = window.location;
 
   let newQuery: string;
-  const paramRegex = new RegExp(`\\??\\&?${param}=[\\w\\d]+`);
+  const paramRegex = new RegExp(`\\??\\&?${param}=[\\w\\d-]+`);
   const query = search.replace(paramRegex, "");
 
   if (query.length === 0) {

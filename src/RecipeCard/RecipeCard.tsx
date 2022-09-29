@@ -76,6 +76,7 @@ const RecipeCard = (props: RecipeCardProps): JSX.Element => {
 
   const { multiplier, recipe, setMultiplier } = props;
 
+  const fromTheBook = recipe.origin === "The Book";
   const slug = recipe.title.replace(/[ ,]/g, "");
 
   return (
@@ -125,17 +126,19 @@ const RecipeCard = (props: RecipeCardProps): JSX.Element => {
           </div>
           <img
             className={classes.thumbnail}
-            srcSet={`./pics/${slug}/${slug}.jpg`}
+            srcSet={
+              fromTheBook ? "./pics/TheBook.jpg" : `./pics/${slug}/${slug}.jpg`
+            }
           />
         </div>
         <div className={classes.recipeSection}>
           <a
             className={classes.originLink}
-            href={recipe.origin}
+            href={fromTheBook ? undefined : recipe.origin}
             target="_blank"
             rel="noreferrer noopener"
           >
-            Originally seen here
+            Originally {fromTheBook ? "from The Book" : "seen here"}
           </a>
           <div className={classes.changeScale}>
             Change recipe servings{" "}
