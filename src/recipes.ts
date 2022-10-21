@@ -1111,7 +1111,7 @@ const recipes: Recipes = {
     servings: 10,
     summary:
       "This is the best vegan spinach artichoke dip ever! It's loaded with spinach, artichoke hearts, garlic, and a creamy cashew sauce! This gluten-free and oil-free vegan dip is loved by vegans and non-vegans alike and it's ready to eat in 30 minutes!",
-    tags: ["vegetartian", "vegan"],
+    tags: ["vegetarian", "vegan"],
     title: "Cashew Cream Spinach Artichoke Dip"
   },
   ChashuPorkBelly: {
@@ -4241,7 +4241,7 @@ const recipes: Recipes = {
     summary:
       "We're having a fish fry! And that means we need to make our Fish Fry Tartar Sauce to tie it all together. This easy tartar sauce recipe is the perfect topping for your fried fish because its got a sweet and tangy flavor that just won't quit! Plus, when a sauce is this easy to make, you'll want to make it again and again.",
     tags: ["vegetarian", "wisconsin"],
-    title: "TartarSauce"
+    title: "Tartar Sauce"
   },
   TequilaLimeSalsa: {
     cookTime: 30,
@@ -4505,7 +4505,7 @@ const recipes: Recipes = {
     servings: 6,
     summary:
       "This is a tasty turkey brine recipe for any poultry. It will make your bird very juicy, and gravy to die for! This is enough brine for a 10- to 18- pound turkey.",
-    tags: ["turkey", "thankgiving"],
+    tags: ["turkey", "thanksgiving"],
     title: "Turkey Brine"
   },
   TwiceBakedPotatoes: {
