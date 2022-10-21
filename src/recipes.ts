@@ -1561,7 +1561,7 @@ const recipes: Recipes = {
       },
       {
         amount: 5,
-        name: "cups crawfish broth"
+        name: "cups crawfish stock"
       },
       {
         amount: 0.3333333333,
@@ -1584,7 +1584,7 @@ const recipes: Recipes = {
     ],
     instructions: [
       "Heat 2 tablespoons crawfish butter in a large soup pot over medium-high heat. Saute the onion until soft and translucent. Do not let it brown. Pour in the vermouth or brandy and let this boil for a minute.",
-      "Add the rice and crawfish broth and bring it to a gentle simmer. Simmer until the rice is soft, about 25 minutes. Add salt to taste.",
+      "Add the rice and crawfish stock and bring it to a gentle simmer. Simmer until the rice is soft, about 25 minutes. Add salt to taste.",
       "Pour the soup into a blender along with 1/4 pound of crawfish meat. Puree, in batches if you need to.",
       "Wipe out the soup pot and return the pureed soup to it. Heat the bisque over medium-low heat just to the steaming point. Add the rest of the crawfish meat and heat for 2-3 minutes. Mix in the heavy cream, then stir in the remaining crawfish butter 1 tablespoon at a time. Serve at once, garnished with the herbs."
     ],
@@ -1596,7 +1596,36 @@ const recipes: Recipes = {
     tags: ["crawfish", "cajun"],
     title: "Crawfish Bisque"
   },
-  CrawfishBroth: {
+  CrawfishButter: {
+    cookTime: 90,
+    ingredients: [
+      {
+        amount: 0.25,
+        name: "pound cooked crawfish heads and shells from the tails"
+      },
+      {
+        amount: 0.5,
+        name: "pound unsalted butter"
+      },
+      {
+        amount: 1,
+        name: "tablespoon brandy"
+      }
+    ],
+    instructions: [
+      "To make the crawfish butter, smash the shells to a pulp. This can be done in a mortar and pestle, or in a strong blender or food processor -- or with a mallet in a bowl. You really want to mash everything well so you get more flavor from the shells.",
+      "Melt the butter in a small saucepan and add the shells to it. Cover and put into a 170°F oven and let this cook for 90 minutes, stirring now and again. Strain the butter through a fine-meshed sieve that has a paper towel set inside it; this filters all the debris out.",
+      "Pour into a container and let it cool. TIP: For long storage, let the butter solidify and pop it out of the container, leaving behind the gellified liquid at the bottom of the container. Leaving this in contact with the butter over time can make it got rancid."
+    ],
+    origin: "https://honest-food.net/crawfish-bisque-recipe/",
+    prepTime: 5,
+    servings: 8,
+    summary:
+      "The reason crawfish butter is so good is because a great deal of the flavor in lobsters, crabs, shrimps and crawfish is fat soluble, not water soluble. So what you can't extract by making broth you get by making the butter. Ah, those crafty French…",
+    tags: ["crawfish", "cajun"],
+    title: "Crawfish Butter"
+  },
+  CrawfishStock: {
     cookTime: 120,
     ingredients: [
       {
@@ -1651,36 +1680,7 @@ const recipes: Recipes = {
     servings: 8,
     summary: "For all good recipies you MUST make your own broth.",
     tags: ["crawfish", "cajun"],
-    title: "Crawfish Broth"
-  },
-  CrawfishButter: {
-    cookTime: 90,
-    ingredients: [
-      {
-        amount: 0.25,
-        name: "pound cooked crawfish heads and shells from the tails"
-      },
-      {
-        amount: 0.5,
-        name: "pound unsalted butter"
-      },
-      {
-        amount: 1,
-        name: "tablespoon brandy"
-      }
-    ],
-    instructions: [
-      "To make the crawfish butter, smash the shells to a pulp. This can be done in a mortar and pestle, or in a strong blender or food processor -- or with a mallet in a bowl. You really want to mash everything well so you get more flavor from the shells.",
-      "Melt the butter in a small saucepan and add the shells to it. Cover and put into a 170°F oven and let this cook for 90 minutes, stirring now and again. Strain the butter through a fine-meshed sieve that has a paper towel set inside it; this filters all the debris out.",
-      "Pour into a container and let it cool. TIP: For long storage, let the butter solidify and pop it out of the container, leaving behind the gellified liquid at the bottom of the container. Leaving this in contact with the butter over time can make it got rancid."
-    ],
-    origin: "https://honest-food.net/crawfish-bisque-recipe/",
-    prepTime: 5,
-    servings: 8,
-    summary:
-      "The reason crawfish butter is so good is because a great deal of the flavor in lobsters, crabs, shrimps and crawfish is fat soluble, not water soluble. So what you can't extract by making broth you get by making the butter. Ah, those crafty French…",
-    tags: ["crawfish", "cajun"],
-    title: "Crawfish Butter"
+    title: "Crawfish Stock"
   },
   CreamofChickenSoup: {
     cookTime: 40,
@@ -1818,42 +1818,42 @@ const recipes: Recipes = {
     title: "Cream of Asparagus Soup"
   },
   CreamofMushroomSoup: {
-    cookTime: 15,
+    cookTime: 20,
     ingredients: [
       {
-        amount: 1,
+        amount: 2,
         name: "tablespoon butter"
       },
       {
-        amount: 1,
+        amount: 2,
         name: "small onion diced"
       },
       {
-        amount: 1,
+        amount: 2,
         name: "pound baby Bella mushrooms sliced"
       },
       {
-        amount: 0.25,
+        amount: 0.5,
         name: "cup flour"
       },
       {
         amount: 1,
-        name: "teaspoon Italian seasoning"
+        name: "tablespoon Italian seasoning"
       },
       {
         amount: 1,
-        name: "teaspoon fresh thyme"
+        name: "tablespoon fresh thyme"
       },
       {
-        amount: 3,
+        amount: 6,
         name: "garlic cloves diced"
       },
       {
-        amount: 4,
+        amount: 8,
         name: "cups chicken broth"
       },
       {
-        amount: 1,
+        amount: 2,
         name: "cup heavy cream"
       },
       {
@@ -1862,16 +1862,78 @@ const recipes: Recipes = {
     ],
     instructions: [
       "In a large pot add the butter, onion and mushrooms. Sauté over medium high until tender. Add in the flour, Italian seasoning, thyme, garlic and salt, pepper and stir until coated.",
-      "Add in the chicken broth and simmer over medium high heat for 5-7 minutes. Add in the heavy cream and let simmer for 3-5 more minutes."
+      "Add in the chicken broth and simmer over medium high heat for 5-7 minutes. Add in the heavy cream and let simmer for 3-5 more minutes.",
+      "Once completed and reduced to a simmer, it can continue cooking for hours. It will only get better!"
     ],
     origin: "https://therecipecritic.com/cream-of-mushroom-soup/",
-    prepTime: 5,
+    prepTime: 10,
     progressPics: 2,
-    servings: 4,
+    servings: 6,
     summary:
       "Cream of Mushroom Soup is a dreamy creamy soup full of delicately flavored sautéed mushrooms and herbs. If you love the taste of cream of mushroom soup, but can stand the canned version, this is for you! This is a fancy, thick, rich, restaurant worthy soup you can whip up at home in no time.",
     tags: ["vegetarian"],
     title: "Cream of Mushroom Soup"
+  },
+  CrispyChiliOilSmashedPotatoes: {
+    cookTime: 40,
+    ingredients: [
+        {
+          amount: 1.5,
+          name: "lbs mini potatoes"
+        },
+        {
+          name: "salt and pepper to taste"
+        },
+        {
+          amount: 5,
+          name: "tbsp chili oil"
+        },
+        {
+          amount: 0.25,
+          name: "cup plantbased mayo"
+        },
+        {
+          amount: 1,
+          name: "tbsp sriracha"
+        },
+        {
+          amount: 1,
+          name: "tbsp chili oil"
+        },
+        {
+          amount: 0.5,
+          name: "tsp toasted sesame oil"
+        },
+        {
+          amount: 1,
+          name: "stick green onion"
+        },
+        {
+          amount: 2,
+          name: "tsp white sesame seeds"
+        },
+        {
+          name: "chili threads to serve"
+        }
+    ],
+    instructions: [
+      "Preheat the oven to 400F",
+      "Place the mini potatoes in a stock pot and fill with enough water to cover the potatoes.  Boil the potatoes until fork tender",
+      "Drain out the potatoes and let them sit for a minute.  Transfer the potatoes onto a baking tray and use a cup to gently smash them (careful not to over smash them or they will fall apart)",
+      "Season the potatoes with salt and pepper.  Drizzle over about 4 tbsp of chili oil",
+      "Bake in the oven for 25min",
+      "Make the dipping sauce by combining the plantbased mayo, sriracha, 1 tbsp chili oil, and toasted sesame oil",
+      "After 25min, broil the potatoes on low for an additional 2min",
+      "Garnish the potatoes with freshly chopped green onions, white sesame seeds, and chili threads"
+    ],
+    origin: "https://www.youtube.com/watch?v=bveumKzHQBA",
+    prepTime: 15,
+    progressPics: 2,
+    servings: 8,
+    summary:
+      "A delicious and easy recipe that's quite smashing",
+    tags: ["vegetarian", "vegan"],
+    title: "Crispy Chili Oil Smashed Potatoes"
   },
   DamnGoodRoastTurkey: {
     cookTime: 120,
@@ -4278,6 +4340,43 @@ const recipes: Recipes = {
     tags: ["vegetarian"],
     title: "Thousand Island Dressing"
   },
+  TomatilloSalsa: {
+    cookTime: 10,
+    ingredients: [
+      {
+        amount: 1.5,
+        name: "lbs tomatillos"
+      },
+      {
+        amount: 0.5,
+        name: "cup white onion"
+      },
+      {
+        amount: 0.75,
+        name: "cup cilantro (leaves only)"
+      },
+      {
+        amount: 1,
+        name: "tablespoon lime juice (freshly squeezed)"
+      },
+      {
+        amount: 1,
+        name: "jalapeño (seeded and roughly chopped)"
+      }
+    ],
+    instructions: [
+      "Preheat broiler on high.",
+      "Peel and discard husks off tomatillos. Rinse and cut tomatillos in half. Place cut side down on foil or parchment lined baking sheet. Broil for 5 – 7 minutes until skin is lightly blackened.",
+      "Puree tomatillos and rest of ingredients together including onion, cilantro, lime, and pepper using a food processor, blender, or hand immersion blender until ingredients are finely chopped and mixed.",
+      "Cool in refrigerator until ready to serve."
+    ],
+    origin: "https://www.100daysofrealfood.com/recipe-tomatillo-salsa/",
+    prepTime: 5,
+    servings: 4,
+    summary: "We often serve this tomatillo salsa with pork carnitas tacos. Yum!",
+    tags: ["vegetarian", "vegan", "mexican"],
+    title: "Tomatillo Salsa"
+  },
   TonkotsuRamen: {
     cookTime: 720,
     ingredients: [
@@ -4551,8 +4650,8 @@ const recipes: Recipes = {
     progressPics: 3,
     servings: 6,
     summary:
-      "Sweet, savory, and full of flavor, this delicious Homemade Eel Sauce is the dream sauce for unagi and BBQ dishes!",
-    tags: ["vegan", "japanese", "eel"],
+      "Originally intended to top Unagi Chazuke, this sweet and savory sauce is the dream sauce for unagi and BBQ dishes!",
+    tags: ["vegan", "japanese", "vegetarian"],
     title: "Unagi Sauce"
   },
   VeganButter: {
