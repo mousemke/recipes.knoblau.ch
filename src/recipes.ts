@@ -3240,9 +3240,80 @@ const recipes: Recipes = {
     progressPics: 1,
     servings: 4,
     summary:
-      "Mushroom Risotto is soft short grained rice with flavorful button mushrooms, crunchy peas combined to make one of the Best side dishes your family will love! The flavor combination is amazing! ",
+      "Mushroom Risotto is soft short grained rice with flavorful button mushrooms, crunchy peas combined to make one of the Best side dishes your family will love! The flavor combination is amazing!",
     tags: ["vegetarian", "vegan"],
     title: "Mushroom Risotto"
+  },
+  MushroomStroganoff: {
+    cookTime: 15,
+    ingredients: [
+      {
+        amount: 1,
+        name: "pound wide egg noodles"
+      },
+      {
+        amount: 3,
+        name: "tablespoons butter, divided"
+      },
+      {
+        amount: 1,
+        name: "small white onion, thinly sliced"
+      },
+      {
+        amount: 4,
+        name: "cloves garlic, minced"
+      },
+      {
+        amount: 1,
+        name: "pound baby bella mushrooms*"
+      },
+      {
+        amount: 0.5,
+        name: "cup dry white wine"
+      },
+      {
+        amount: 1.5,
+        name: "cups vegetable stock"
+      },
+      {
+        amount: 1,
+        name: "tablespoon Worcestershire sauce (here is a vegetarian brand)"
+      },
+      {
+        amount: 3.5,
+        name: "tablespoons flour"
+      },
+      {
+        amount: 3,
+        name: "small sprigs of fresh thyme (or 1/4 teaspoon dried thyme)"
+      },
+      {
+        amount: 1,
+        name: "cup sour cream"
+      },
+      {
+        name: "Kosher salt"
+      },
+      {
+        name: "Freshly-cracked black pepper"
+      },
+      {
+        name: "Freshly-grated Parmesan cheese"
+      }
+    ],
+    instructions: [
+      "Cook egg noodles al dente in boiling, generously-salted water according to package instructions.",
+      "Melt 1 tablespoon butter in a large sauté pan over medium-high heat.  Add onions and sauté for 5 minutes, stirring occasionally. Add the remaining 2 tablespoons butter, garlic and mushrooms, and stir to combine. Continue sautéing for an additional 5-7 minutes, until the mushrooms are cooked and tender. Add the white wine, and deglaze the pan by using a wooden spoon to scrape the brown bits off the bottom of the pan. Let the sauce simmer for 3 minutes.",
+      "Meanwhile, in a separate bowl, whisk together the vegetable stock, Worcestershire and flour until smooth. Pour the vegetable stock mixture into the pan, along with the thyme, and stir to combine. Let the mixture simmer for an additional 5 minutes, stirring occasionally, until slightly thickened. Then, stir in the Greek yogurt (or sour cream) evenly into the sauce. Taste, and season with a generous pinch of two of salt and pepper as needed.",
+      "Serve immediately over the egg noodles, garnished with parmasean."
+    ],
+    origin: "https://www.gimmesomeoven.com/mushroom-stroganoff/",
+    prepTime: 15,
+    progressPics: 1,
+    servings: 4,
+    summary: "This vegetarian Mushroom Stroganoff recipe is quick and easy to make in about 30 minutes, and it is perfectly comforting, hearty, savory, and delicious.",
+    tags: ["vegetarian"],
+    title: "Mushroom Stroganoff"
   },
   MushroomWellington: {
     cookTime: 50,
