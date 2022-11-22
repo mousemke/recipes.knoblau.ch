@@ -14,8 +14,9 @@ import type { Classes } from "jss";
  * @returns
  */
 const filterByTag = (recipes: Recipe[], tag: string) => {
+  const tagWithSpace = tag.replace(/-/g, " ")
   return recipes.filter((r) => {
-    if (r.tags.includes(tag)) {
+    if (r.tags.includes(tagWithSpace)) {
       return true;
     }
   });
@@ -151,9 +152,13 @@ const RecipesList = (props: RecipesListProps): JSX.Element => {
 
     if (tag) {
       const defaultTag = tag.split("=")[1];
+      const label = defaultTag
+        .split("-")
+        .map(w => `${w[0].toUpperCase()}${w.slice(1)}`)
+        .join(" ");
 
       return {
-        label: `${defaultTag[0].toUpperCase()}${defaultTag.slice(1)}`,
+        label,
         value: defaultTag
       };
     } else {
@@ -177,7 +182,7 @@ const RecipesList = (props: RecipesListProps): JSX.Element => {
             id="tagFilterSelect"
             isClearable
             onChange={(e) => {
-              const tag = e?.value.toLowerCase() || "";
+              const tag = (e?.value.toLowerCase() || "").replace(/ /g, "-");
 
               setQueryParam("t", tag);
               setActiveTag(tag);

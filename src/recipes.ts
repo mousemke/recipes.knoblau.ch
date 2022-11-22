@@ -99,7 +99,7 @@ const recipes: Recipes = {
     progressPics: 1,
     servings: 12,
     summary: "Great as a side to a lighter meal",
-    tags: ["vegetarian", "vegan", "the-book"],
+    tags: ["vegetarian", "vegan", "the book"],
     title: "Apple Mint Yogurt Salsa"
   },
   AwaseDashi: {
@@ -1503,7 +1503,7 @@ const recipes: Recipes = {
     servings: 10,
     summary:
       "An easy to prepare spiced drink for Thanksgiving, Christmas, or any cold winter's day.",
-    tags: ["vegetarian", "vegan", "thanksgiving", "christmas", "the-book"],
+    tags: ["vegetarian", "vegan", "thanksgiving", "christmas", "the book"],
     title: "Cranberry Apple Spiced Tea"
   },
   CranberrySauce: {
@@ -1970,7 +1970,7 @@ const recipes: Recipes = {
     servings: 8,
     summary:
       "Impress your Thanksgiving guests by serving some Damn Good Roast Turkey. Its unbelievably moist from the brine and flavorful from all the herbs.",
-    tags: ["thanksgiving", "turkey"],
+    tags: ["thanksgiving", "turkey", "thanksgiving 2022"],
     title: "Damn Good Roast Turkey"
   },
   DillPickleRelish: {
@@ -3009,7 +3009,7 @@ const recipes: Recipes = {
     servings: 18,
     summary:
       "This is Dave's favorite brine for Thanksgiving turkey. It can be used on any kind of poultry and pork. It gives a sweet, maple flavor to meats.",
-    tags: ["turkey", "thanksgiving"],
+    tags: ["turkey", "thanksgiving", "thanksgiving 2022"],
     title: "Maple Turkey Brine"
   },
   MapoTofu: {
@@ -3380,8 +3380,64 @@ const recipes: Recipes = {
     servings: 4,
     summary:
       "A fantastic vegan version of the classic beef wellington. Tender mushrooms wrapped up in a flaky vegan puff pastry. This recipe is a perfect for a vegan Christmas or Thanksgiving entree, or any time you need a dish that impresses",
-    tags: ["vegetarian", "vegan"],
+    tags: ["vegetarian", "vegan", "thanksgiving 2022"],
     title: "Mushroom Wellington"
+  },
+  MustardHoneyBakedHam: {
+    cookTime: 75,
+    ingredients: [
+      {
+        amount: 2,
+        name: "kg bone-in fully cooked ham"
+      },
+      {
+        amount: 0.25,
+        name: "cup water"
+      },
+      {
+        amount: 0.25,
+        name: "cup unsalted butter, reduce fat or full fat"
+      },
+      {
+        amount: 0.5,
+        name: "cup brown sugar"
+      },
+      {
+        amount: 0.25,
+        name: "cup honey"
+      },
+      {
+        amount: 2,
+        name: "teaspoon Dijon mustard"
+      },
+      {
+        amount: 2,
+        name: "cloves garlic, smashed"
+      },
+      {
+        name: "ground cinnamon"
+      },
+      {
+        name: "ground cloves"
+      }
+    ],
+    instructions: [
+      "Preheat the oven to 300°F | 150°C and arrange a rack in the lower third. Remove any plastic packaging or netting from the ham. Trim away the rind and discard. Set the ham aside to rest at room temperature for 1-2 hours.",
+      "Line a baking tray or dish with several sheets of aluminium foil or parchment paper if you prefer (it will make cleanup a lot easier).",
+      "Remove the rind or skin of the ham (refer to steps in post), ensuring you leave the fat on. Using a sharp knife score a 1-inch-wide diamond pattern (don't cut more than 1/4 inch deep) over the entire ham. Place the ham in the baking tray; pour 1/3 cup of water into the base of the pan and cover the ham with two pieces of foil or parchment paper and bake for 30 minutes.",
+      "Meanwhile, heat the butter in a small pot or saucepan over medium heat until golden browned. Add in the brown sugar, honey, mustard, cinnamon and cloves, stirring to mix together well until the brown sugar has completely dissolved, (about 2 minutes).",
+      "Reduce heat to low and add in the garlic. Allow it to become fragrant, cooking for a further minute or two until the glaze just begins to simmer, then set it aside and let cool to lukewarm (the glaze should be the consistency of room-temperature honey).",
+      "After 30 minutes baking time, carefully remove the ham from the oven and increase the oven temperature to 425°F | 220°C. Discard the foil or parchment paper and pour 1/3 of the glaze all over the ham, brushing in between the cuts to evenly cover. Return to the oven and bake uncovered for 15 minutes.",
+      "Remove from the oven, brush with another third of the glaze and some of the pan juices, and repeat again after 15 minutes more minutes of baking until a dark golden-brown crust has formed, (about 30 minutes total). For added depth of flavour, mix some of the ham pan juices together with the glaze in the pot which will help keep it runny enough for brushing. If your crust is still pink after there suggested baking time, turn on your broiler (or oven grill), and allow it to broil for 2-5 minutes, while keeping an eye on it so it doesn't burn from the sugar.",
+      "Let the ham rest 10-20 minutes before slicing."
+    ],
+    origin: "https://cafedelites.com/brown-sugar-mustard-glazed-ham/",
+    prepTime: 15,
+    progressPics: 3,
+    servings: 10,
+    summary: "The most perfect sticky glaze is slathered all over this juicy, tender, baked Mustard Honey Baked Ham, with crisp edges and an incredible flavour.",
+    tags: ["pork", "christmas"],
+    title: "Mustard Honey Baked Ham"
   },
   OnsenTamago: {
     cookTime: 20,
@@ -3821,7 +3877,7 @@ const recipes: Recipes = {
     servings: 8,
     summary:
       "Savory Herb Turkey Gravy is the absolute best homemade turkey gravy from turkey drippings that you can serve with your Thanksgiving dinner.",
-    tags: ["turkey", "thanksgiving"],
+    tags: ["turkey", "thanksgiving", "thanksgiving 2022"],
     title: "Savory Herb Turkey Gravy"
   },
   SavoryHerbTurkeyStock: {

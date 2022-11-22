@@ -77,7 +77,10 @@ const App = (): JSX.Element => {
 
     Object.values(recipes).forEach((r) =>
       r.tags.forEach((t) => {
-        newTags.push(`${t[0].toUpperCase()}${t.slice(1)}`);
+        const tWords = t
+          .split(" ")
+          .map(w => `${w[0].toUpperCase()}${w.slice(1)}`);
+        newTags.push(tWords.join(" "));
       })
     );
 

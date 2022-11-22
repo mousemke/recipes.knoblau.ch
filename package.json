@@ -1,8 +1,8 @@
 {
-  "name": "test",
-  "version": "0.0.1",
-  "description": "if you're gonna do it, do it right",
-  "repository": "https://github.com/mousemke/test",
+  "name": "recipes.knoblau.ch",
+  "version": "0.2.1",
+  "description": "a simple repo for all the instructions",
+  "repository": "https://github.com/mousemke/recipes.knoblau.ch",
   "main": "index.js",
   "author": "Sadie Braun",
   "license": "ISC",
