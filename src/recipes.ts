@@ -1956,8 +1956,7 @@ const recipes: Recipes = {
       { amount: 1, name: "teaspoon salt" }
     ],
     instructions: [
-      "Remove giblets and neck from turkey, refrigerate until ready to use, and reserve for gravy. Rinse turkey with cold water and pat dry. Trim excess fat. Stuff body cavity with orange quarters. Place a turkey-sized oven bag inside a large stockpot. Place turkey inside bag. Add whatever brine you are using. Squeeze as much air out of bag as possible. twist top and secure with twist tie or tuck end so that it stays put. Refrigerate for 12 to 24 hours, turning occasionally.",
-      "To roast the turkey:Preheat oven or grill to 450º.",
+      "Preheat oven or grill to 450º.",
       "Remove turkey from and discard your brine. Rinse turkey with cold water and pat dry. Cut a small slit in the breast skin so that you can tuck wing tips under to keep in place. Tie legs together with kitchen string if the turkey didn't already come with a fastener. Place herbs in the cavity of the bird. Pour the broth in the bottom of a roasting pan that will be under the bird (this will also catch the drippings). Place roasting rack in pan if roasting in the oven or if using a rack and roasting pan on your grill. I cooked mine on the trager and put a pan on the grease tray under the rack, and the turkey directly on the rack.",
       "Arrange turkey, breast side down, on roasting rack. Brush turkey with 1 tablespoon of the butter and sprinkle with salt and pepper. Roast at 450º for 30 minutes.",
       "Reduce oven temperature to 350º.",
@@ -3351,19 +3350,7 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "tablespoon aquafaba (chickpea water)"
-      },
-      {
-        amount: 1,
-        name: "tablespoon almond or cashew milk"
-      },
-      {
-        amount: 1,
-        name: "teaspoon neutral flavoured oil"
-      },
-      {
-        amount: 0.5,
-        name: "teaspoon maple syrup or brown rice syrup"
+        name: "Vegan Egg Wash recipe"
       }
     ],
     instructions: [
@@ -3372,7 +3359,7 @@ const recipes: Recipes = {
       "Increase the heat to medium/high and return the pan to the heat. Add the remaining olive oil and place the mushrooms, top side down. Cook until lightly golden (about 5 minutes) before turning over and cooking for a further 5 minutes or until golden. Remove from the heat, and drain on paper towel top side up as they will release a lot of liquid as they cool. Transfer the onions, spinach and mushrooms to the refrigerator and cool completely. ",
       "Preheat the oven to 200 degrees Celsius (390 Fahrenheit). Place a sheet of baking paper on the baking tray and then place the puff pastry sheet on top. Spread half the caramelised onions over the middle third of the pastry, making sure to leave an extra 2cm (¾ inch) border at the edge of the pastry. Top with half of the baby spinach. Spread the dijon mustard over the mushrooms and season well with salt and pepper. Place the mushrooms on top of the spinach. Top the mushrooms with thyme and the remaining baby spinach and onions.",
       "Very carefully roll the pastry over the top of the mushroom mixture until you have a log. Press down to seal the edges. Roll over the log so that the seam is facing the bottom.",
-      "To make the vegan egg wash whisk all of the ingredients together in a bowl. Very lightly coat with the vegan egg wash. Place the pastry in the freezer for 10 minutes before repeating with another layer of vegan egg wash and freezing the pastry for a further 10 minutes.",
+      "Very lightly coat with the vegan egg wash. Place the pastry in the freezer for 10 minutes before repeating with another layer of vegan egg wash and freezing the pastry for a further 10 minutes.",
       "Place the pastry back on the baking sheet and tray and place in the oven for 30 to 35 minutes, or until golden and flakey."
     ],
     origin: "https://www.deliciouseveryday.com/mushroom-wellington/",
@@ -4821,6 +4808,37 @@ const recipes: Recipes = {
     tags: ["vegan"],
     title: "Vegan Butter"
   },
+  VeganEggWash: {
+    cookTime: 2,
+    ingredients: [
+      {
+        amount: 1,
+        name: "tablespoon aquafaba (chickpea water)"
+      },
+      {
+        amount: 1,
+        name: "tablespoon almond or cashew milk"
+      },
+      {
+        amount: 1,
+        name: "teaspoon neutral flavoured oil"
+      },
+      {
+        amount: 0.5,
+        name: "teaspoon maple syrup"
+      }
+    ],
+    instructions: [
+      "Combine all inrediants. Mix Well"
+    ],
+    origin: "https://www.deliciouseveryday.com/mushroom-wellington/",
+    prepTime: 5,
+    servings: 8,
+    summary:
+      "A vegan replacement to make the top of any pastry a golden brown!",
+    tags: ["vegetarian", "vegan", "thanksgiving 2022"],
+    title: "Vegan Egg Wash"
+  },
   VeganPuffPastry: {
     cookTime: 0,
     ingredients: [
@@ -4854,7 +4872,7 @@ const recipes: Recipes = {
     servings: 6,
     summary:
       "Don't buy store bought chemical laden rubbish. This recipe yields a wonderful golden flaky pastry. And below you'll find a video of complete step by step instructions to help ensure success at home!",
-    tags: ["vegan"],
+    tags: ["vegan", "thanksgiving 2022"],
     title: "Vegan Puff Pastry"
   },
   YoshinoyaGyudonBeefBowls: {
