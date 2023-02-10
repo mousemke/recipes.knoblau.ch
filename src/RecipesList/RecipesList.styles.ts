@@ -109,6 +109,13 @@ const useStyles = createUseStyles(
 );
 
 export const selectStyles = {
+  clearIndicator: (provided: CSSObjectWithLabel) => ({
+    ...provided,
+    "&:hover": {
+      color: "#e129f5",
+      cursor: "pointer"
+    }
+  }),
   container: (provided: CSSObjectWithLabel) => ({
     ...provided,
     display: "inline-block"
@@ -124,7 +131,14 @@ export const selectStyles = {
       borderColor: "#e129f5",
       boxShadow: "0 1px 4px #e129f5"
     }
-  })
+  }),
+  dropdownIndicator: (provided: CSSObjectWithLabel) => ({
+    ...provided,
+    "&:hover": {
+      color: "#e129f5",
+      cursor: "pointer"
+    }
+  }),
 };
 
 export default useStyles;
