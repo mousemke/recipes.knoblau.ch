@@ -1,7 +1,7 @@
 import React from "react";
 
 import useStyles from "./RecipeCard.styles";
-
+import { setQueryParam } from "../App/App";
 import type { RecipeCardProps } from "./RecipeCard.types";
 
 /**
@@ -74,7 +74,7 @@ const parseIngredientAmount = (rawAmount: number) => {
 const RecipeCard = (props: RecipeCardProps): JSX.Element => {
   const classes = useStyles();
 
-  const { multiplier, recipe, setMultiplier } = props;
+  const { multiplier, recipe, recipes, setActiveRecipe, setMultiplier } = props;
 
   const fromTheBook = recipe.origin === "The Book";
   const slug = recipe.title.replace(/[ ,]/g, "");
@@ -132,14 +132,16 @@ const RecipeCard = (props: RecipeCardProps): JSX.Element => {
           />
         </div>
         <div className={classes.recipeSection}>
-          <a
-            className={classes.originLink}
-            href={fromTheBook ? undefined : recipe.origin}
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Originally {fromTheBook ? "from The Book" : "seen here"}
-          </a>
+          {recipe.origin ? (
+            <a
+              className={classes.originLink}
+              href={fromTheBook ? undefined : recipe.origin}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Originally {fromTheBook ? "from The Book" : "seen here"}
+            </a>
+          ) : null}
           <div className={classes.changeScale}>
             Change recipe servings{" "}
             <input
@@ -163,7 +165,20 @@ const RecipeCard = (props: RecipeCardProps): JSX.Element => {
                 {ingredient.amount
                   ? parseIngredientAmount(ingredient.amount * multiplier)
                   : ""}
-                {ingredient.name}
+                {ingredient.slug ? (
+                  <a
+                    className={classes.recipeLink}
+                    onClick={() => {
+                      setQueryParam("r", ingredient.slug);
+                      setActiveRecipe(recipes[ingredient.slug as string]);
+                    }}
+                    role="button"
+                  >
+                    {ingredient.name}
+                  </a>
+                ) : (
+                  ingredient.name
+                )}
               </li>
             ))}
           </ul>

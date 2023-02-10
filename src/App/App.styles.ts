@@ -10,6 +10,7 @@ const useStyles = createUseStyles(
       },
       "@font-face": [
         {
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore // this works - no idea why ts doesnt like it
           fontFamily: "MuseoSansCyrl-500",
           src: "url('fonts/MuseoSansCyrl-500.ttf')"

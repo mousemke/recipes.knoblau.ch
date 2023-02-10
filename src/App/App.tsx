@@ -14,7 +14,7 @@ import type { Recipe } from "../recipes";
  * @param param parameter to set in the query string
  * @param slug value to set in the query string
  */
-const setQueryParam = (param: string, slug: string = "") => {
+export const setQueryParam = (param: string, slug: string = "") => {
   const { pathname, search } = window.location;
 
   let newQuery: string;
@@ -79,7 +79,7 @@ const App = (): JSX.Element => {
       r.tags.forEach((t) => {
         const tWords = t
           .split(" ")
-          .map(w => `${w[0].toUpperCase()}${w.slice(1)}`);
+          .map((w) => `${w[0].toUpperCase()}${w.slice(1)}`);
         newTags.push(tWords.join(" "));
       })
     );
@@ -100,7 +100,9 @@ const App = (): JSX.Element => {
         >
           <RecipeCard
             recipe={activeRecipe}
+            recipes={recipes}
             multiplier={multiplier}
+            setActiveRecipe={setActiveRecipe}
             setMultiplier={setMultiplier}
           />
         </div>

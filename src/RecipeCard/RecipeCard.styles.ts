@@ -129,6 +129,31 @@ const useStyles = createUseStyles(
       paddingRight: 20,
       textAlign: "center"
     },
+    recipeLink: {
+      cursor: "pointer",
+      color: "#ee52ff",
+      lineHeight: "1.75rem",
+
+      "& > div": {
+        paddingLeft: 30
+      },
+
+      "&:hover": {
+        color: "#e129f5",
+
+        "& > div": {
+          backgroundColor: "#aee9fe"
+        }
+      },
+
+      "&:active": {
+        color: "#913e9a",
+
+        "& > div": {
+          backgroundColor: "#dae4e8"
+        }
+      }
+    },
     recipeSection: {
       padding: "0 25px 25px"
     },

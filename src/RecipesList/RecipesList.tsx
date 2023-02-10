@@ -14,7 +14,7 @@ import type { Classes } from "jss";
  * @returns
  */
 const filterByTag = (recipes: Recipe[], tag: string) => {
-  const tagWithSpace = tag.replace(/-/g, " ")
+  const tagWithSpace = tag.replace(/-/g, " ");
   return recipes.filter((r) => {
     if (r.tags.includes(tagWithSpace)) {
       return true;
@@ -66,7 +66,7 @@ const filterByString = (recipes: Recipe[], filter: string) => {
  * @param setQueryParam
  * @returns
  */
-const rendereRecipeLinks = (
+const renderRecipeLinks = (
   recipes: Recipe[],
   classes: Classes,
   setActiveRecipe: React.Dispatch<React.SetStateAction<Recipe | null>>,
@@ -118,7 +118,7 @@ const RecipesList = (props: RecipesListProps): JSX.Element => {
    */
   const getRecipeLinks = useCallback(
     (recipes: Recipe[]) =>
-      rendereRecipeLinks(recipes, classes, setActiveRecipe, setQueryParam),
+      renderRecipeLinks(recipes, classes, setActiveRecipe, setQueryParam),
     [classes, setActiveRecipe, setQueryParam]
   );
 
@@ -154,7 +154,7 @@ const RecipesList = (props: RecipesListProps): JSX.Element => {
       const defaultTag = tag.split("=")[1];
       const label = defaultTag
         .split("-")
-        .map(w => `${w[0].toUpperCase()}${w.slice(1)}`)
+        .map((w) => `${w[0].toUpperCase()}${w.slice(1)}`)
         .join(" ");
 
       return {

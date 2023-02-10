@@ -3,10 +3,11 @@ export interface Recipe {
   ingredients: {
     amount?: number;
     name: string;
+    slug?: string;
   }[];
   instructions: string[];
   marinadeTime?: number;
-  origin: string;
+  origin?: string;
   prepTime: number;
   progressPics?: number;
   servings: number;
@@ -608,10 +609,12 @@ const recipes: Recipes = {
         name: "lb cod or haddock fillets, cut into serveable sizes"
       },
       {
-        name: "Seasoned flour Recipe"
+        name: "Seasoned flour",
+        slug: "SeasonedFlour"
       },
       {
-        name: "Beer Batter Recipe"
+        name: "Beer Batter",
+        slug: "BeerBatter"
       },
       {
         name: "Canola oil to fill a deep fat fryer"
@@ -765,7 +768,7 @@ const recipes: Recipes = {
     servings: 4,
     summary:
       "Wisconsin beer cheese soup is a favorite in pubs and fine restaurants alike. Beer. Cheese. They're the top two food groups in Wisconsin. And in the frigid Wisconsin winters, there's no better way to warm up than with soup. No wonder beer cheese soup is a favorite around here.",
-    tags: ["vegetarian", "wisconsin"],
+    tags: ["vegetarian", "wisconsin", "soup"],
     title: "Beer Cheese Soup"
   },
   BlackCodwithMiso: {
@@ -918,7 +921,7 @@ const recipes: Recipes = {
     servings: 6,
     summary:
       "Extra creamy buttermilk mashed potatoes bursting with flavor. No need to add gravy!",
-    tags: ["vegetarian"],
+    tags: ["vegetarian", "appetizer"],
     title: "Buttermilk Mashed Potatoes"
   },
   ButteryFlakyPieCrust: {
@@ -1111,7 +1114,7 @@ const recipes: Recipes = {
     servings: 10,
     summary:
       "This is the best vegan spinach artichoke dip ever! It's loaded with spinach, artichoke hearts, garlic, and a creamy cashew sauce! This gluten-free and oil-free vegan dip is loved by vegans and non-vegans alike and it's ready to eat in 30 minutes!",
-    tags: ["vegetarian", "vegan"],
+    tags: ["vegetarian", "vegan", "appetizer"],
     title: "Cashew Cream Spinach Artichoke Dip"
   },
   ChashuPorkBelly: {
@@ -1541,7 +1544,7 @@ const recipes: Recipes = {
     servings: 4,
     summary:
       "I go back to this homemade cranberry sauce year after year after year.",
-    tags: ["vegetarian", "vegan", "thanksgiving"],
+    tags: ["vegetarian", "vegan", "thanksgiving", "appetizer"],
     title: "Cranberry Sauce"
   },
   CrawfishBisque: {
@@ -1593,7 +1596,7 @@ const recipes: Recipes = {
     servings: 8,
     summary:
       "Few recipes concentrate the flavors of the main ingredient better than a French crawfish bisque. This is no mere soup or stew, it is a full-on barrage of flavor that makes everyone stop talking at the table: You just want to savor this soup in silence.",
-    tags: ["crawfish", "cajun"],
+    tags: ["crawfish", "cajun", "soup"],
     title: "Crawfish Bisque"
   },
   CrawfishButter: {
@@ -1756,7 +1759,7 @@ const recipes: Recipes = {
     servings: 8,
     summary:
       "An amazing cream of chicken soup that has also been my base of modification for plenty of other cream soups.",
-    tags: ["chicken"],
+    tags: ["chicken", "soup"],
     title: "Cream of Chicken Soup"
   },
   CreamofAsparagusSoup: {
@@ -1814,7 +1817,7 @@ const recipes: Recipes = {
     servings: 4,
     summary:
       "This cream of asparagus soup recipe is perfect for making the most of fresh asparagus when it's in season — take advantage!",
-    tags: ["vegetarian"],
+    tags: ["vegetarian", "soup"],
     title: "Cream of Asparagus Soup"
   },
   CreamofMushroomSoup: {
@@ -1871,50 +1874,50 @@ const recipes: Recipes = {
     servings: 6,
     summary:
       "Cream of Mushroom Soup is a dreamy creamy soup full of delicately flavored sautéed mushrooms and herbs. If you love the taste of cream of mushroom soup, but can stand the canned version, this is for you! This is a fancy, thick, rich, restaurant worthy soup you can whip up at home in no time.",
-    tags: ["vegetarian"],
+    tags: ["vegetarian", "soup"],
     title: "Cream of Mushroom Soup"
   },
   CrispyChiliOilSmashedPotatoes: {
     cookTime: 40,
     ingredients: [
-        {
-          amount: 1.5,
-          name: "lbs mini potatoes"
-        },
-        {
-          name: "salt and pepper to taste"
-        },
-        {
-          amount: 5,
-          name: "tbsp chili oil"
-        },
-        {
-          amount: 0.25,
-          name: "cup plantbased mayo"
-        },
-        {
-          amount: 1,
-          name: "tbsp sriracha"
-        },
-        {
-          amount: 1,
-          name: "tbsp chili oil"
-        },
-        {
-          amount: 0.5,
-          name: "tsp toasted sesame oil"
-        },
-        {
-          amount: 1,
-          name: "stick green onion"
-        },
-        {
-          amount: 2,
-          name: "tsp white sesame seeds"
-        },
-        {
-          name: "chili threads to serve"
-        }
+      {
+        amount: 1.5,
+        name: "lbs mini potatoes"
+      },
+      {
+        name: "salt and pepper to taste"
+      },
+      {
+        amount: 5,
+        name: "tbsp chili oil"
+      },
+      {
+        amount: 0.25,
+        name: "cup plantbased mayo"
+      },
+      {
+        amount: 1,
+        name: "tbsp sriracha"
+      },
+      {
+        amount: 1,
+        name: "tbsp chili oil"
+      },
+      {
+        amount: 0.5,
+        name: "tsp toasted sesame oil"
+      },
+      {
+        amount: 1,
+        name: "stick green onion"
+      },
+      {
+        amount: 2,
+        name: "tsp white sesame seeds"
+      },
+      {
+        name: "chili threads to serve"
+      }
     ],
     instructions: [
       "Preheat the oven to 400F",
@@ -1930,9 +1933,8 @@ const recipes: Recipes = {
     prepTime: 15,
     progressPics: 2,
     servings: 8,
-    summary:
-      "A delicious and easy recipe that's quite smashing",
-    tags: ["vegetarian", "vegan"],
+    summary: "A delicious and easy recipe that's quite smashing",
+    tags: ["vegetarian", "vegan", "appetizer"],
     title: "Crispy Chili Oil Smashed Potatoes"
   },
   DamnGoodRoastTurkey: {
@@ -1969,7 +1971,7 @@ const recipes: Recipes = {
     servings: 8,
     summary:
       "Impress your Thanksgiving guests by serving some Damn Good Roast Turkey. Its unbelievably moist from the brine and flavorful from all the herbs.",
-    tags: ["thanksgiving", "turkey", "thanksgiving 2022"],
+    tags: ["thanksgiving", "turkey", "thanksgiving"],
     title: "Damn Good Roast Turkey"
   },
   DillPickleRelish: {
@@ -2402,7 +2404,7 @@ const recipes: Recipes = {
     servings: 2,
     summary:
       "Want to make french fries from scratch but don't like the dark brown soggy fries? This recipe will yield perfectly crisp pale yellow fries that are guaranteed to please.",
-    tags: ["vegetarian"],
+    tags: ["vegetarian", "appetizer"],
     title: "French Fries"
   },
   FudgeBrownies: {
@@ -3008,7 +3010,7 @@ const recipes: Recipes = {
     servings: 18,
     summary:
       "This is Dave's favorite brine for Thanksgiving turkey. It can be used on any kind of poultry and pork. It gives a sweet, maple flavor to meats.",
-    tags: ["turkey", "thanksgiving", "thanksgiving 2022"],
+    tags: ["turkey", "thanksgiving", "thanksgiving"],
     title: "Maple Turkey Brine"
   },
   MapoTofu: {
@@ -3310,7 +3312,8 @@ const recipes: Recipes = {
     prepTime: 15,
     progressPics: 1,
     servings: 4,
-    summary: "This vegetarian Mushroom Stroganoff recipe is quick and easy to make in about 30 minutes, and it is perfectly comforting, hearty, savory, and delicious.",
+    summary:
+      "This vegetarian Mushroom Stroganoff recipe is quick and easy to make in about 30 minutes, and it is perfectly comforting, hearty, savory, and delicious.",
     tags: ["vegetarian"],
     title: "Mushroom Stroganoff"
   },
@@ -3339,7 +3342,8 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "Vegan Puff Pastry recipe"
+        name: "Vegan Puff Pastry",
+        slug: "VeganPuffPastry"
       },
       {
         amount: 1,
@@ -3350,7 +3354,8 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "Vegan Egg Wash recipe"
+        name: "Vegan Egg Wash",
+        slug: "VeganEggWash"
       }
     ],
     instructions: [
@@ -3367,7 +3372,7 @@ const recipes: Recipes = {
     servings: 4,
     summary:
       "A fantastic vegan version of the classic beef wellington. Tender mushrooms wrapped up in a flaky vegan puff pastry. This recipe is a perfect for a vegan Christmas or Thanksgiving entree, or any time you need a dish that impresses",
-    tags: ["vegetarian", "vegan", "thanksgiving 2022"],
+    tags: ["vegetarian", "vegan", "thanksgiving"],
     title: "Mushroom Wellington"
   },
   MustardHoneyBakedHam: {
@@ -3422,7 +3427,8 @@ const recipes: Recipes = {
     prepTime: 15,
     progressPics: 3,
     servings: 10,
-    summary: "The most perfect sticky glaze is slathered all over this juicy, tender, baked Mustard Honey Baked Ham, with crisp edges and an incredible flavour.",
+    summary:
+      "The most perfect sticky glaze is slathered all over this juicy, tender, baked Mustard Honey Baked Ham, with crisp edges and an incredible flavour.",
     tags: ["pork", "christmas"],
     title: "Mustard Honey Baked Ham"
   },
@@ -3671,7 +3677,7 @@ const recipes: Recipes = {
     servings: 4,
     summary:
       'Pico de gallo is a uncooked salsa known as a salsa fresca, or "fresh salsa," in Spanish. It is a delicious combination of plum (Roma) tomatoes, white onion, cilantro, serrano peppers and a splash of lime juice.',
-    tags: ["vegetarian", "vegan", "mexican"],
+    tags: ["vegetarian", "vegan", "mexican", "appetizer"],
     title: "Pico de Gallo"
   },
   RoastedThanksgivingTurkey: {
@@ -3864,7 +3870,7 @@ const recipes: Recipes = {
     servings: 8,
     summary:
       "Savory Herb Turkey Gravy is the absolute best homemade turkey gravy from turkey drippings that you can serve with your Thanksgiving dinner.",
-    tags: ["turkey", "thanksgiving", "thanksgiving 2022"],
+    tags: ["turkey", "thanksgiving", "thanksgiving"],
     title: "Savory Herb Turkey Gravy"
   },
   SavoryHerbTurkeyStock: {
@@ -3966,6 +3972,78 @@ const recipes: Recipes = {
       "You can buy seasoned flour at the grocery store, but making your own is easy and allows you to customize the flavors to suit your palate. Learn how with this easy recipe.",
     tags: ["vegan", "wisconsin"],
     title: "Seasoned Flour"
+  },
+  SevenLayerDip: {
+    cookTime: 0,
+    ingredients: [
+      {
+        amount: 1,
+        name: "can refried beans"
+      },
+      {
+        amount: 400,
+        name: "g ground/minced beef or meat substitute"
+      },
+      {
+        amount: 1,
+        name: "medium onion, diced"
+      },
+      {
+        amount: 2,
+        name: "cloves garlic, diced small"
+      },
+      {
+        amount: 200,
+        name: "g shredded cheddar cheese"
+      },
+      {
+        amount: 400,
+        name: "g 24% schmand (works better than German sour cream)"
+      },
+      {
+        name: "Taco Seasoning",
+        slug: "TacoSeasoning"
+      },
+      {
+        amount: 3,
+        name: "medium tomatoes, chopped"
+      },
+      {
+        name: "Green onions, sliced"
+      },
+      {
+        name: "Black olives, sliced"
+      },
+      {
+        amount: 2,
+        name: "tbs water"
+      },
+      {
+        name: "cream cheese (optional)"
+      },
+      {
+        name: "salsa (optional)"
+      },
+      {
+        name: "guacamole (optional)"
+      }
+    ],
+    instructions: [
+      "In a large pan, heat 2tbs oil, add in diced onion and garlic and cook for 3 minutes until softened but not colored.",
+      "Add ground/minced beef or meat substitute and taco seasoning and water. Cook over low-medium low heat until meat is cooked through.",
+      "In a roasting pan or dish, spread out the refried beans in a layer on the bottom of the pan. ",
+      "Sprinkle liberally with the shredded cheese (good spot for optional salsa if you like)",
+      "Add cooked taco meat/meat substitute (good place for guacamole if you'd like),",
+      "Spread schmand evenly over the top. ",
+      "Sprinkle with additional cheese if desired, then chopped tomatoes, sliced green onions, and sliced black olives",
+      "Serve with plain salted tortilla chips."
+    ],
+    prepTime: 25,
+    servings: 8,
+    summary:
+      "As far as classic game-day dips go, seven-layer dip ranks among the very best. Carefully composed and colorfully striped, it's no wonder this dip is a key player on the tailgate snack table.",
+    tags: ["beef", "vegetarian", "super bowl", "appetizer", "american"],
+    title: "Seven Layer Dip"
   },
   SheetPanMapleSalmon: {
     cookTime: 25,
@@ -4311,8 +4389,48 @@ const recipes: Recipes = {
     servings: 4,
     summary:
       "This easy, attractive dish has a mild flavor and tastes as good as it looks.",
-    tags: ["vegetarian", "vegan"],
+    tags: ["vegetarian", "vegan", "appetizer"],
     title: "Steamed Cauliflower with Lemon Butter Sauce"
+  },
+  TacoSeasoning: {
+    cookTime: 0,
+    ingredients: [
+      {
+        amount: 2,
+        name: "tbs cumin"
+      },
+      {
+        amount: 1,
+        name: "tbs chilli powder"
+      },
+      {
+        amount: 1,
+        name: "tbs garlic powder"
+      },
+      {
+        amount: 1,
+        name: "tsp oregano"
+      },
+      {
+        name: "smoked paprika"
+      },
+      {
+        name: "cayenne pepper"
+      },
+      {
+        name: "salt"
+      },
+      {
+        name: "pepper"
+      }
+    ],
+    instructions: ["Mix all ingredient well in a bowl."],
+    prepTime: 5,
+    servings: 8,
+    summary:
+      "This recipe for homemade taco seasoning is a flavorful combination of herbs and spices that are blended together to make the perfect mixture. You can use this taco spice blend with chicken, pork, turkey, beef or vegetarian tacos. It also makes a great seasoning for vegetables, potatoes and rice.",
+    tags: ["american"],
+    title: "Taco Seasoning"
   },
   TartarSauce: {
     cookTime: 0,
@@ -4487,7 +4605,8 @@ const recipes: Recipes = {
     origin: "https://www.100daysofrealfood.com/recipe-tomatillo-salsa/",
     prepTime: 5,
     servings: 4,
-    summary: "We often serve this tomatillo salsa with pork carnitas tacos. Yum!",
+    summary:
+      "We often serve this tomatillo salsa with pork carnitas tacos. Yum!",
     tags: ["vegetarian", "vegan", "mexican"],
     title: "Tomatillo Salsa"
   },
@@ -4496,7 +4615,8 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 8,
-        name: "cups Tonkotsu Ramen Broth"
+        name: "cups Tonkotsu Ramen Broth",
+        slug: "TonkotsuRamenBroth"
       },
       {
         amount: 12,
@@ -4672,7 +4792,7 @@ const recipes: Recipes = {
     servings: 4,
     summary:
       "Baked potatoes are already so good, why not bake them twice? Twice baked potatoes are a great way to elevate this simple side into a more exciting meal for your family",
-    tags: ["bacon"],
+    tags: ["bacon", "appetizer"],
     title: "Twice Baked Potatoes"
   },
   UnagiChazuke: {
@@ -4692,7 +4812,8 @@ const recipes: Recipes = {
       },
       {
         amount: 3,
-        name: "tablespoon Unagi Sauce Recipe"
+        name: "tablespoon Unagi Sauce",
+        slug: "UnagiSauce"
       },
       {
         amount: 2,
@@ -4828,15 +4949,13 @@ const recipes: Recipes = {
         name: "teaspoon maple syrup"
       }
     ],
-    instructions: [
-      "Combine all inrediants. Mix Well"
-    ],
+    instructions: ["Combine all inrediants. Mix Well"],
     origin: "https://www.deliciouseveryday.com/mushroom-wellington/",
     prepTime: 5,
     servings: 8,
     summary:
       "A vegan replacement to make the top of any pastry a golden brown!",
-    tags: ["vegetarian", "vegan", "thanksgiving 2022"],
+    tags: ["vegetarian", "vegan", "thanksgiving"],
     title: "Vegan Egg Wash"
   },
   VeganPuffPastry: {
@@ -4872,7 +4991,7 @@ const recipes: Recipes = {
     servings: 6,
     summary:
       "Don't buy store bought chemical laden rubbish. This recipe yields a wonderful golden flaky pastry. And below you'll find a video of complete step by step instructions to help ensure success at home!",
-    tags: ["vegan", "thanksgiving 2022"],
+    tags: ["vegan", "thanksgiving"],
     title: "Vegan Puff Pastry"
   },
   YoshinoyaGyudonBeefBowls: {
