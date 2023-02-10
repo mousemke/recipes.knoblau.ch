@@ -14,7 +14,7 @@ import type { Recipe } from "../recipes";
  * @param param parameter to set in the query string
  * @param slug value to set in the query string
  */
-export const setQueryParam = (param: string, slug: string = "") => {
+const setQueryParam = (param: string, slug = "") => {
   const { pathname, search } = window.location;
 
   let newQuery: string;
@@ -53,7 +53,8 @@ const App = (): JSX.Element => {
       .split("&")
       .forEach((q) => {
         const paramPair = q.split("=");
-        query[paramPair[0]] = paramPair[1];
+        const [key, value] = paramPair;
+        query[key] = value;
       });
 
     if (query.t) {
@@ -104,6 +105,7 @@ const App = (): JSX.Element => {
             multiplier={multiplier}
             setActiveRecipe={setActiveRecipe}
             setMultiplier={setMultiplier}
+            setQueryParam={setQueryParam}
           />
         </div>
       ) : null}

@@ -90,6 +90,16 @@ module.exports = {
       {
         functions: false
       }
+    ],
+    /**
+     * This rule allows else if returns. Since that is still wrapped in
+     * logic, we need to be able to to choose to return or not
+     */
+    "no-else-return": [
+      "error",
+      {
+        allowElseIf: true
+      }
     ]
   },
   settings: {

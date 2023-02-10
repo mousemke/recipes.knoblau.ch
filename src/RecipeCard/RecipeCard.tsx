@@ -1,7 +1,6 @@
 import React from "react";
-
 import useStyles from "./RecipeCard.styles";
-import { setQueryParam } from "../App/App";
+
 import type { RecipeCardProps } from "./RecipeCard.types";
 
 /**
@@ -65,7 +64,10 @@ const parseIngredientAmount = (rawAmount: number) => {
 
   const amountArray = rawAmount.toFixed(3).split(".");
 
-  return getFraction(parseInt(amountArray[0]), parseInt(amountArray[1]));
+  return getFraction(
+    parseInt(amountArray[0], 10),
+    parseInt(amountArray[1], 10)
+  );
 };
 
 /**
@@ -74,7 +76,14 @@ const parseIngredientAmount = (rawAmount: number) => {
 const RecipeCard = (props: RecipeCardProps): JSX.Element => {
   const classes = useStyles();
 
-  const { multiplier, recipe, recipes, setActiveRecipe, setMultiplier } = props;
+  const {
+    multiplier,
+    recipe,
+    recipes,
+    setActiveRecipe,
+    setMultiplier,
+    setQueryParam
+  } = props;
 
   const fromTheBook = recipe.origin === "The Book";
   const slug = recipe.title.replace(/[ ,]/g, "");
@@ -150,7 +159,9 @@ const RecipeCard = (props: RecipeCardProps): JSX.Element => {
               value={recipe.servings * multiplier}
               onChange={(e) =>
                 e.target.value
-                  ? setMultiplier(parseInt(e.target.value) / recipe.servings)
+                  ? setMultiplier(
+                      parseInt(e.target.value, 10) / recipe.servings
+                    )
                   : 1
               }
             />
@@ -169,7 +180,7 @@ const RecipeCard = (props: RecipeCardProps): JSX.Element => {
                   <a
                     className={classes.recipeLink}
                     onClick={() => {
-                      setQueryParam("r", ingredient.slug);
+                      setQueryParam("r", ingredient.slug as string);
                       setActiveRecipe(recipes[ingredient.slug as string]);
                     }}
                     role="button"

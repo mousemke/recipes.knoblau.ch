@@ -15,11 +15,8 @@ import type { Classes } from "jss";
  */
 const filterByTag = (recipes: Recipe[], tag: string) => {
   const tagWithSpace = tag.replace(/-/g, " ");
-  return recipes.filter((r) => {
-    if (r.tags.includes(tagWithSpace)) {
-      return true;
-    }
-  });
+
+  return recipes.filter((r) => r.tags.includes(tagWithSpace));
 };
 
 /**
@@ -36,7 +33,7 @@ const filterByString = (recipes: Recipe[], filter: string) => {
     instructions: []
   };
 
-  recipes.filter((r) => {
+  recipes.forEach((r) => {
     const { ingredients, instructions, summary, title } = r;
 
     if (title.toLowerCase().includes(filter)) {
@@ -117,8 +114,13 @@ const RecipesList = (props: RecipesListProps): JSX.Element => {
    * takes the same 2nd, 3rd, and 4th parameters
    */
   const getRecipeLinks = useCallback(
-    (recipes: Recipe[]) =>
-      renderRecipeLinks(recipes, classes, setActiveRecipe, setQueryParam),
+    (recipesToRender: Recipe[]) =>
+      renderRecipeLinks(
+        recipesToRender,
+        classes,
+        setActiveRecipe,
+        setQueryParam
+      ),
     [classes, setActiveRecipe, setQueryParam]
   );
 
@@ -126,7 +128,7 @@ const RecipesList = (props: RecipesListProps): JSX.Element => {
    * on tag change, this updates the visible recipes
    */
   useEffect(() => {
-    let allRecipes = Object.values(recipes);
+    const allRecipes = Object.values(recipes);
 
     if (activeTag) {
       setVisibleRecipes(filterByTag(allRecipes, activeTag));
@@ -161,9 +163,9 @@ const RecipesList = (props: RecipesListProps): JSX.Element => {
         label,
         value: defaultTag
       };
-    } else {
-      return undefined;
     }
+
+    return undefined;
   }, []);
 
   return (
@@ -204,9 +206,9 @@ const RecipesList = (props: RecipesListProps): JSX.Element => {
             defaultValue={filter || ""}
             id={classes.filterInput}
             onChange={(e) => {
-              const filter = e.target.value.toLowerCase();
-              setQueryParam("f", filter);
-              setFilter(filter);
+              const filterText = e.target.value.toLowerCase();
+              setQueryParam("f", filterText);
+              setFilter(filterText);
             }}
             placeholder="Filter by Text"
             type="text"

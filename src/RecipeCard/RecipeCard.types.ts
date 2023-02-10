@@ -6,4 +6,5 @@ export interface RecipeCardProps {
   recipes: Recipes;
   setActiveRecipe: React.Dispatch<React.SetStateAction<Recipe | null>>;
   setMultiplier: React.Dispatch<React.SetStateAction<number>>;
+  setQueryParam: (param: string, slug: string) => void;
 }
