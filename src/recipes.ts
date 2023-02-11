@@ -4,6 +4,7 @@ export interface Recipe {
     amount?: number;
     name: string;
     slug?: string;
+    unit?: string;
   }[];
   instructions: string[];
   marinadeTime?: number;
@@ -26,19 +27,23 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 8,
-        name: "cups apple cider"
+        name: "apple cider",
+        unit: "cup"
       },
       {
         amount: 0.6666666666,
-        name: "cup kosher salt"
+        name: "kosher salt",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "tablespoon black peppercorns (coarsely crushed)"
+        name: "black peppercorns (coarsely crushed)",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "tablespoon whole allspice (coarsely crushed)"
+        name: "whole allspice (coarsely crushed)",
+        unit: "tablespoon"
       },
       {
         amount: 6,
@@ -54,7 +59,8 @@ const recipes: Recipes = {
       },
       {
         amount: 6,
-        name: "cups ice"
+        name: "ice",
+        unit: "cup"
       }
     ],
     instructions: [
@@ -75,8 +81,9 @@ const recipes: Recipes = {
     cookTime: 0,
     ingredients: [
       {
-        amount: 1,
-        name: "liter vegan yogurt"
+        amount: 3.5,
+        name: "vegan yogurt",
+        unit: "cup"
       },
       {
         amount: 4,
@@ -84,11 +91,13 @@ const recipes: Recipes = {
       },
       {
         amount: 0.75,
-        name: "cups Mint"
+        name: "Mint",
+        unit: "cup"
       },
       {
         amount: 4,
-        name: "Tablespoons Lemon Juice"
+        name: "Lemon Juice",
+        unit: "tablespoon"
       },
       {
         name: "Lemon zest"
@@ -107,16 +116,18 @@ const recipes: Recipes = {
     cookTime: 15,
     ingredients: [
       {
-        amount: 10,
-        name: "g kombu (dried kelp)"
+        amount: 1,
+        name: "10g piece of kombu (dried kelp)"
       },
       {
-        amount: 10,
-        name: "g cup katsuobushi (dried bonito flakes)"
+        amount: 1,
+        name: "katsuobushi (dried bonito flakes)",
+        unit: "cup"
       },
       {
         amount: 4,
-        name: "cups water"
+        name: "water",
+        unit: "cup"
       }
     ],
     instructions: [
@@ -145,38 +156,46 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 1,
-        name: "pound salmon fillets, divided"
+        name: "salmon fillets, divided",
+        unit: "pound"
       },
       {
         amount: 2,
-        name: "tablespoons vegetable broth or chicken broth"
+        name: "vegetable broth or chicken broth",
+        unit: "tablespoon"
       },
       {
         amount: 1.5,
-        name: "tablespoon fresh lemon juice, or to taste"
+        name: "fresh lemon juice, or to taste",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "tablespoon of your favorite hot sauce (we used Sriracha)"
+        name: "your favorite hot sauce (we used Sriracha)",
+        unit: "tablespoon"
       },
       {
         amount: 4,
-        name: "teaspoons minced garlic"
+        name: "minced garlic",
+        unit: "tablespoon"
       },
       {
         name: "Salt and fresh ground black pepper, to taste"
       },
       {
         amount: 4,
-        name: "tablespoons butter, diced into small cubes (or ghee)"
+        name: "butter, diced into small cubes (or ghee)",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "tablespoons fresh chopped parsley or cilantro"
+        name: "fresh chopped parsley or cilantro",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "pound medium-thick asparagus, woody ends trimmed"
+        name: "medium-thick asparagus, woody ends trimmed",
+        unit: "pound"
       }
     ],
     instructions: [
@@ -202,28 +221,34 @@ const recipes: Recipes = {
     cookTime: 20,
     ingredients: [
       {
-        amount: 500,
-        name: "g White fish fillet"
+        amount: 1,
+        name: "White fish fillet",
+        unit: "pound"
       },
       {
         amount: 1,
-        name: "cup Green pesto"
+        name: "Green pesto",
+        unit: "cup"
       },
       {
         amount: 0.3,
-        name: "cup Parmesan cheese"
+        name: "Parmesan cheese",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "cup Breadcrumbs"
+        name: "Breadcrumbs",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "tablespoons flour"
+        name: "flour",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "teaspoon Paprika"
+        name: "Paprika",
+        unit: "teaspoon"
       },
       {
         amount: 2,
@@ -261,15 +286,18 @@ const recipes: Recipes = {
       },
       {
         amount: 2,
-        name: "tablespoons soy sauce divided"
+        name: "soy sauce divided",
+        unit: "tablespoon"
       },
       {
         amount: 3,
-        name: "teaspoons rice vinegar divided"
+        name: "rice vinegar divided",
+        unit: "teaspoon"
       },
       {
         amount: 2,
-        name: "teaspoons canola oil divided"
+        name: "canola oil divided",
+        unit: "teaspoon"
       },
       {
         amount: 1,
@@ -317,79 +345,97 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 2,
-        name: "kg beef brisket"
+        name: "beef brisket",
+        unit: "kilogram"
       },
       {
         amount: 1,
-        name: "Tablespoon olive oil (or a neutral oil like vegetable, canola)"
+        name: "olive oil (or a neutral oil like vegetable, canola)",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "Tablespoon brown sugar"
+        name: "brown sugar",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "teaspoon paprika powder"
+        name: "paprika powder",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "teaspoon onion powder"
+        name: "onion powder",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "teaspoon garlic powder"
+        name: "garlic powder",
+        unit: "teaspoon"
       },
       {
         amount: 0.5,
-        name: "teaspoon cumin powder"
+        name: "cumin powder",
+        unit: "teaspoon"
       },
       {
         amount: 0.75,
-        name: "teaspoon mustard powder"
+        name: "mustard powder",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "teaspoon salt"
+        name: "salt",
+        unit: "teaspoon"
       },
       {
         amount: 0.5,
-        name: "teaspoon black pepper"
+        name: "black pepper",
+        unit: "teaspoon"
       },
       {
         amount: 2,
-        name: "garlic cloves , minced"
+        name: "garlic cloves, minced"
       },
       {
         amount: 0.5,
-        name: "cup apple cider vinegar"
+        name: "apple cider vinegar",
+        unit: "cup"
       },
       {
         amount: 1.5,
-        name: "cups ketchup"
+        name: "ketchup",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "cup, packed"
+        name: "brown sugar, packed",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "teaspoon black pepper"
+        name: "black pepper",
+        unit: "teaspoon"
       },
       {
         amount: 2,
-        name: "teaspoon onion powder"
+        name: "onion powder",
+        unit: "teaspoon"
       },
       {
         amount: 2,
-        name: "teaspoon mustard powder"
+        name: "mustard powder",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "teaspoon cayenne pepper"
+        name: "cayenne pepper",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "Tablespoon Worcestershire sauce"
+        name: "Worcestershire sauce",
+        unit: "tablespoon"
       }
     ],
     instructions: [
@@ -420,31 +466,38 @@ const recipes: Recipes = {
       },
       {
         amount: 3,
-        name: "tablespoons chili powder"
+        name: "chili powder",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "teaspoons ground cumin"
+        name: "ground cumin",
+        unit: "teaspoon"
       },
       {
         amount: 2,
-        name: "teaspoons ground coriander"
+        name: "ground coriander",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "teaspoon granulated sugar"
+        name: "granulated sugar",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "teaspoon salt"
+        name: "salt",
+        unit: "teaspoon"
       },
       {
         amount: 1.25,
-        name: "pounds boneless chuck steaks, trimmed of fat"
+        name: "boneless chuck steaks, trimmed of fat",
+        unit: "pound"
       },
       {
         amount: 1,
-        name: "tablespoon vegetable oil"
+        name: "vegetable oil",
+        unit: "tablespoon"
       },
       {
         amount: 2,
@@ -452,27 +505,33 @@ const recipes: Recipes = {
       },
       {
         amount: 15,
-        name: "ounce can tomato sauce"
+        name: "can tomato sauce",
+        unit: "ounce"
       },
       {
         amount: 0.5,
-        name: "cup water"
+        name: "water",
+        unit: "cup"
       },
       {
         amount: 4,
-        name: "ounces Monterey Jack cheese, shredded, divided"
+        name: "Monterey Jack cheese, shredded, divided",
+        unit: "ounce"
       },
       {
         amount: 4,
-        name: "ounces sharp cheddar cheese, shredded, divided"
+        name: "sharp cheddar cheese, shredded, divided",
+        unit: "ounce"
       },
       {
         amount: 0.3333333333,
-        name: "cup chopped fresh cilantro"
+        name: "chopped fresh cilantro",
+        unit: "cup"
       },
       {
         amount: 0.25,
-        name: "cup chopped canned pickled jalapeños"
+        name: "chopped canned pickled jalapeños",
+        unit: "cup"
       },
       {
         amount: 12,
@@ -502,11 +561,13 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 1.5,
-        name: "pounds beef sirloin steak, 1/2 inch thick"
+        name: "beef sirloin steak, 1/2 inch thick",
+        unit: "pound"
       },
       {
         amount: 2.5,
-        name: "cups fresh mushrooms, sliced"
+        name: "fresh mushrooms, sliced",
+        unit: "cup"
       },
       {
         amount: 2,
@@ -518,31 +579,38 @@ const recipes: Recipes = {
       },
       {
         amount: 0.25,
-        name: "cup butter"
+        name: "butter",
+        unit: "cup"
       },
       {
         amount: 1.5,
-        name: "cups beef broth"
+        name: "beef broth",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "teaspoon salt"
+        name: "salt",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "teaspoon Worcestershire sauce"
+        name: "Worcestershire sauce",
+        unit: "teaspoon"
       },
       {
         amount: 0.25,
-        name: "cup all-purpose flour"
+        name: "all-purpose flour",
+        unit: "cup"
       },
       {
         amount: 1.5,
-        name: "cups sour cream"
+        name: "sour cream",
+        unit: "cup"
       },
       {
         amount: 3,
-        name: "cups hot cooked egg noodles"
+        name: "hot cooked egg noodles",
+        unit: "cup"
       }
     ],
     instructions: [
@@ -565,27 +633,33 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 3.3333333333,
-        name: "cup all-purpose flour"
+        name: "all-purpose flour",
+        unit: "cup"
       },
       {
         amount: 0.75,
-        name: "cup rice flour"
+        name: "rice flour",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "teaspoon baking powder"
+        name: "baking powder",
+        unit: "teaspoon"
       },
       {
         amount: 4,
-        name: "cup American lager"
+        name: "American lager",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "cup vodka"
+        name: "vodka",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "Tablespoon honey"
+        name: "honey",
+        unit: "tablespoon"
       }
     ],
     instructions: [
@@ -606,7 +680,8 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 1,
-        name: "lb cod or haddock fillets, cut into serveable sizes"
+        name: "cod or haddock fillets, cut into serveable sizes",
+        unit: "pound"
       },
       {
         name: "Seasoned flour",
@@ -637,43 +712,53 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 1,
-        name: "cup chili sauce (such as Heinz brand)"
+        name: "chili sauce (such as Heinz brand)",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "cup ketchup"
+        name: "ketchup",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "cup Amber ale (though any beer of your choice will work)"
+        name: "Amber ale (though any beer of your choice will work)",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "tablespoon cider vinegar"
+        name: "cider vinegar",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "tablespoon brown sugar"
+        name: "brown sugar",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "tablespoon Worcestershire Sauce"
+        name: "Worcestershire Sauce",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "teaspoon prepared horseradish"
+        name: "prepared horseradish",
+        unit: "teaspoon"
       },
       {
         amount: 0.5,
-        name: "teaspoon paprika"
+        name: "paprika",
+        unit: "teaspoon"
       },
       {
         amount: 0.5,
-        name: "teaspoon salt"
+        name: "salt",
+        unit: "teaspoon"
       },
       {
         amount: 0.25,
-        name: "teaspoon ground black pepper"
+        name: "ground black pepper",
+        unit: "teaspoon"
       }
     ],
     instructions: [
@@ -694,23 +779,28 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 0.5,
-        name: "cup butter"
+        name: "butter",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "cups yellow onion, chopped"
+        name: "yellow onion, chopped",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "cup diced celery stalks, cut into ¼-inch dice"
+        name: "diced celery stalks, cut into ¼-inch dice",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "cup diced carrots, cut into ¼-inch dice"
+        name: "diced carrots, cut into ¼-inch dice",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "teaspoon minced garlic"
+        name: "minced garlic",
+        unit: "teaspoon"
       },
       {
         amount: 1,
@@ -718,39 +808,48 @@ const recipes: Recipes = {
       },
       {
         amount: 0.3333333333,
-        name: "cup all-purpose flour"
+        name: "all-purpose flour",
+        unit: "cup"
       },
       {
         amount: 1.75,
-        name: "cups fake chicken broth or vegetable broth"
+        name: "fake chicken broth or vegetable broth",
+        unit: "cup"
       },
       {
         amount: 12,
-        name: "fluid ounces bottle beer. Farmhouse or session ale, or a light red or brown ale with an emphasis on malt and not so much on the hops. A full-strength American lager or good old Miller High Life."
+        name: "bottle beer. Farmhouse or session ale, or a light red or brown ale with an emphasis on malt and not so much on the hops. A full-strength American lager or good old Miller High Life.",
+        unit: "ounce"
       },
       {
         amount: 2,
-        name: "cups half-and-half"
+        name: "half-and-half",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "tablespoon Worcestershire sauce"
+        name: "Worcestershire sauce",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "teaspoon dry mustard"
+        name: "dry mustard",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "teaspoon salt"
+        name: "salt",
+        unit: "teaspoon"
       },
       {
         amount: 0.125,
-        name: "teaspoon cayenne pepper"
+        name: "cayenne pepper",
+        unit: "teaspoon"
       },
       {
         amount: 3,
-        name: "cups sharp Cheddar cheese, shredded"
+        name: "sharp Cheddar cheese, shredded",
+        unit: "cup"
       },
       {
         name: "Freshly popped popcorn"
@@ -780,27 +879,33 @@ const recipes: Recipes = {
       },
       {
         amount: 2,
-        name: "teaspoons kosher salt (Diamond Crystal; use half for table salt)"
+        name: "kosher salt (Diamond Crystal; use half for table salt)",
+        unit: "teaspoon"
       },
       {
         amount: 2,
-        name: "tablespoons sake (for cleaning and removing the odor of the fish)"
+        name: "sake (for cleaning and removing the odor of the fish)",
+        unit: "tablespoon"
       },
       {
         amount: 6,
-        name: "tablespoons Saikyo miso (Kyoto-style white miso - 西京味噌)"
+        name: "Saikyo miso (Kyoto-style white miso - 西京味噌)",
+        unit: "tablespoon"
       },
       {
         amount: 3,
-        name: "tablespoons mirin"
+        name: "mirin",
+        unit: "tablespoon"
       },
       {
         amount: 3,
-        name: "tablespoons sake"
+        name: "sake",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "tablespoons sugar (add sugar only if you do not use saikyo miso)"
+        name: "sugar (add sugar only if you do not use saikyo miso)",
+        unit: "tablespoon"
       }
     ],
     instructions: [
@@ -830,7 +935,8 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 1.5,
-        name: "lbs thinly sliced pork belly"
+        name: "thinly sliced pork belly",
+        unit: "pound"
       },
       {
         amount: 1,
@@ -838,23 +944,28 @@ const recipes: Recipes = {
       },
       {
         amount: 3,
-        name: "tbs dashi broth granules"
+        name: "dashi broth granules",
+        unit: "tablespoon"
       },
       {
         amount: 3,
-        name: "cups water"
+        name: "water",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "cup soy sauce"
+        name: "soy sauce",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "cup mirin"
+        name: "mirin",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "teaspoon honey"
+        name: "honey",
+        unit: "teaspoon"
       },
       {
         name: "Chopped green onions (optional garnish)"
@@ -893,19 +1004,23 @@ const recipes: Recipes = {
       },
       {
         amount: 0.75,
-        name: "cup buttermilk"
+        name: "buttermilk",
+        unit: "cup"
       },
       {
         amount: 3,
-        name: "tablespoons butter"
+        name: "butter",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "tablespoons chicken bouillon powder"
+        name: "chicken bouillon powder",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "teaspoons chopped fresh dill"
+        name: "chopped fresh dill",
+        unit: "teaspoon"
       },
       {
         name: "salt and ground black pepper to taste"
@@ -929,23 +1044,28 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 2.5,
-        name: "cups all-purpose flour (spoon & leveled), plus more as needed for shaping and rolling"
+        name: "all-purpose flour (spoon & leveled), plus more as needed for shaping and rolling",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "teaspoon salt"
+        name: "salt",
+        unit: "teaspoon"
       },
       {
         amount: 6,
-        name: "Tablespoons unsalted butter, chilled and cubed"
+        name: "unsalted butter, chilled and cubed",
+        unit: "tablespoon"
       },
       {
         amount: 0.6666666666,
-        name: "cup vegetable shortening, chilled"
+        name: "vegetable shortening, chilled",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "cup ice water"
+        name: "ice water",
+        unit: "cup"
       }
     ],
     instructions: [
@@ -972,15 +1092,18 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 2,
-        name: "kg pork shoulder, skinless, boneless (Use pork with the skin removed but leaving some of the fat cap on. The fat adds juiciness to the carnitas)"
+        name: "pork shoulder, skinless, boneless (Use pork with the skin removed but leaving some of the fat cap on. The fat adds juiciness to the carnitas)",
+        unit: "kilogram"
       },
       {
         amount: 2.5,
-        name: "teaspoon salt"
+        name: "salt",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "teaspoon black pepper"
+        name: "black pepper",
+        unit: "teaspoon"
       },
       {
         amount: 1,
@@ -996,19 +1119,23 @@ const recipes: Recipes = {
       },
       {
         amount: 0.75,
-        name: "cup juice from orange"
+        name: "juice from orange",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "tablespoon dried oregano"
+        name: "dried oregano",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "teaspoon ground cumin"
+        name: "ground cumin",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "tablespoon olive oil"
+        name: "olive oil",
+        unit: "tablespoon"
       }
     ],
     instructions: [
@@ -1037,51 +1164,63 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 1.5,
-        name: "cups raw cashews"
+        name: "raw cashews",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "cups unsweetened coconut milk (from a carton, not canned)"
+        name: "unsweetened coconut milk (from a carton, not canned)",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "Tablespoon fresh lemon juice"
+        name: "fresh lemon juice",
+        unit: "tablespoon"
       },
       {
         amount: 1.5,
-        name: "Tablespoon raw apple cider vinegar"
+        name: "raw apple cider vinegar",
+        unit: "tablespoon"
       },
       {
         amount: 4,
-        name: "Tablespoon nutritional yeast"
+        name: "nutritional yeast",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "teaspoon paprika"
+        name: "paprika",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "teaspoon garlic powder"
+        name: "garlic powder",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "teaspoon onion powder"
+        name: "onion powder",
+        unit: "teaspoon"
       },
       {
         amount: 0.125,
-        name: "teaspoon nutmeg"
+        name: "nutmeg",
+        unit: "teaspoon"
       },
       {
         amount: 0.5,
-        name: "teaspoon salt (add more to taste)"
+        name: "salt (add more to taste)",
+        unit: "teaspoon"
       },
       {
         amount: 0.25,
-        name: "teaspoon black pepper (add more to taste)"
+        name: "black pepper (add more to taste)",
+        unit: "teaspoon"
       },
       {
         amount: 4,
-        name: "Tablespoon vegetable broth"
+        name: "vegetable broth",
+        unit: "tablespoon"
       },
       {
         amount: 1,
@@ -1093,11 +1232,13 @@ const recipes: Recipes = {
       },
       {
         amount: 28,
-        name: "oz artichoke hearts (in water) rinsed, drained, and roughly chopped"
+        name: "artichoke hearts (in water) rinsed, drained, and roughly chopped",
+        unit: "ounce"
       },
       {
         amount: 20,
-        name: "oz frozen spinach"
+        name: "frozen spinach",
+        unit: "ounce"
       }
     ],
     instructions: [
@@ -1122,23 +1263,28 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 2,
-        name: "lb pork belly, rolled and tied"
+        name: "pork belly, rolled and tied",
+        unit: "pound"
       },
       {
         amount: 0.25,
-        name: "cup soy sauce"
+        name: "soy sauce",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "cup sake"
+        name: "sake",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "cup mirin, sweet Japanese wine"
+        name: "mirin, sweet Japanese wine",
+        unit: "cup"
       },
       {
         amount: 0.25,
-        name: "cup sugar"
+        name: "sugar",
+        unit: "cup"
       },
       {
         amount: 3,
@@ -1168,23 +1314,28 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 1.5,
-        name: "cup short or medium grain brown rice"
+        name: "short or medium grain brown rice",
+        unit: "cup"
       },
       {
         amount: 2.5,
-        name: "cups water"
+        name: "water",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "tablespoon unsalted butter (for rice)"
+        name: "unsalted butter (for rice)",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "teaspoon salt (for rice)"
+        name: "salt (for rice)",
+        unit: "teaspoon"
       },
       {
         amount: 4,
-        name: "tablespoons butter (unsalted)"
+        name: "butter (unsalted)",
+        unit: "tablespoon"
       },
       {
         amount: 1,
@@ -1192,23 +1343,28 @@ const recipes: Recipes = {
       },
       {
         amount: 8,
-        name: "ounces mushrooms, any variety (quartered)"
+        name: "mushrooms, any variety (quartered)",
+        unit: "ounce"
       },
       {
         amount: 3,
-        name: "tablespoons all-purpose flour"
+        name: "all-purpose flour",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "cup low-sodium fake chicken or vegetable broth"
+        name: "low-sodium fake chicken or vegetable broth",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "cup whole milk"
+        name: "whole milk",
+        unit: "cup"
       },
       {
         amount: 4,
-        name: "ounces Swiss cheese (grated)"
+        name: "Swiss cheese (grated)",
+        unit: "ounce"
       },
       {
         amount: 15,
@@ -1245,7 +1401,8 @@ const recipes: Recipes = {
       },
       {
         amount: 3,
-        name: "Cups Pepper Jack Cheese shredded"
+        name: "Pepper Jack Cheese shredded",
+        unit: "cup"
       },
       {
         amount: 8,
@@ -1253,11 +1410,13 @@ const recipes: Recipes = {
       },
       {
         amount: 5,
-        name: "tablespoons butter divided"
+        name: "butter divided",
+        unit: "tablespoon"
       },
       {
         amount: 3,
-        name: "tablespoons all purpose flour"
+        name: "all purpose flour",
+        unit: "tablespoon"
       },
       {
         amount: 1,
@@ -1265,35 +1424,43 @@ const recipes: Recipes = {
       },
       {
         amount: 4,
-        name: "cups chicken stock"
+        name: "chicken stock",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "cup sour cream"
+        name: "sour cream",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "cup Fontina cheese shredded"
+        name: "Fontina cheese shredded",
+        unit: "cup"
       },
       {
         amount: 15,
-        name: "ounces Rotel tomatoes and green chilis"
+        name: "Rotel tomatoes and green chilis",
+        unit: "ounce"
       },
       {
         amount: 4,
-        name: "ounces green chilis"
+        name: "green chilis",
+        unit: "ounce"
       },
       {
         amount: 2,
-        name: "teaspoons garlic powder"
+        name: "garlic powder",
+        unit: "teaspoon"
       },
       {
         amount: 2,
-        name: "teaspoons onion powder"
+        name: "onion powder",
+        unit: "teaspoon"
       },
       {
         amount: 2,
-        name: "teaspoons cumin"
+        name: "cumin",
+        unit: "teaspoon"
       },
       {
         name: "salt and pepper to taste"
@@ -1326,19 +1493,23 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 0.5,
-        name: "cup unsalted butter"
+        name: "unsalted butter",
+        unit: "cup"
       },
       {
         amount: 4,
-        name: "cups chicken broth, divided"
+        name: "chicken broth, divided",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "cup all-purpose flour"
+        name: "all-purpose flour",
+        unit: "cup"
       },
       {
         amount: 0.25,
-        name: "cup dried onion flakes"
+        name: "dried onion flakes",
+        unit: "cup"
       },
       {
         amount: 1,
@@ -1346,11 +1517,13 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "teaspoon ground black pepper"
+        name: "ground black pepper",
+        unit: "teaspoon"
       },
       {
         amount: 0.5,
-        name: "teaspoon dried thyme"
+        name: "dried thyme",
+        unit: "teaspoon"
       },
       {
         amount: 1,
@@ -1358,15 +1531,18 @@ const recipes: Recipes = {
       },
       {
         amount: 8,
-        name: "ounce can carrots, drained"
+        name: "can carrots, drained",
+        unit: "ounce"
       },
       {
         amount: 8,
-        name: "ounce can white potatoes"
+        name: "can white potatoes",
+        unit: "ounce"
       },
       {
         amount: 2,
-        name: "cups diced cooked chicken"
+        name: "diced cooked chicken",
+        unit: "cup"
       },
       {
         amount: 4,
@@ -1382,7 +1558,8 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "tablespoon water"
+        name: "water",
+        unit: "tablespoon"
       }
     ],
     instructions: [
@@ -1409,19 +1586,23 @@ const recipes: Recipes = {
       },
       {
         amount: 0.5,
-        name: "cup mirin"
+        name: "mirin",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "cup water"
+        name: "water",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "cup loosely packed bonito flakes"
+        name: "loosely packed bonito flakes",
+        unit: "cup"
       },
       {
         amount: 3,
-        name: "Tablespoon soy sauce"
+        name: "soy sauce",
+        unit: "tablespoon"
       },
       {
         name: "finely grated daikon"
@@ -1453,23 +1634,28 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 1,
-        name: "liter Cranberry Juice"
+        name: "Cranberry Juice",
+        unit: "liter"
       },
       {
         amount: 1,
-        name: "liter Apple Juice"
+        name: "Apple Juice",
+        unit: "liter"
       },
       {
         amount: 125,
-        name: "ml Pineapple Juice"
+        name: "Pineapple Juice",
+        unit: "ml"
       },
       {
         amount: 25,
-        name: "ml Honey"
+        name: "Honey",
+        unit: "ml"
       },
       {
         amount: 350,
-        name: "ml water"
+        name: "water",
+        unit: "ml"
       },
       {
         amount: 1,
@@ -1514,19 +1700,23 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 12,
-        name: "ounce fresh cranberries"
+        name: "fresh cranberries",
+        unit: "ounce"
       },
       {
         amount: 1,
-        name: "cup cranberry juice"
+        name: "cranberry juice",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "cup pure maple syrup"
+        name: "pure maple syrup",
+        unit: "cup"
       },
       {
         amount: 3,
-        name: "tablespoon orange juice"
+        name: "orange juice",
+        unit: "tablespoon"
       }
     ],
     instructions: [
@@ -1552,31 +1742,38 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 6,
-        name: "tablespoons crawfish butter, divided"
+        name: "crawfish butter, divided",
+        unit: "tablespoon"
       },
       {
         amount: 0.3333333333,
-        name: "cup chopped onion"
+        name: "chopped onion",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "tablespoons vermouth or brandy"
+        name: "vermouth or brandy",
+        unit: "tablespoon"
       },
       {
         amount: 5,
-        name: "cups crawfish stock"
+        name: "crawfish stock",
+        unit: "cup"
       },
       {
         amount: 0.3333333333,
-        name: "cup rice"
+        name: "rice",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "pound crawfish meat"
+        name: "crawfish meat",
+        unit: "pound"
       },
       {
         amount: 2,
-        name: "tablespoons heavy cream, or to taste"
+        name: "heavy cream, or to taste",
+        unit: "tablespoon"
       },
       {
         name: "Salt to taste"
@@ -1604,15 +1801,18 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 0.25,
-        name: "pound cooked crawfish heads and shells from the tails"
+        name: "cooked crawfish heads and shells from the tails",
+        unit: "pound"
       },
       {
         amount: 0.5,
-        name: "pound unsalted butter"
+        name: "unsalted butter",
+        unit: "pound"
       },
       {
         amount: 1,
-        name: "tablespoon brandy"
+        name: "brandy",
+        unit: "tablespoon"
       }
     ],
     instructions: [
@@ -1633,11 +1833,13 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 4,
-        name: "pounds crawfish heads and shells from tails"
+        name: "crawfish heads and shells from tails",
+        unit: "pound"
       },
       {
         amount: 0.25,
-        name: "cup safflower, grapeseed or other neutral oil"
+        name: "safflower, grapeseed or other neutral oil",
+        unit: "cup"
       },
       {
         amount: 1,
@@ -1649,7 +1851,8 @@ const recipes: Recipes = {
       },
       {
         amount: 2,
-        name: "cups chopped onion"
+        name: "chopped onion",
+        unit: "cup"
       },
       {
         amount: 4,
@@ -1657,15 +1860,18 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "ounce dried matsutake mushrooms (optional)"
+        name: "dried matsutake mushrooms (optional)",
+        unit: "ounce"
       },
       {
         amount: 6,
-        name: "ounces tomato paste"
+        name: "tomato paste",
+        unit: "ounce"
       },
       {
         amount: 1,
-        name: "cup dry vermouth"
+        name: "dry vermouth",
+        unit: "cup"
       },
       {
         amount: 5,
@@ -1690,7 +1896,8 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 115,
-        name: "g unsalted butter"
+        name: "unsalted butter",
+        unit: "gram"
       },
       {
         amount: 1,
@@ -1706,11 +1913,13 @@ const recipes: Recipes = {
       },
       {
         amount: 80,
-        name: "g plain flour"
+        name: "plain flour",
+        unit: "gram"
       },
       {
         amount: 1.65,
-        name: "liter chicken stock, homemade or low-sodium tinned"
+        name: "chicken stock, homemade or low-sodium tinned",
+        unit: "liter"
       },
       {
         amount: 3,
@@ -1726,23 +1935,28 @@ const recipes: Recipes = {
       },
       {
         amount: 415,
-        name: "g cooked, diced chicken"
+        name: "cooked, diced chicken",
+        unit: "gram"
       },
       {
         amount: 120,
-        name: "ml double cream"
+        name: "double cream",
+        unit: "ml"
       },
       {
         amount: 2.5,
-        name: "teaspoon dry sherry"
+        name: "dry sherry",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "Tablespoon salt"
+        name: "salt",
+        unit: "tablespoon"
       },
       {
         amount: 10,
-        name: "g chopped flat-leaf parsley"
+        name: "chopped flat-leaf parsley",
+        unit: "gram"
       },
       {
         name: "Freshly ground black pepper to taste"
@@ -1767,27 +1981,33 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 1,
-        name: "pound fresh asparagus, trimmed and cut into 1 inch pieces"
+        name: "fresh asparagus, trimmed and cut into 1 inch pieces",
+        unit: "pound"
       },
       {
         amount: 2,
-        name: "cups fake chicken or vegetable broth"
+        name: "fake chicken or vegetable broth",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "cup chopped onion"
+        name: "chopped onion",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "tablespoons butter"
+        name: "butter",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "tablespoons all-purpose flour"
+        name: "all-purpose flour",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "teaspoon salt"
+        name: "salt",
+        unit: "teaspoon"
       },
       {
         amount: 1,
@@ -1795,15 +2015,18 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "cup milk"
+        name: "milk",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "cup sour cream"
+        name: "sour cream",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "teaspoon fresh lemon juice"
+        name: "fresh lemon juice",
+        unit: "teaspoon"
       }
     ],
     instructions: [
@@ -1825,7 +2048,8 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 2,
-        name: "tablespoon butter"
+        name: "butter",
+        unit: "tablespoon"
       },
       {
         amount: 2,
@@ -1833,19 +2057,23 @@ const recipes: Recipes = {
       },
       {
         amount: 2,
-        name: "pound baby Bella mushrooms sliced"
+        name: "baby Bella mushrooms sliced",
+        unit: "pound"
       },
       {
         amount: 0.5,
-        name: "cup flour"
+        name: "flour",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "tablespoon Italian seasoning"
+        name: "Italian seasoning",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "tablespoon fresh thyme"
+        name: "fresh thyme",
+        unit: "tablespoon"
       },
       {
         amount: 6,
@@ -1853,11 +2081,13 @@ const recipes: Recipes = {
       },
       {
         amount: 8,
-        name: "cups chicken broth"
+        name: "chicken broth",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "cup heavy cream"
+        name: "heavy cream",
+        unit: "cup"
       },
       {
         name: "salt and pepper"
@@ -1882,30 +2112,36 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 1.5,
-        name: "lbs mini potatoes"
+        name: "mini potatoes",
+        unit: "pound"
       },
       {
         name: "salt and pepper to taste"
       },
       {
         amount: 5,
-        name: "tbsp chili oil"
+        name: "chili oil",
+        unit: "tablespoon"
       },
       {
         amount: 0.25,
-        name: "cup plantbased mayo"
+        name: "plantbased mayo",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "tbsp sriracha"
+        name: "sriracha",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "tbsp chili oil"
+        name: "chili oil",
+        unit: "tablespoon"
       },
       {
         amount: 0.5,
-        name: "tsp toasted sesame oil"
+        name: "toasted sesame oil",
+        unit: "teaspoon"
       },
       {
         amount: 1,
@@ -1913,7 +2149,8 @@ const recipes: Recipes = {
       },
       {
         amount: 2,
-        name: "tsp white sesame seeds"
+        name: "white sesame seeds",
+        unit: "teaspoon"
       },
       {
         name: "chili threads to serve"
@@ -1941,7 +2178,8 @@ const recipes: Recipes = {
     cookTime: 120,
     ingredients: [
       {
-        name: 'A brine recipe, originally suggested with "Apple Cider Turkey Brine"'
+        name: 'Any brine recipe, originally suggested with "Apple Cider Turkey Brine"',
+        slug: "AppleCiderTurkeyBrine"
       },
       {
         amount: 1,
@@ -1950,12 +2188,24 @@ const recipes: Recipes = {
       {
         name: "As many fresh herbs as will fit into cavity (sage, rosemary, thyme, marjoram, oregano, basil)"
       },
-      { amount: 2, name: "cups chicken broth" },
-      { amount: 2, name: "tablespoons unsalted butter (melted)" },
+      {
+        amount: 2,
+        name: "chicken broth",
+        unit: "cup"
+      },
+      {
+        amount: 2,
+        name: "unsalted butter (melted)",
+        unit: "tablespoon"
+      },
       {
         name: "freshly ground black pepper (divided)"
       },
-      { amount: 1, name: "teaspoon salt" }
+      {
+        amount: 1,
+        name: "salt",
+        unit: "teaspoon"
+      }
     ],
     instructions: [
       "Preheat oven or grill to 450º.",
@@ -1979,7 +2229,8 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 2.5,
-        name: "lbs cucumbers (weighed prior to peeling and seeding),peeled, center row of seeds removed, and finely diced"
+        name: "cucumbers (weighed prior to peeling and seeding),peeled, center row of seeds removed, and finely diced",
+        unit: "pound"
       },
       {
         amount: 1,
@@ -1999,31 +2250,38 @@ const recipes: Recipes = {
       },
       {
         amount: 0.25,
-        name: "cup kosher or pickling salt (neither of these have additives which is important to avoid when canning)"
+        name: "kosher or pickling salt (neither of these have additives which is important to avoid when canning)",
+        unit: "cup"
       },
       {
         amount: 3,
-        name: "cups white vinegar"
+        name: "white vinegar",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "cup sugar (optional or use less according to taste)"
+        name: "sugar (optional or use less according to taste)",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "teaspoons dill seeds"
+        name: "dill seeds",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "tablespoon yellow mustard seeds"
+        name: "yellow mustard seeds",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "teaspoons celery seeds"
+        name: "celery seeds",
+        unit: "teaspoon"
       },
       {
         amount: 0.5,
-        name: "teaspoon turmeric"
+        name: "turmeric",
+        unit: "teaspoon"
       },
       {
         amount: 2,
@@ -2052,59 +2310,73 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 1,
-        name: 'recipe "Buttery Flaky Pie Crust"'
+        name: "Buttery Flaky Pie Crust",
+        slug: "ButteryFlakyPieCrust"
       },
       {
         amount: 1,
-        name: "pound skinless boneless chicken breast, cubed"
+        name: "skinless boneless chicken breast, cubed",
+        unit: "pound"
       },
       {
         amount: 1,
-        name: "cup sliced carrots (about 2 carrots)"
+        name: "sliced carrots (about 2 carrots)",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "cup sliced celery (about 1 stalk)"
+        name: "sliced celery (about 1 stalk)",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "cup unsalted butter"
+        name: "unsalted butter",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "cup chopped onion"
+        name: "chopped onion",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "teaspoon minced garlic"
+        name: "minced garlic",
+        unit: "teaspoon"
       },
       {
         amount: 0.3333333333,
-        name: "cup all-purpose flour"
+        name: "all-purpose flour",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "teaspoon salt"
+        name: "salt",
+        unit: "teaspoon"
       },
       {
         amount: 0.5,
-        name: "teaspoon black pepper"
+        name: "black pepper",
+        unit: "teaspoon"
       },
       {
         amount: 0.5,
-        name: "teaspoon dried thyme"
+        name: "dried thyme",
+        unit: "teaspoon"
       },
       {
         amount: 1.75,
-        name: "cups chicken broth"
+        name: "chicken broth",
+        unit: "cup"
       },
       {
         amount: 0.6666666666,
-        name: "cup half-and-half"
+        name: "half-and-half",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "cup frozen peas"
+        name: "frozen peas",
+        unit: "cup"
       },
       {
         amount: 1,
@@ -2136,47 +2408,58 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 6,
-        name: "tablespoons cold unsalted butter"
+        name: "cold unsalted butter",
+        unit: "tablespoon"
       },
       {
         amount: 0.25,
-        name: "cup cold unsalted butter, separated"
+        name: "cold unsalted butter, separated",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "cups All-Purpose flour"
+        name: "All-Purpose flour",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "teaspoons baking powder"
+        name: "baking powder",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "teaspoon baking soda"
+        name: "baking soda",
+        unit: "teaspoon"
       },
       {
         amount: 0.5,
-        name: "teaspoon fine sea salt plus a pinch"
+        name: "fine sea salt plus a pinch",
+        unit: "teaspoon"
       },
       {
         amount: 0.5,
-        name: "teaspoon garlic powder"
+        name: "garlic powder",
+        unit: "teaspoon"
       },
       {
         amount: 0.5,
-        name: "cup freshly grated cheddar cheese"
+        name: "freshly grated cheddar cheese",
+        unit: "cup"
       },
       {
         amount: 3,
-        name: "tablespoons freshly snipped chives"
+        name: "freshly snipped chives",
+        unit: "tablespoon"
       },
       {
         amount: 1.25,
-        name: "cup buttermilk"
+        name: "buttermilk",
+        unit: "cup"
       },
       {
         amount: 3,
-        name: "tablespoons honey"
+        name: "honey",
+        unit: "tablespoon"
       }
     ],
     instructions: [
@@ -2203,7 +2486,8 @@ const recipes: Recipes = {
       },
       {
         amount: 2,
-        name: "cups chicken broth"
+        name: "chicken broth",
+        unit: "cup"
       },
       {
         amount: 1,
@@ -2211,11 +2495,13 @@ const recipes: Recipes = {
       },
       {
         amount: 2,
-        name: "teaspoons salt"
+        name: "salt",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "pound fresh tomatillos, husks removed"
+        name: "fresh tomatillos, husks removed",
+        unit: "pound"
       },
       {
         amount: 5,
@@ -2239,11 +2525,13 @@ const recipes: Recipes = {
       },
       {
         amount: 0.25,
-        name: "cup vegetable oil"
+        name: "vegetable oil",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "cup crumbled queso fresco"
+        name: "crumbled queso fresco",
+        unit: "cup"
       },
       {
         amount: 0.5,
@@ -2305,15 +2593,18 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "teaspoon cumin seeds"
+        name: "cumin seeds",
+        unit: "teaspoon"
       },
       {
         amount: 2,
-        name: "tablespoons fennel seeds"
+        name: "fennel seeds",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "tablespoons smoked paprika"
+        name: "smoked paprika",
+        unit: "tablespoon"
       },
       {
         amount: 6,
@@ -2325,27 +2616,33 @@ const recipes: Recipes = {
       },
       {
         amount: 200,
-        name: "g soft brown sugar"
+        name: "soft brown sugar",
+        unit: "gram"
       },
       {
         amount: 6,
-        name: "tablespoons balsamic vinegar"
+        name: "balsamic vinegar",
+        unit: "tablespoon"
       },
       {
         amount: 200,
-        name: "ml tomato ketchup"
+        name: "tomato ketchup",
+        unit: "ml"
       },
       {
         amount: 2,
-        name: "tablespoons Worcestershire sauce"
+        name: "Worcestershire sauce",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "teaspoons English mustard"
+        name: "English mustard",
+        unit: "teaspoon"
       },
       {
         amount: 200,
-        name: "ml apple juice"
+        name: "apple juice",
+        unit: "ml"
       }
     ],
     instructions: [
@@ -2373,11 +2670,13 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "tablespoon white vinegar"
+        name: "white vinegar",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "quart water"
+        name: "water",
+        unit: "quart"
       },
       {
         name: "Peanut oil"
@@ -2412,19 +2711,23 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 1,
-        name: "cup unsalted butter, melted and cooled"
+        name: "unsalted butter, melted and cooled",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "tablespoons vegetable oil"
+        name: "vegetable oil",
+        unit: "tablespoon"
       },
       {
         amount: 1.25,
-        name: "cups white sugar"
+        name: "white sugar",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "cup packed light brown sugar"
+        name: "packed light brown sugar",
+        unit: "cup"
       },
       {
         amount: 4,
@@ -2432,23 +2735,28 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "tablespoon pure vanilla extract"
+        name: "pure vanilla extract",
+        unit: "tablespoon"
       },
       {
         amount: 0.75,
-        name: "teaspoon salt"
+        name: "salt",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "cup all purpose flour"
+        name: "all purpose flour",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "cup good quality, unsweetened cocoa powder"
+        name: "good quality, unsweetened cocoa powder",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "cup roughly chopped chocolate or large chocolate chips"
+        name: "roughly chopped chocolate or large chocolate chips",
+        unit: "cup"
       }
     ],
     instructions: [
@@ -2469,11 +2777,13 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 2,
-        name: "ounces soba noodles"
+        name: "soba noodles",
+        unit: "ounce"
       },
       {
         amount: 1,
-        name: "pound medium shrimp, peeled and deveined"
+        name: "medium shrimp, peeled and deveined",
+        unit: "pound"
       },
       {
         name: "kosher salt"
@@ -2483,7 +2793,8 @@ const recipes: Recipes = {
       },
       {
         amount: 0.25,
-        name: "cup extra-virgin olive oil"
+        name: "extra-virgin olive oil",
+        unit: "cup"
       },
       {
         amount: 3,
@@ -2499,19 +2810,23 @@ const recipes: Recipes = {
       },
       {
         amount: 2,
-        name: "tablespoon low-sodium soy sauce"
+        name: "low-sodium soy sauce",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "tablespoon dry white wine"
+        name: "dry white wine",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "tablespoon honey"
+        name: "honey",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "tablespoon sesame oil (optional)"
+        name: "sesame oil (optional)",
+        unit: "tablespoon"
       }
     ],
     instructions: [
@@ -2536,8 +2851,9 @@ const recipes: Recipes = {
         name: "Turkey giblets (from whole turkey, thawed if frozen)"
       },
       {
-        amount: 2,
-        name: "medium stalks celery, sliced (1 cup)"
+        amount: 1,
+        name: "cup celery, sliced",
+        unit: "cup"
       },
       {
         amount: 1,
@@ -2545,11 +2861,13 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "teaspoon salt"
+        name: "salt",
+        unit: "teaspoon"
       },
       {
         amount: 0.25,
-        name: "teaspoon pepper"
+        name: "pepper",
+        unit: "teaspoon"
       },
       {
         amount: 1,
@@ -2557,11 +2875,13 @@ const recipes: Recipes = {
       },
       {
         amount: 0.25,
-        name: "cup chicken broth, if needed"
+        name: "chicken broth, if needed",
+        unit: "cup"
       },
       {
         amount: 0.25,
-        name: "cup all-purpose flour"
+        name: "all-purpose flour",
+        unit: "cup"
       },
       {
         name: "Salt and pepper to taste"
@@ -2587,7 +2907,8 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 1,
-        name: "lb. thinly sliced beef"
+        name: "thinly sliced beef",
+        unit: "pound"
       },
       {
         amount: 0.5,
@@ -2595,23 +2916,28 @@ const recipes: Recipes = {
       },
       {
         amount: 2,
-        name: "cups water"
+        name: "water",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "tablespoons dashi broth granules"
+        name: "dashi broth granules",
+        unit: "tablespoon"
       },
       {
         amount: 0.3333333333,
-        name: "cup soy sauce"
+        name: "soy sauce",
+        unit: "cup"
       },
       {
         amount: 0.25,
-        name: "cup mirin"
+        name: "mirin",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "tablespoon honey"
+        name: "honey",
+        unit: "tablespoon"
       }
     ],
     instructions: [
@@ -2643,19 +2969,23 @@ const recipes: Recipes = {
       },
       {
         amount: 1.5,
-        name: "cups Awase dashi (use kombu dashi for vegan/vegetarian)"
+        name: "Awase dashi (use kombu dashi for vegan/vegetarian)",
+        unit: "cup"
       },
       {
         amount: 3,
-        name: "Tablespoon soy sauce"
+        name: "soy sauce",
+        unit: "tablespoon"
       },
       {
         amount: 3,
-        name: "Tablespoon mirin"
+        name: "mirin",
+        unit: "tablespoon"
       },
       {
         amount: 3,
-        name: "Tablespoon sugar"
+        name: "sugar",
+        unit: "tablespoon"
       }
     ],
     instructions: [
@@ -2683,11 +3013,13 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 0.5,
-        name: "cup iriko or niboshi (dried baby sardines/anchovies)"
+        name: "iriko or niboshi (dried baby sardines/anchovies)",
+        unit: "cup"
       },
       {
         amount: 4,
-        name: "cups water"
+        name: "water",
+        unit: "cup"
       }
     ],
     instructions: [
@@ -2726,26 +3058,31 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "cup panko"
+        name: "panko",
+        unit: "cup"
       },
       {
         name: "oil (for frying)"
       },
       {
         amount: 0.5,
-        name: "cup Awase dashi or chicken stock"
+        name: "Awase dashi or chicken stock",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "teaspoons sugar"
+        name: "sugar",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "tablespoon soy sauce"
+        name: "soy sauce",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "teaspoons Mirin"
+        name: "Mirin",
+        unit: "teaspoon"
       },
       {
         amount: 2,
@@ -2785,11 +3122,13 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 2,
-        name: "cups katsuobushi (dried bonito flakes), packed"
+        name: "katsuobushi (dried bonito flakes), packed",
+        unit: "cup"
       },
       {
         amount: 4,
-        name: "cups water"
+        name: "water",
+        unit: "cup"
       }
     ],
     instructions: [
@@ -2813,23 +3152,28 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 2.5,
-        name: "cups Awase Dashi (for vegetarian, use Kombu Dashi or Shitake Dashi)"
+        name: "Awase Dashi (for vegetarian, use Kombu Dashi or Shitake Dashi)",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "Tablespoon mirin"
+        name: "mirin",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "teaspoon sugar"
+        name: "sugar",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "Tablespoon usukuchi (light-colored) soy sauce"
+        name: "usukuchi (light-colored) soy sauce",
+        unit: "tablespoon"
       },
       {
         amount: 0.5,
-        name: "teaspoon kosher salt (Diamond Crystal; use half for table salt)"
+        name: "kosher salt (Diamond Crystal; use half for table salt)",
+        unit: "teaspoon"
       },
       {
         amount: 2,
@@ -2837,7 +3181,8 @@ const recipes: Recipes = {
       },
       {
         amount: 4,
-        name: 'Inari age (seasoned fried tofu pouch) (you can buy them oror use the "Inari age" recipe)'
+        name: "Inari age (seasoned fried tofu pouch)",
+        slug: "InariAge"
       },
       {
         amount: 1,
@@ -2872,11 +3217,13 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 10,
-        name: "g kombu (dried kelp)"
+        name: "kombu (dried kelp)",
+        unit: "gram"
       },
       {
         amount: 4,
-        name: "cups water"
+        name: "water",
+        unit: "cup"
       }
     ],
     instructions: [
@@ -2902,15 +3249,18 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 1,
-        name: "cup sour cream"
+        name: "sour cream",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "teaspoon vanilla"
+        name: "vanilla",
+        unit: "teaspoon"
       },
       {
         amount: 2,
-        name: "cups flour"
+        name: "flour",
+        unit: "cup"
       },
       {
         amount: 2,
@@ -2922,23 +3272,28 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "tablespoon sugar"
+        name: "sugar",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "cup sour cherry jam"
+        name: "sour cherry jam",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "cup powdered sugar"
+        name: "powdered sugar",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "tablespoons milk"
+        name: "milk",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "teaspoon vanilla"
+        name: "vanilla",
+        unit: "teaspoon"
       }
     ],
     instructions: [
@@ -2962,23 +3317,28 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 4,
-        name: "quarts water, divided"
+        name: "water, divided",
+        unit: "quart"
       },
       {
         amount: 2,
-        name: "cups dark brown sugar"
+        name: "dark brown sugar",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "cup soy sauce"
+        name: "soy sauce",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "cup maple syrup"
+        name: "maple syrup",
+        unit: "cup"
       },
       {
         amount: 0.75,
-        name: "cup sea salt"
+        name: "sea salt",
+        unit: "cup"
       },
       {
         amount: 8,
@@ -2994,11 +3354,13 @@ const recipes: Recipes = {
       },
       {
         amount: 2,
-        name: "teaspoons whole black peppercorns"
+        name: "whole black peppercorns",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "cup sour mash whiskey"
+        name: "sour mash whiskey",
+        unit: "cup"
       }
     ],
     instructions: [
@@ -3018,66 +3380,79 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 450,
-        name: "g soft tofu"
+        name: "soft tofu",
+        unit: "gram"
       },
       {
         amount: 100,
-        name: "g minced meat-beef or pork"
+        name: "minced meat-beef or pork",
+        unit: "gram"
       },
       {
         amount: 0.5,
-        name: "Tablespoon sesame oil"
+        name: "sesame oil",
+        unit: "tablespoon"
       },
       {
         amount: 0.5,
-        name: "teaspoon. salt"
+        name: "salt",
+        unit: "teaspoon"
       },
       {
         amount: 3,
-        name: "Tablespoon cooking oil , divided"
+        name: "cooking oil , divided",
+        unit: "tablespoon"
       },
       {
         amount: 1.5,
-        name: "Tablespoon Doubanjiang ,roughly chopped"
+        name: "Doubanjiang ,roughly chopped",
+        unit: "tablespoon"
       },
       {
         amount: 0.5,
-        name: "Tablespoon Dou-Chi, roughly chopped"
+        name: "Dou-Chi, roughly chopped",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "Tablespoon pepper flakes or powder ,optional"
+        name: "pepper flakes or powder ,optional",
+        unit: "tablespoon"
       },
       {
         amount: 0.5,
-        name: "Tablespoon Sichuan pepper for making fresh ground powder"
+        name: "Sichuan pepper for making fresh ground powder",
+        unit: "tablespoon"
       },
       {
-        name: "water or broth for braising ,I use 400ml this time"
+        amount: 400,
+        name: "water or broth for braising (flexible as needed)",
+        unit: "milliliter"
       },
       {
         amount: 1,
-        name: "Tablespoon light soy sauce"
+        name: "light soy sauce",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "teaspoon. sugar, optional for reducing the spiciness"
+        name: "sugar, optional for reducing the spiciness",
+        unit: "teaspoon"
       },
       {
         amount: 2,
-        name: "scallion whites ,finely chopped"
+        name: "scallion whites, finely chopped"
       },
       {
         amount: 4,
-        name: "garlic greens or scallion greens ,finely chopped"
+        name: "garlic greens or scallion greens, finely chopped"
       },
       {
         amount: 2,
-        name: "garlic cloves ,finely chopped"
+        name: "garlic cloves, finely chopped"
       },
       {
         amount: 5,
-        name: "ginger slices ,finely minced"
+        name: "ginger slices, finely minced"
       }
     ],
     instructions: [
@@ -3104,22 +3479,26 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 0.5,
-        name: "cup shiro miso"
+        name: "shiro miso",
+        unit: "cup"
       },
       {
         amount: 0.25,
-        name: "cup sake"
+        name: "sake",
+        unit: "cup"
       },
       {
         amount: 0.25,
-        name: "cup mirin"
+        name: "mirin",
+        unit: "cup"
       },
       {
         name: "pinch shichimi togarashi (optional)"
       },
       {
         amount: 1.5,
-        name: "teaspoon kosher salt - depending on how salty you like your ramen."
+        name: "kosher salt - depending on how salty you like your ramen.",
+        unit: "teaspoon"
       }
     ],
     instructions: [
@@ -3138,26 +3517,31 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 0.25,
-        name: "cup olive oil or non-dairy butter"
+        name: "olive oil or non-dairy butter",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "pound sliced mushrooms (white or baby bellas)"
+        name: "sliced mushrooms (white or baby bellas)",
+        unit: "pound"
       },
       {
         amount: 0.25,
-        name: "cup all-purpose flour, or as needed"
+        name: "all-purpose flour, or as needed",
+        unit: "cup"
       },
       {
         amount: 4,
-        name: "cups mushroom or vegetable broth"
+        name: "mushroom or vegetable broth",
+        unit: "cup"
       },
       {
-        name: "mineral salt & fresh ground black pepper, to taste"
+        name: "salt & fresh ground black pepper, to taste"
       },
       {
         amount: 0.5,
-        name: "teaspoons fresh thyme leaves, or to taste (optional)"
+        name: "fresh thyme leaves, or to taste (optional)",
+        unit: "teaspoon"
       }
     ],
     instructions: [
@@ -3179,11 +3563,13 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 8,
-        name: "cup chicken or vegetable broth"
+        name: "chicken or vegetable broth",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "tablespoons extra-virgin olive oil"
+        name: "extra-virgin olive oil",
+        unit: "tablespoon"
       },
       {
         amount: 1,
@@ -3191,7 +3577,8 @@ const recipes: Recipes = {
       },
       {
         amount: 2,
-        name: "tablespoons butter divided"
+        name: "butter divided",
+        unit: "tablespoon"
       },
       {
         amount: 2,
@@ -3199,34 +3586,41 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "pound button mushrooms sliced"
+        name: "button mushrooms sliced",
+        unit: "pound"
       },
       {
         amount: 1,
-        name: "Tablespoon fresh thyme stems removed and minced"
+        name: "fresh thyme stems removed and minced",
+        unit: "tablespoon"
       },
       {
         name: "salt and pepper"
       },
       {
         amount: 2,
-        name: "cups arborio rice"
+        name: "arborio rice",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "cup white wine"
+        name: "white wine",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "cup Fresh Parmesan Cheese grated"
+        name: "Fresh Parmesan Cheese grated",
+        unit: "cup"
       },
       {
         amount: 0.75,
-        name: "cup frozen peas thawed"
+        name: "frozen peas thawed",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "tablespoons chopped fresh parsley"
+        name: "chopped fresh parsley",
+        unit: "tablespoon"
       }
     ],
     instructions: [
@@ -3250,11 +3644,13 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 1,
-        name: "pound wide egg noodles"
+        name: "wide egg noodles",
+        unit: "pound"
       },
       {
         amount: 3,
-        name: "tablespoons butter, divided"
+        name: "butter, divided",
+        unit: "tablespoon"
       },
       {
         amount: 1,
@@ -3266,23 +3662,28 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "pound baby bella mushrooms*"
+        name: "baby bella mushrooms*",
+        unit: "pound"
       },
       {
         amount: 0.5,
-        name: "cup dry white wine"
+        name: "dry white wine",
+        unit: "cup"
       },
       {
         amount: 1.5,
-        name: "cups vegetable stock"
+        name: "vegetable stock",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "tablespoon Worcestershire sauce (here is a vegetarian brand)"
+        name: "Worcestershire sauce (here is a vegetarian brand)",
+        unit: "tablespoon"
       },
       {
         amount: 3.5,
-        name: "tablespoons flour"
+        name: "flour",
+        unit: "tablespoon"
       },
       {
         amount: 3,
@@ -3290,7 +3691,8 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "cup sour cream"
+        name: "sour cream",
+        unit: "cup"
       },
       {
         name: "Kosher salt"
@@ -3330,11 +3732,13 @@ const recipes: Recipes = {
       },
       {
         amount: 3,
-        name: "tablespoon olive oil"
+        name: "olive oil",
+        unit: "tablespoon"
       },
       {
         amount: 300,
-        name: "g baby spinach"
+        name: "baby spinach",
+        unit: "gram"
       },
       {
         amount: 4,
@@ -3347,7 +3751,8 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "tablespoon dijon mustard"
+        name: "dijon mustard",
+        unit: "tablespoon"
       },
       {
         name: "salt and pepper to taste"
@@ -3380,27 +3785,33 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 2,
-        name: "kg bone-in fully cooked ham"
+        name: "bone-in fully cooked ham",
+        unit: "kilogram"
       },
       {
         amount: 0.25,
-        name: "cup water"
+        name: "water",
+        unit: "cup"
       },
       {
         amount: 0.25,
-        name: "cup unsalted butter, reduce fat or full fat"
+        name: "unsalted butter, reduce fat or full fat",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "cup brown sugar"
+        name: "brown sugar",
+        unit: "cup"
       },
       {
         amount: 0.25,
-        name: "cup honey"
+        name: "honey",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "teaspoon Dijon mustard"
+        name: "Dijon mustard",
+        unit: "teaspoon"
       },
       {
         amount: 2,
@@ -3437,11 +3848,13 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 4.25,
-        name: "cups water"
+        name: "water",
+        unit: "cup"
       },
       {
         amount: 0.75,
-        name: "cup tap water"
+        name: "tap water",
+        unit: "cup"
       },
       {
         amount: 4,
@@ -3469,19 +3882,23 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 0.25,
-        name: "cup Awase dashi (use kombu dashi for vegetarian)"
+        name: "Awase dashi (use kombu dashi for vegetarian)",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "Tablespoon mirin"
+        name: "mirin",
+        unit: "tablespoon"
       },
       {
         amount: 1.5,
-        name: "Tablespoon soy sauce"
+        name: "soy sauce",
+        unit: "tablespoon"
       },
       {
         amount: 0.3333333333,
-        name: "cup katsuobushi (dried bonito flakes) (skip for vegetarian)"
+        name: "katsuobushi (dried bonito flakes) (skip for vegetarian)",
+        unit: "cup"
       },
       {
         name: "green onion/scallion (for garnish)"
@@ -3518,23 +3935,28 @@ const recipes: Recipes = {
       },
       {
         amount: 0.5,
-        name: "cup dashi"
+        name: "dashi",
+        unit: "cup"
       },
       {
         amount: 1.5,
-        name: "Tablespoon mirin"
+        name: "mirin",
+        unit: "tablespoon"
       },
       {
         amount: 1.5,
-        name: "Tablespoon sake"
+        name: "sake",
+        unit: "tablespoon"
       },
       {
         amount: 1.5,
-        name: "Tablespoon soy sauce"
+        name: "soy sauce",
+        unit: "tablespoon"
       },
       {
         amount: 1.5,
-        name: "teaspoon sugar"
+        name: "sugar",
+        unit: "teaspoon"
       },
       {
         amount: 2,
@@ -3578,15 +4000,18 @@ const recipes: Recipes = {
       },
       {
         amount: 6,
-        name: "teaspoons olive oil, divided"
+        name: "olive oil, divided",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "pound penne"
+        name: "penne",
+        unit: "pound"
       },
       {
         amount: 8,
-        name: "ounces bacon (about 8 slices), cut crosswise into 1/3-inch-wide strips"
+        name: "bacon (about 8 slices), cut crosswise into 1/3-inch-wide strips",
+        unit: "ounce"
       },
       {
         amount: 1,
@@ -3594,27 +4019,33 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "cup chicken broth"
+        name: "chicken broth",
+        unit: "cup"
       },
       {
         amount: 6,
-        name: "cups (packed) coarsely torn Treviso, Chioggia, or Tardivo radicchio leaves (from about 2 medium heads)"
+        name: "(packed) coarsely torn Treviso, Chioggia, or Tardivo radicchio leaves (from about 2 medium heads)",
+        unit: "cup"
       },
       {
         amount: 3,
-        name: "cups (packed) baby spinach leaves, torn in half (about 10 ounces)"
+        name: "(packed) baby spinach leaves, torn in half (about 10 ounces)",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "cup (packed) fresh basil leaves, torn in half (about 10 ounces)"
+        name: "(packed) fresh basil leaves, torn in half (about 10 ounces)",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "cup freshly grated Parmesan cheese plus additional for serving"
+        name: "freshly grated Parmesan cheese plus additional for serving",
+        unit: "cup"
       },
       {
         amount: 0.25,
-        name: "teaspoon dried crushed red pepper"
+        name: "dried crushed red pepper",
+        unit: "teaspoon"
       }
     ],
     instructions: [
@@ -3689,7 +4120,8 @@ const recipes: Recipes = {
       },
       {
         amount: 0.5,
-        name: "cups butter, softened"
+        name: "butter, softened",
+        unit: "cup"
       },
       {
         amount: 1,
@@ -3701,11 +4133,13 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "teaspoon salt"
+        name: "salt",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "teaspoon black pepper"
+        name: "black pepper",
+        unit: "teaspoon"
       }
     ],
     instructions: [
@@ -3732,27 +4166,33 @@ const recipes: Recipes = {
       },
       {
         amount: 0.5,
-        name: "teaspoon lovage (celery or ajwain seeds can substitute)"
+        name: "lovage (celery or ajwain seeds can substitute)",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "teaspoon of caraway seed"
+        name: "of caraway seed",
+        unit: "teaspoon"
       },
       {
         amount: 0.75,
-        name: "teaspoon of asfoetida powder "
+        name: "of asfoetida powder ",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "cup medium sweet white wine"
+        name: "medium sweet white wine",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "Tablespoon olive oil"
+        name: "olive oil",
+        unit: "tablespoon"
       },
       {
         amount: 3,
-        name: "Tablespoon garum (can be substituted with Thai Nam Pla or Vietnamese Nuoc Nam Mhi)"
+        name: "garum (can be substituted with Thai Nam Pla or Vietnamese Nuoc Nam Mhi)",
+        unit: "tablespoon"
       },
       {
         name: "dash of pepper"
@@ -3778,31 +4218,38 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 2,
-        name: "lbs. Chicken Breasts Tenders, or Thighs"
+        name: "Chicken Breasts Tenders, or Thighs",
+        unit: "pound"
       },
       {
         amount: 0.5,
-        name: "cup Extra Virgin Olive Oil depending on preference"
+        name: "Extra Virgin Olive Oil depending on preference",
+        unit: "cup"
       },
       {
         amount: 3,
-        name: "Tablespoons Fresh Lemon Juice"
+        name: "Fresh Lemon Juice",
+        unit: "tablespoon"
       },
       {
         amount: 3,
-        name: "Tablespoons Soy Sauce"
+        name: "Soy Sauce",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "Tablespoons Balsamic Vinegar"
+        name: "Balsamic Vinegar",
+        unit: "tablespoon"
       },
       {
         amount: 0.25,
-        name: "cup Brown Sugar"
+        name: "Brown Sugar",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "Tablespoon Worcestershire Sauce"
+        name: "Worcestershire Sauce",
+        unit: "tablespoon"
       },
       {
         amount: 3,
@@ -3810,11 +4257,13 @@ const recipes: Recipes = {
       },
       {
         amount: 1.5,
-        name: "teaspoon Salt"
+        name: "Salt",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "teaspoon Pepper"
+        name: "Pepper",
+        unit: "teaspoon"
       },
       {
         name: "Fresh Parsley (garnish)"
@@ -3842,18 +4291,21 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 4,
-        name: "cups turkey stock"
+        name: "turkey stock",
+        unit: "cup"
       },
       {
         name: "Reserved turkey drippings"
       },
       {
         amount: 4,
-        name: "tablespoons unsalted butter"
+        name: "unsalted butter",
+        unit: "tablespoon"
       },
       {
         amount: 4,
-        name: "tablespoons all-purpose flour (amount may vary)"
+        name: "all-purpose flour (amount may vary)",
+        unit: "tablespoon"
       },
       {
         name: "kosher salt and freshly ground pepper (to taste)"
@@ -3878,7 +4330,8 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 2,
-        name: "tablespoons olive oil"
+        name: "olive oil",
+        unit: "tablespoon"
       },
       {
         name: "Reserved turkey neck and giblets"
@@ -3901,11 +4354,13 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "cup dry white wine"
+        name: "dry white wine",
+        unit: "cup"
       },
       {
         amount: 4,
-        name: "cups water"
+        name: "water",
+        unit: "cup"
       },
       {
         amount: 6,
@@ -3938,27 +4393,33 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 3,
-        name: "cup all-purpose flour"
+        name: "all-purpose flour",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "Tablespoon onion powder"
+        name: "onion powder",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "Tablespoon garlic powder"
+        name: "garlic powder",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "teaspoon paprika"
+        name: "paprika",
+        unit: "teaspoon"
       },
       {
         amount: 2,
-        name: "teaspoon salt"
+        name: "salt",
+        unit: "teaspoon"
       },
       {
         amount: 2,
-        name: "teaspoon white pepper"
+        name: "white pepper",
+        unit: "teaspoon"
       }
     ],
     instructions: [
@@ -3982,7 +4443,8 @@ const recipes: Recipes = {
       },
       {
         amount: 400,
-        name: "g ground/minced beef or meat substitute"
+        name: "ground/minced beef or meat substitute",
+        unit: "gram"
       },
       {
         amount: 1,
@@ -3994,11 +4456,13 @@ const recipes: Recipes = {
       },
       {
         amount: 200,
-        name: "g shredded cheddar cheese"
+        name: "shredded cheddar cheese",
+        unit: "gram"
       },
       {
         amount: 400,
-        name: "g 24% schmand (works better than German sour cream)"
+        name: "24% schmand (works better than German sour cream)",
+        unit: "gram"
       },
       {
         name: "Taco Seasoning",
@@ -4016,7 +4480,8 @@ const recipes: Recipes = {
       },
       {
         amount: 2,
-        name: "tbs water"
+        name: "water",
+        unit: "tablespoon"
       },
       {
         name: "cream cheese (optional)"
@@ -4050,23 +4515,28 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 2,
-        name: "tablespoons maple syrup"
+        name: "maple syrup",
+        unit: "tablespoon"
       },
       {
         amount: 0.5,
-        name: "teaspoon Dijon mustard"
+        name: "Dijon mustard",
+        unit: "teaspoon"
       },
       {
         amount: 2,
-        name: "tablespoons olive oil"
+        name: "olive oil",
+        unit: "tablespoon"
       },
       {
         amount: 0.5,
-        name: "teaspoon salt, plus extra for sprinkling"
+        name: "salt, plus extra for sprinkling",
+        unit: "teaspoon"
       },
       {
         amount: 0.25,
-        name: "teaspoon black pepper, plus extra for sprinkling"
+        name: "black pepper, plus extra for sprinkling",
+        unit: "teaspoon"
       },
       {
         amount: 1,
@@ -4105,7 +4575,8 @@ const recipes: Recipes = {
       },
       {
         amount: 4,
-        name: "cups water"
+        name: "water",
+        unit: "cup"
       }
     ],
     instructions: [
@@ -4134,35 +4605,43 @@ const recipes: Recipes = {
       },
       {
         amount: 4,
-        name: "ounces stewing beef, cut into 1/2 inch cubes"
+        name: "stewing beef, cut into 1/2 inch cubes",
+        unit: "ounce"
       },
       {
         amount: 3,
-        name: "tablespoons cooking oil or fat, for pan-frying"
+        name: "cooking oil or fat, for pan-frying",
+        unit: "tablespoon"
       },
       {
         amount: 3,
-        name: "cups dashi"
+        name: "dashi",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "tablespoons soy sauce"
+        name: "soy sauce",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "tablespoons sake"
+        name: "sake",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "tablespoons mirin"
+        name: "mirin",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "teaspoon sugar"
+        name: "sugar",
+        unit: "teaspoon"
       },
       {
         amount: 2,
-        name: "tablespoons brown or red miso paste, or to taste"
+        name: "brown or red miso paste, or to taste",
+        unit: "tablespoon"
       }
     ],
     instructions: [
@@ -4187,27 +4666,33 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 2,
-        name: "cups all-purpose flour, plus extra for working with dough"
+        name: "all-purpose flour, plus extra for working with dough",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "teaspoon baking powder"
+        name: "baking powder",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "teaspoon baking soda"
+        name: "baking soda",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "teaspoon fine sea salt"
+        name: "fine sea salt",
+        unit: "teaspoon"
       },
       {
         amount: 6,
-        name: "tablespoons cold unsalted butter, cut into small cubes"
+        name: "cold unsalted butter, cut into small cubes",
+        unit: "tablespoon"
       },
       {
         amount: 0.75,
-        name: "cup whole milk"
+        name: "whole milk",
+        unit: "cup"
       }
     ],
     instructions: [
@@ -4237,19 +4722,23 @@ const recipes: Recipes = {
       },
       {
         amount: 0.25,
-        name: "cup soy sauce"
+        name: "soy sauce",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "Tablespoon mirin"
+        name: "mirin",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "Tablespoon sake"
+        name: "sake",
+        unit: "tablespoon"
       },
       {
         amount: 4,
-        name: "Tablespoon shiro miso"
+        name: "shiro miso",
+        unit: "tablespoon"
       }
     ],
     instructions: [
@@ -4269,23 +4758,28 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 400,
-        name: "g Japanese konnyaku"
+        name: "Japanese konnyaku",
+        unit: "gram"
       },
       {
         amount: 2,
-        name: "tablespoons Awase Dashi (use Kombu or Shitake Dashi for vegan / veggie)"
+        name: "Awase Dashi (use Kombu or Shitake Dashi for vegan / veggie)",
+        unit: "tablespoon"
       },
       {
         amount: 3,
-        name: "teaspoons dashi-seasoned soy sauce"
+        name: "dashi-seasoned soy sauce",
+        unit: "teaspoon"
       },
       {
         amount: 2,
-        name: "teaspoons soy sauce, to taste"
+        name: "soy sauce, to taste",
+        unit: "teaspoon"
       },
       {
         amount: 0.125,
-        name: "teaspoon Shichimi Togarashi (Japanese 7-chile pepper)"
+        name: "Shichimi Togarashi (Japanese 7-chile pepper)",
+        unit: "teaspoon"
       }
     ],
     instructions: [
@@ -4308,39 +4802,48 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 1,
-        name: "cup soy sauce"
+        name: "soy sauce",
+        unit: "cup"
       },
       {
         amount: 0.25,
-        name: "cup rice wine"
+        name: "rice wine",
+        unit: "cup"
       },
       {
         amount: 0.25,
-        name: "cup white sugar"
+        name: "white sugar",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "tablespoons chile paste"
+        name: "chile paste",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "tablespoons sesame oil"
+        name: "sesame oil",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "tablespoon crushed red pepper"
+        name: "crushed red pepper",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "tablespoon chopped garlic"
+        name: "chopped garlic",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "tablespoon cornstarch"
+        name: "cornstarch",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "teaspoons chopped ginger"
+        name: "chopped ginger",
+        unit: "teaspoon"
       }
     ],
     instructions: [
@@ -4359,11 +4862,13 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 1,
-        name: "kg cauliflower"
+        name: "cauliflower",
+        unit: "kilogram"
       },
       {
         amount: 2,
-        name: "tablespoons butter"
+        name: "butter",
+        unit: "tablespoon"
       },
       {
         amount: 1,
@@ -4371,7 +4876,8 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "tablespoon chopped parsley"
+        name: "chopped parsley",
+        unit: "tablespoon"
       },
       {
         name: "salt, for steaming water"
@@ -4397,19 +4903,23 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 2,
-        name: "tbs cumin"
+        name: "cumin",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "tbs chilli powder"
+        name: "chilli powder",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "tbs garlic powder"
+        name: "garlic powder",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "tsp oregano"
+        name: "oregano",
+        unit: "teaspoon"
       },
       {
         name: "smoked paprika"
@@ -4437,31 +4947,38 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 1,
-        name: "cup mayonnaise"
+        name: "mayonnaise",
+        unit: "cup"
       },
       {
         amount: 0.25,
-        name: "cup finely chopped sweet pickles"
+        name: "finely chopped sweet pickles",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "tablespoon finely chopped onion"
+        name: "finely chopped onion",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "teaspoon sugar"
+        name: "sugar",
+        unit: "teaspoon"
       },
       {
         amount: 0.25,
-        name: "teaspoon salt"
+        name: "salt",
+        unit: "teaspoon"
       },
       {
         amount: 0.25,
-        name: "teaspoon black pepper"
+        name: "black pepper",
+        unit: "teaspoon"
       },
       {
         amount: 2,
-        name: "teaspoons white vinegar"
+        name: "white vinegar",
+        unit: "teaspoon"
       }
     ],
     instructions: [
@@ -4484,7 +5001,8 @@ const recipes: Recipes = {
       },
       {
         amount: 0.5,
-        name: "cup cilantro, chopped"
+        name: "cilantro, chopped",
+        unit: "cup"
       },
       {
         amount: 1,
@@ -4504,11 +5022,13 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "Tablespoon 100% agave tequila"
+        name: "100% agave tequila",
+        unit: "tablespoon"
       },
       {
         amount: 1.5,
-        name: "teaspoon sea salt"
+        name: "sea salt",
+        unit: "teaspoon"
       }
     ],
     instructions: [
@@ -4532,31 +5052,38 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 1,
-        name: "cup mayonnaise"
+        name: "mayonnaise",
+        unit: "cup"
       },
       {
         amount: 0.25,
-        name: "cup yellow onion, minced"
+        name: "yellow onion, minced",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "tablespoons ketchup"
+        name: "ketchup",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "tablespoons sweet pickle relish"
+        name: "sweet pickle relish",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "teaspoon lemon juice"
+        name: "lemon juice",
+        unit: "teaspoon"
       },
       {
         amount: 0.5,
-        name: "teaspoon sweet paprika"
+        name: "sweet paprika",
+        unit: "teaspoon"
       },
       {
         amount: 0.25,
-        name: "teaspoon kosher salt"
+        name: "kosher salt",
+        unit: "teaspoon"
       }
     ],
     instructions: [
@@ -4577,19 +5104,23 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 1.5,
-        name: "lbs tomatillos"
+        name: "tomatillos",
+        unit: "pound"
       },
       {
         amount: 0.5,
-        name: "cup white onion"
+        name: "white onion",
+        unit: "cup"
       },
       {
         amount: 0.75,
-        name: "cup cilantro (leaves only)"
+        name: "cilantro (leaves only)",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "tablespoon lime juice (freshly squeezed)"
+        name: "lime juice (freshly squeezed)",
+        unit: "tablespoon"
       },
       {
         amount: 1,
@@ -4615,12 +5146,14 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 8,
-        name: "cups Tonkotsu Ramen Broth",
-        slug: "TonkotsuRamenBroth"
+        name: "Tonkotsu Ramen Broth",
+        slug: "TonkotsuRamenBroth",
+        unit: "cup"
       },
       {
         amount: 12,
-        name: "oz good quality dried ramen noodles"
+        name: "good quality dried ramen noodles",
+        unit: "ounce"
       },
       {
         amount: 4,
@@ -4628,7 +5161,8 @@ const recipes: Recipes = {
       },
       {
         amount: 3,
-        name: "oz enoki or other mushrooms"
+        name: "enoki or other mushrooms",
+        unit: "ounce"
       },
       {
         name: "thinly sliced green onions"
@@ -4666,11 +5200,13 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 6,
-        name: "lbs pork bones with a little meat on them. Pork neck bones work well."
+        name: "pork bones with a little meat on them. Pork neck bones work well.",
+        unit: "pound"
       },
       {
         amount: 4,
-        name: "oz white mushrooms sliced"
+        name: "white mushrooms sliced",
+        unit: "ounce"
       },
       {
         amount: 1,
@@ -4703,23 +5239,28 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "cup sea salt"
+        name: "sea salt",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "tablespoon crushed dried rosemary"
+        name: "crushed dried rosemary",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "tablespoon dried sage"
+        name: "dried sage",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "tablespoon dried thyme"
+        name: "dried thyme",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "tablespoon dried savory"
+        name: "dried savory",
+        unit: "tablespoon"
       },
       {
         amount: 1,
@@ -4751,15 +5292,18 @@ const recipes: Recipes = {
       },
       {
         amount: 0.5,
-        name: "cup sour cream"
+        name: "sour cream",
+        unit: "cup"
       },
       {
         amount: 0.5,
-        name: "cup buttermilk"
+        name: "buttermilk",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "tablespoons unsalted butter"
+        name: "unsalted butter",
+        unit: "tablespoon"
       },
       {
         amount: 4,
@@ -4771,14 +5315,16 @@ const recipes: Recipes = {
       },
       {
         amount: 0.5,
-        name: "teaspoon salt"
+        name: "salt",
+        unit: "teaspoon"
       },
       {
         name: "black pepper"
       },
       {
         amount: 6,
-        name: "oz sharp cheddar cheese"
+        name: "sharp cheddar cheese",
+        unit: "ounce"
       }
     ],
     instructions: [
@@ -4800,11 +5346,13 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 2,
-        name: "cups Awase dashi"
+        name: "Awase dashi",
+        unit: "cup"
       },
       {
         amount: 2,
-        name: "teaspoon kombucha"
+        name: "kombucha",
+        unit: "teaspoon"
       },
       {
         amount: 1,
@@ -4812,8 +5360,9 @@ const recipes: Recipes = {
       },
       {
         amount: 3,
-        name: "tablespoon Unagi Sauce",
-        slug: "UnagiSauce"
+        name: "Unagi Sauce",
+        slug: "UnagiSauce",
+        unit: "tablespoon"
       },
       {
         amount: 2,
@@ -4829,7 +5378,8 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "teaspoon toasted white sesame seeds"
+        name: "toasted white sesame seeds",
+        unit: "teaspoon"
       },
       {
         name: "Japanese sansho pepper (optional)"
@@ -4859,19 +5409,23 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 0.25,
-        name: "cup mirin"
+        name: "mirin",
+        unit: "cup"
       },
       {
         amount: 1.5,
-        name: "Tablespoon sake"
+        name: "sake",
+        unit: "tablespoon"
       },
       {
         amount: 2.5,
-        name: "Tablespoon sugar"
+        name: "sugar",
+        unit: "tablespoon"
       },
       {
         amount: 0.25,
-        name: "cup soy sauce"
+        name: "soy sauce",
+        unit: "cup"
       }
     ],
     instructions: [
@@ -4894,23 +5448,28 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 3,
-        name: "tablespoon aquafaba (chickpea water)"
+        name: "aquafaba (chickpea water)",
+        unit: "tablespoon"
       },
       {
         amount: 7,
-        name: "tablespoon coconut oil (I prefer virgin coconut oil but you will taste the coconut. Odourless coconut oil will make it VERY buttery))"
+        name: "coconut oil (I prefer virgin coconut oil but you will taste the coconut. Odourless coconut oil will make it VERY buttery))",
+        unit: "tablespoon"
       },
       {
         amount: 4,
-        name: "teaspoon cold pressed rapeseed oil, canola or olive oil (or a similar oil that you like the taste of. Or try a blend!)"
+        name: "cold pressed rapeseed oil, canola or olive oil (or a similar oil that you like the taste of. Or try a blend!)",
+        unit: "teaspoon"
       },
       {
         amount: 0.6666666666,
-        name: "teaspoon apple cider vinegar (or freshly squeezed lemon juice)"
+        name: "apple cider vinegar (or freshly squeezed lemon juice)",
+        unit: "teaspoon"
       },
       {
         amount: 0.3333333333,
-        name: "teaspoon salt"
+        name: "salt",
+        unit: "teaspoon"
       }
     ],
     instructions: [
@@ -4934,19 +5493,23 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 1,
-        name: "tablespoon aquafaba (chickpea water)"
+        name: "aquafaba (chickpea water)",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "tablespoon almond or cashew milk"
+        name: "almond or cashew milk",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "teaspoon neutral flavoured oil"
+        name: "neutral flavoured oil",
+        unit: "teaspoon"
       },
       {
         amount: 0.5,
-        name: "teaspoon maple syrup"
+        name: "maple syrup",
+        unit: "teaspoon"
       }
     ],
     instructions: ["Combine all inrediants. Mix Well"],
@@ -4963,19 +5526,23 @@ const recipes: Recipes = {
     ingredients: [
       {
         amount: 160,
-        name: "g pastry flour"
+        name: "pastry flour",
+        unit: "gram"
       },
       {
         amount: 0.5,
-        name: "teaspoon fine sea salt"
+        name: "fine sea salt",
+        unit: "teaspoon"
       },
       {
         amount: 160,
-        name: "g vegan butter"
+        name: "vegan butter",
+        unit: "gram"
       },
       {
         amount: 95,
-        name: "ml cold water"
+        name: "cold water",
+        unit: "ml"
       }
     ],
     instructions: [
@@ -5007,31 +5574,38 @@ const recipes: Recipes = {
       },
       {
         amount: 0.5,
-        name: "cup Awase Dashi"
+        name: "Awase Dashi",
+        unit: "cup"
       },
       {
         amount: 1,
-        name: "Tablespoon sake"
+        name: "sake",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "Tablespoon mirin"
+        name: "mirin",
+        unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "Tablespoon sugar"
+        name: "sugar",
+        unit: "tablespoon"
       },
       {
         amount: 2,
-        name: "Tablespoon soy sauce"
+        name: "soy sauce",
+        unit: "tablespoon"
       },
       {
         amount: 0.75,
-        name: "pound thinly sliced beef (chuck or rib eye), komagire, or shabu shabu"
+        name: "thinly sliced beef (chuck or rib eye), komagire, or shabu shabu",
+        unit: "pound"
       },
       {
         amount: 2,
-        name: "Tablespoon pickled red ginger (beni shoga or kizami beni shoga)"
+        name: "pickled red ginger (beni shoga or kizami beni shoga)",
+        unit: "tablespoon"
       },
       {
         amount: 2,

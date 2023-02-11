@@ -76,12 +76,7 @@ const parseIngredientAmount = (rawAmount: number) => {
 const RecipeCard = (props: RecipeCardProps): JSX.Element => {
   const classes = useStyles();
 
-  const {
-    gotoRecipe,
-    multiplier,
-    recipe,
-    setMultiplier
-  } = props;
+  const { gotoRecipe, multiplier, recipe, setMultiplier } = props;
 
   const fromTheBook = recipe.origin === "The Book";
   const slug = recipe.title.replace(/[ ,]/g, "");
@@ -174,6 +169,7 @@ const RecipeCard = (props: RecipeCardProps): JSX.Element => {
                 {ingredient.amount
                   ? parseIngredientAmount(ingredient.amount * multiplier)
                   : ""}
+                {ingredient.unit ? `${ingredient.unit} ` : ""}
                 {ingredient.slug ? (
                   <a
                     className={classes.recipeLink}

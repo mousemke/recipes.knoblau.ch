@@ -111,11 +111,7 @@ const RecipesList = (props: RecipesListProps): JSX.Element => {
    */
   const getRecipeLinks = useCallback(
     (recipesToRender: Recipe[]) =>
-      renderRecipeLinks(
-        recipesToRender,
-        classes,
-        gotoRecipe
-      ),
+      renderRecipeLinks(recipesToRender, classes, gotoRecipe),
     [classes, gotoRecipe]
   );
 

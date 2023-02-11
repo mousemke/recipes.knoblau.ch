@@ -1,4 +1,4 @@
-import type { Recipe, Recipes } from "../recipes";
+import type { Recipe } from "../recipes";
 
 export interface RecipeCardProps {
   gotoRecipe: (slug: string) => void;

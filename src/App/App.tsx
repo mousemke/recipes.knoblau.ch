@@ -29,10 +29,10 @@ const setQueryParam = (param: string, slug = "") => {
 
   const newPath = `${pathname}${newQuery}`;
 
-  if (param !== 'r') {
+  if (param !== "r") {
     window.history.replaceState(null, document.title, newPath);
   } else {
-    window.history.pushState({slug}, document.title, newPath);
+    window.history.pushState({ slug }, document.title, newPath);
   }
 };
 
@@ -58,8 +58,11 @@ const App = (): JSX.Element => {
   /**
    * catches the browser back event and sets the slug as the active recipe
    */
-  const onBack = useCallback((e: PopStateEvent) =>
-    setActiveRecipe(e.state?.slug ? recipes[e.state.slug] : null), []);
+  const onBack = useCallback(
+    (e: PopStateEvent) =>
+      setActiveRecipe(e.state?.slug ? recipes[e.state.slug] : null),
+    []
+  );
 
   /**
    * on load, this takes query params, parses them, and sets appropriate states
@@ -88,10 +91,10 @@ const App = (): JSX.Element => {
       setActiveRecipe(recipes[query.r]);
     }
 
-    window.addEventListener('popstate', onBack);
+    window.addEventListener("popstate", onBack);
 
     return () => {
-      window.removeEventListener('popstate', onBack);
+      window.removeEventListener("popstate", onBack);
     };
   }, []);
 

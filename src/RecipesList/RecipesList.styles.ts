@@ -138,7 +138,7 @@ export const selectStyles = {
       color: "#e129f5",
       cursor: "pointer"
     }
-  }),
+  })
 };
 
 export default useStyles;
