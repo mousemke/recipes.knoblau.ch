@@ -1,10 +1,8 @@
 import type { Recipe, Recipes } from "../recipes";
 
 export interface RecipeCardProps {
+  gotoRecipe: (slug: string) => void;
   multiplier: number;
   recipe: Recipe;
-  recipes: Recipes;
-  setActiveRecipe: React.Dispatch<React.SetStateAction<Recipe | null>>;
   setMultiplier: React.Dispatch<React.SetStateAction<number>>;
-  setQueryParam: (param: string, slug: string) => void;
 }

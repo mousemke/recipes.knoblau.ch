@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 
 import recipes from "../recipes";
 
@@ -28,7 +28,12 @@ const setQueryParam = (param: string, slug = "") => {
   }
 
   const newPath = `${pathname}${newQuery}`;
-  window.history.replaceState(null, document.title, newPath);
+
+  if (param !== 'r') {
+    window.history.replaceState(null, document.title, newPath);
+  } else {
+    window.history.pushState({slug}, document.title, newPath);
+  }
 };
 
 /**
@@ -41,6 +46,20 @@ const App = (): JSX.Element => {
   const [filter, setFilter] = useState<string | null>(null);
 
   const classes = useStyles();
+
+  /**
+   * controls going to a recipe and setting the browser history
+   */
+  const gotoRecipe = useCallback((slug: string) => {
+    setQueryParam("r", slug);
+    setActiveRecipe(recipes[slug]);
+  }, []);
+
+  /**
+   * catches the browser back event and sets the slug as the active recipe
+   */
+  const onBack = useCallback((e: PopStateEvent) =>
+    setActiveRecipe(e.state?.slug ? recipes[e.state.slug] : null), []);
 
   /**
    * on load, this takes query params, parses them, and sets appropriate states
@@ -68,6 +87,12 @@ const App = (): JSX.Element => {
     if (query.r) {
       setActiveRecipe(recipes[query.r]);
     }
+
+    window.addEventListener('popstate', onBack);
+
+    return () => {
+      window.removeEventListener('popstate', onBack);
+    };
   }, []);
 
   /**
@@ -100,12 +125,10 @@ const App = (): JSX.Element => {
           }}
         >
           <RecipeCard
+            gotoRecipe={gotoRecipe}
             recipe={activeRecipe}
-            recipes={recipes}
             multiplier={multiplier}
-            setActiveRecipe={setActiveRecipe}
             setMultiplier={setMultiplier}
-            setQueryParam={setQueryParam}
           />
         </div>
       ) : null}
@@ -113,8 +136,8 @@ const App = (): JSX.Element => {
         <RecipesList
           activeTag={activeTag}
           filter={filter}
+          gotoRecipe={gotoRecipe}
           recipes={recipes}
-          setActiveRecipe={setActiveRecipe}
           setActiveTag={setActiveTag}
           setFilter={setFilter}
           setQueryParam={setQueryParam}

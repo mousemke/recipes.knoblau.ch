@@ -59,25 +59,21 @@ const filterByString = (recipes: Recipe[], filter: string) => {
 /**
  *
  * @param recipes
- * @param setActiveRecipe
- * @param setQueryParam
+ * @param classes
+ * @param gotoRecipe
  * @returns
  */
 const renderRecipeLinks = (
   recipes: Recipe[],
   classes: Classes,
-  setActiveRecipe: React.Dispatch<React.SetStateAction<Recipe | null>>,
-  setQueryParam: (param: string, slug: string) => void
+  gotoRecipe: (slug: string) => void
 ) => {
   return recipes.map((recipe, i) => {
     return (
       <a
         key={i}
         className={classes.recipeLink}
-        onClick={() => {
-          setQueryParam("r", recipe.title.replace(/[ ,]/g, ""));
-          setActiveRecipe(recipe);
-        }}
+        onClick={() => gotoRecipe(recipe.title.replace(/[ ,]/g, ""))}
         role="button"
       >
         <div>{recipe.title}</div>
@@ -93,8 +89,8 @@ const RecipesList = (props: RecipesListProps): JSX.Element => {
   const {
     activeTag,
     filter,
+    gotoRecipe,
     recipes,
-    setActiveRecipe,
     setActiveTag,
     setFilter,
     setQueryParam,
@@ -118,10 +114,9 @@ const RecipesList = (props: RecipesListProps): JSX.Element => {
       renderRecipeLinks(
         recipesToRender,
         classes,
-        setActiveRecipe,
-        setQueryParam
+        gotoRecipe
       ),
-    [classes, setActiveRecipe, setQueryParam]
+    [classes, gotoRecipe]
   );
 
   /**

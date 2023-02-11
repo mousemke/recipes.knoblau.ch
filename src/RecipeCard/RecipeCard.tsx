@@ -77,12 +77,10 @@ const RecipeCard = (props: RecipeCardProps): JSX.Element => {
   const classes = useStyles();
 
   const {
+    gotoRecipe,
     multiplier,
     recipe,
-    recipes,
-    setActiveRecipe,
-    setMultiplier,
-    setQueryParam
+    setMultiplier
   } = props;
 
   const fromTheBook = recipe.origin === "The Book";
@@ -179,10 +177,7 @@ const RecipeCard = (props: RecipeCardProps): JSX.Element => {
                 {ingredient.slug ? (
                   <a
                     className={classes.recipeLink}
-                    onClick={() => {
-                      setQueryParam("r", ingredient.slug as string);
-                      setActiveRecipe(recipes[ingredient.slug as string]);
-                    }}
+                    onClick={() => gotoRecipe(ingredient.slug as string)}
                     role="button"
                   >
                     {ingredient.name}
