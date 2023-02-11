@@ -1,5 +1,6 @@
 export interface Recipe {
   cookTime: number;
+  converted?: boolean;
   ingredients: {
     amount?: number;
     name: string;
@@ -819,7 +820,7 @@ const recipes: Recipes = {
       {
         amount: 12,
         name: "bottle beer. Farmhouse or session ale, or a light red or brown ale with an emphasis on malt and not so much on the hops. A full-strength American lager or good old Miller High Life.",
-        unit: "ounce"
+        unit: "fluid ounce"
       },
       {
         amount: 2,
@@ -1645,17 +1646,17 @@ const recipes: Recipes = {
       {
         amount: 125,
         name: "Pineapple Juice",
-        unit: "ml"
+        unit: "milliliter"
       },
       {
         amount: 25,
         name: "Honey",
-        unit: "ml"
+        unit: "milliliter"
       },
       {
         amount: 350,
         name: "water",
-        unit: "ml"
+        unit: "milliliter"
       },
       {
         amount: 1,
@@ -1941,7 +1942,7 @@ const recipes: Recipes = {
       {
         amount: 120,
         name: "double cream",
-        unit: "ml"
+        unit: "milliliter"
       },
       {
         amount: 2.5,
@@ -2627,7 +2628,7 @@ const recipes: Recipes = {
       {
         amount: 200,
         name: "tomato ketchup",
-        unit: "ml"
+        unit: "milliliter"
       },
       {
         amount: 2,
@@ -2642,7 +2643,7 @@ const recipes: Recipes = {
       {
         amount: 200,
         name: "apple juice",
-        unit: "ml"
+        unit: "milliliter"
       }
     ],
     instructions: [
@@ -4726,7 +4727,7 @@ const recipes: Recipes = {
         unit: "cup"
       },
       {
-        amount: 2,
+        amount: 99,
         name: "mirin",
         unit: "tablespoon"
       },
@@ -5169,11 +5170,13 @@ const recipes: Recipes = {
       },
       {
         amount: 1,
-        name: "recipe Chashu Pork Belly"
+        name: "Chashu Pork Belly",
+        slug: "ChashuPorkBelly"
       },
       {
         amount: 1,
-        name: "recipe Soy Bacon Tare or Miso Tare"
+        name: "Soy Bacon Tare",
+        slug: "SoyBaconTare"
       }
     ],
     instructions: [
@@ -5182,7 +5185,7 @@ const recipes: Recipes = {
       "Boil the ramen noodles in plenty of water as directed by the packaging. If there's no translation on the packaging usually its 4 minutes. You don't need to salt the water.",
       "Cook the mushrooms along side the noodles - you just want them softened.",
       "Gently fry the chashu pork in a non-stick skillet until lightly browned.",
-      "Place 1/4 of whichever tare you are using in the bottom of four bowls.",
+      "Place 1/4 of th Tare in the bottom of four bowls.",
       "Ladle in about 1/2 cup of the tonkotsu broth into each of the bowls and stir to mix.",
       "Add the noodles. Pour in another 1 1/2 cups of the tonkotsu broth per bowl.",
       "Top with the egg, mushrooms, pork and green onions."
@@ -5542,7 +5545,7 @@ const recipes: Recipes = {
       {
         amount: 95,
         name: "cold water",
-        unit: "ml"
+        unit: "milliliter"
       }
     ],
     instructions: [

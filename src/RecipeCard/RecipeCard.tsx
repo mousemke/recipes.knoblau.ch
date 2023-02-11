@@ -1,85 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Switch from "react-switch";
 import useStyles from "./RecipeCard.styles";
+import { convertRecipeUnits, isImperialUnits, minutesHoursDays, parseIngredientAmount } from "./RecipeCard.helpers";
 
 import type { RecipeCardProps } from "./RecipeCard.types";
-
-/**
- *
- * @param minutes
- * @returns
- */
-const minutesHoursDays = (minutes: number) => {
-  if (minutes < 60) {
-    return `${minutes} min.`;
-  } else if (minutes < 1440) {
-    const hours = parseFloat((minutes / 60).toFixed(2));
-
-    return `${hours} hours`;
-  }
-
-  const days = parseFloat((minutes / 60 / 24).toFixed(2));
-
-  return `${days} days`;
-};
-
-/**
- * Parses decimal into easier to read fractions when possible
- *
- * @param rawAmount initial amount + multiplier
- */
-const parseIngredientAmount = (rawAmount: number) => {
-  /**
-   * converts commonly used measurements from float to fractions
-   * @paran integer
-   * @param fraction
-   */
-  const getFraction = (rawInteger: number, fraction: number) => {
-    const integer = rawInteger === 0 ? "" : `${rawInteger} `;
-
-    switch (fraction) {
-      case 875:
-        return `${integer}7/8 `;
-      case 750:
-        return `${integer}3/4 `;
-      case 667:
-        return `${integer}2/3 `;
-      case 625:
-        return `${integer}5/8 `;
-      case 500:
-        return `${integer}1/2 `;
-      case 375:
-        return `${integer}3/8 `;
-      case 333:
-        return `${integer}1/3 `;
-      case 250:
-        return `${integer}1/4 `;
-      case 125:
-        return `${integer}1/8 `;
-      case 0:
-        return `${rawInteger} `;
-      default:
-        return `${rawInteger}.${fraction} `;
-    }
-  };
-
-  const amountArray = rawAmount.toFixed(3).split(".");
-
-  return getFraction(
-    parseInt(amountArray[0], 10),
-    parseInt(amountArray[1], 10)
-  );
-};
 
 /**
  * A generalized recipe card
  */
 const RecipeCard = (props: RecipeCardProps): JSX.Element => {
+  const { gotoRecipe, multiplier, recipe, setActiveRecipe, setMultiplier } = props;
+  const [isImperial, setIsImperial] = useState<boolean | null>(isImperialUnits(recipe));
+
   const classes = useStyles();
 
-  const { gotoRecipe, multiplier, recipe, setMultiplier } = props;
+  const slug = recipe.title.replace(/[ ,]/g, "");
+
+  useEffect(() => {
+    setIsImperial(isImperialUnits(recipe));
+  }, [slug]);
 
   const fromTheBook = recipe.origin === "The Book";
-  const slug = recipe.title.replace(/[ ,]/g, "");
 
   return (
     <>
@@ -118,7 +59,7 @@ const RecipeCard = (props: RecipeCardProps): JSX.Element => {
                 </span>
               </div>
               {multiplier !== 1 ? (
-                <div className={classes.multiplierWarning}>
+                <div className={classes.changeWarning}>
                   * The recipe servings have been changed. Prep time, cook time,
                   and specific cooking instructions may need to be altered.
                 </div>
@@ -158,6 +99,36 @@ const RecipeCard = (props: RecipeCardProps): JSX.Element => {
                   : 1
               }
             />
+          </div>
+          <div className={classes.changeUnitsWrapper}>
+            <div className={classes.changeUnits}>
+              {isImperial === null ?
+                <div className={classes.disabledText}>Mixed units, can't convert them</div> : (
+                <>
+                  <span>Imperial{" "}</span>
+                  <Switch
+                    aria-label="change units. on for metric, off for imperial"
+                    checked={!isImperial}
+                    checkedIcon={false}
+                    onChange={() => {
+                      setActiveRecipe(convertRecipeUnits(recipe, isImperial as boolean));
+                      setIsImperial(!isImperial);
+                    }}
+                    height={20}
+                    offColor="#ee52ff"
+                    onColor="#9452ff"
+                    uncheckedIcon={false}
+                    width={48}
+                  />
+                  <span>{" "}Metric</span>
+                  {recipe.converted ? (
+                    <span className={`${classes.changeWarning} ${classes.unitChangedWarning}`}>
+                      Units have been converted. Be careful of unconverted units in the recipe text
+                    </span>
+                  ) : null}
+                </>
+              )}
+            </div>
           </div>
           <div className={classes.seperator}></div>
           <p className={classes.sectionHeader}>

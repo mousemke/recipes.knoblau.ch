@@ -13,11 +13,25 @@ const useStyles = createUseStyles(
       width: "100%"
     },
     changeScale: {
-      marginBottom: 20,
+      marginBottom: 10,
 
       "& > input": {
         width: 50
       }
+    },
+    changeUnits: {
+      marginBottom: 20,
+      "& > div": {
+        verticalAlign: "middle"
+      }
+    },
+    changeUnitsWrapper: {
+      position: "relative"
+    },
+    changeWarning: {
+      fontFamily: "MuseoSansCyrl-900, sans-serif",
+      fontWeight: 900,
+      marginTop: 10
     },
     closeIcon: {
       display: "inline-block",
@@ -65,6 +79,9 @@ const useStyles = createUseStyles(
         border: "4px solid #e129f5"
       }
     },
+    disabledText: {
+      color: "#888888"
+    },
     header: {
       background: "#ececec",
       display: "flex",
@@ -92,11 +109,6 @@ const useStyles = createUseStyles(
       "& > p": {
         padding: "0 20px 20px 40px"
       }
-    },
-    multiplierWarning: {
-      fontFamily: "MuseoSansCyrl-900, sans-serif",
-      fontWeight: 900,
-      marginTop: 20
     },
     originLink: {
       display: "block",
@@ -182,6 +194,11 @@ const useStyles = createUseStyles(
       fontSize: "1.85rem",
       marginTop: 0,
       textAlign: "center"
+    },
+    unitChangedWarning: {
+      fontSize: "0.75rem",
+      verticalAlign: "middle",
+      marginLeft: 8
     }
   },
   {

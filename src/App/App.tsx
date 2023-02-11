@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 
 import recipes from "../recipes";
-
 import RecipeCard from "../RecipeCard";
 import RecipesList from "../RecipesList";
 
@@ -59,8 +58,7 @@ const App = (): JSX.Element => {
    * catches the browser back event and sets the slug as the active recipe
    */
   const onBack = useCallback(
-    (e: PopStateEvent) =>
-      setActiveRecipe(e.state?.slug ? recipes[e.state.slug] : null),
+    (e: PopStateEvent) => setActiveRecipe(e.state?.slug ? recipes[e.state?.slug] : null),
     []
   );
 
@@ -129,8 +127,9 @@ const App = (): JSX.Element => {
         >
           <RecipeCard
             gotoRecipe={gotoRecipe}
-            recipe={activeRecipe}
             multiplier={multiplier}
+            recipe={activeRecipe}
+            setActiveRecipe={setActiveRecipe}
             setMultiplier={setMultiplier}
           />
         </div>
