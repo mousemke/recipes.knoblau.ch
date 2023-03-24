@@ -3246,72 +3246,104 @@ const recipes: Recipes = {
     title: "Kombu Dashi"
   },
   Kringle: {
-    cookTime: 15,
+    cookTime: 25,
     ingredients: [
       {
         amount: 1,
-        name: "sour cream",
+        name: "Pastry Dough",
+        slug: "KringlePastryDough"
+      },
+      {
+        amount: 1,
+        name: "Pastry Glaze",
+        slug: "PastryGlaze"
+      },
+      {
+        amount: 8,
+        name: "Cream Cheese",
+        unit: "ounce"
+      },
+      {
+        amount: 0.5,
+        name: "Sugar",
         unit: "cup"
       },
       {
         amount: 1,
-        name: "vanilla",
+        name: "Vanilla Extract",
         unit: "teaspoon"
       },
       {
-        amount: 2,
-        name: "flour",
+        amount: 16,
+        name: "Strawberry Pie Filling",
+        slug: "StrawberryPieFilling",
+        unit: "ounce"
+      },
+    ],
+    instructions: [
+      "Prepare the pastry dough as directed",
+      "Preheat the oven to 375°.",
+      "Beat together the cream cheese, sugar and vanilla. Roll out each piece of dough into a rectangle, 1/8 inch thick, about the length of your cookie sheet and as wide as 1/8 inch will allow.",
+      "Spread half of the cream cheese filling over each piece of dough. Then, spread each kringle with half of the canned pie filling (whatever flavor you've chosen).",
+      "Rolling from the short ends, roll each side to the center. Pinch the center together and roll the ends under. Place each kringle on an cookie sheet lined with parchment paper.",
+      "Bake 20-25 minutes. Let cool about 10 minutes before glazing."
+    ],
+    origin: "https://www.seriouseats.com/kringle-wisconsin-pastry-breakfast-recipe",
+    prepTime: 150,
+    servings: 10,
+    summary: "A classic pastry that originated in Racine, Wis., the American kringle has a flaky, buttery crust and a sweet, tender filling.",
+    tags: ["vegetarian", "wisconsin"],
+    title: "Kringle"
+  },
+  KringlePastryDough: {
+    cookTime: 0,
+    ingredients: [
+      {
+        amount: 4,
+        name: "Unbleached All Purpose Flour",
+        unit: "cup"
+      },
+      {
+        amount: 1,
+        name: "Butter, Slightly Softened",
         unit: "cup"
       },
       {
         amount: 2,
-        name: "sticks unsalted butter, chilled"
-      },
-      {
-        amount: 1,
-        name: "egg"
-      },
-      {
-        amount: 1,
-        name: "sugar",
+        name: "Sugar",
         unit: "tablespoon"
       },
       {
         amount: 1,
-        name: "sour cherry jam",
-        unit: "cup"
+        name: "Salt",
+        unit: "teaspoon"
       },
       {
         amount: 1,
-        name: "powdered sugar",
-        unit: "cup"
+        name: "Dry Yeast Envelope",
+        unit: "package"
       },
       {
         amount: 2,
-        name: "milk",
-        unit: "tablespoon"
+        name: "Large Eggs, Beaten"
       },
       {
         amount: 1,
-        name: "vanilla",
-        unit: "teaspoon"
+        name: "Milk, Warmed To 110 Degrees",
+        unit: "cup"
       }
     ],
     instructions: [
-      "In a small bowl mix together sour cream and vanilla. Set aside.",
-      "Using a pastry blender or (several pulses with a food processor) cut together flour and butter so butter is reduced to small pea-sized bits. Stir in sour cream mixture. Blend well to form a dough. Divide into two disks. Flatten disks slightly, cover and chill at least 2 hours or overnight.",
-      "Preheat oven to 450°F. In a small bowl whisk together egg and sugar. Set aside. On a floured work surface, roll out each dough disk into a 12 by 6 inch rectangle. Spread filling down center in a thin strip leaving two inches clear on each side and an inch and a half at both ends. Fold sides over center then fold ends up, press lightly to seal. Brush with egg wash.",
-      "Mix together 1 cup powdered sugar, milk, and vanilla to make the icing",
-      "Bake on a parchment lined cookie sheet for 10 to 15 minutes or until golden brown. Drizzle icing over warm kringle. Cool on wire rack. Store in a covered container. Best within a day."
+      "Put the flour, butter, sugar and salt into a bowl. Using a pastry blender, two knives, Kitchen Aid or your hands, blend together until the mixture is crumbly.",
+      "Mix in the dry yeast, beaten eggs, and milk. Mix well until all ingredients are blended, it will pull away from the sides of the bowl and form a ball. You may have to work the final flour into the dough with your hands.",
+      "Divide it into two pieces, flatten into discs, wrap in plastic wrap or wax paper and put them into the refrigerator for 2-3 hours."
     ],
-    origin:
-      "https://www.seriouseats.com/kringle-wisconsin-pastry-breakfast-recipe",
-    prepTime: 125,
-    servings: 12,
-    summary:
-      "Kringles can be filled with fruit or nuts. Cherry, apple and almond are popular and traditional fillings. Special thanks to Racine native MJ Diem for sharing her mother's Kringle recipe which has been adapted here.",
+    origin: "https://tastykitchen.com/recipes/breakfastbrunch/wisconsin-kringle/",
+    prepTime: 15,
+    servings: 10,
+    summary: "A classic pastry that originated in Racine, Wis., the American kringle has a flaky, buttery crust and a sweet, tender filling.",
     tags: ["vegetarian", "wisconsin"],
-    title: "Kringle"
+    title: "Kringle Pastry Dough"
   },
   MapleTurkeyBrine: {
     cookTime: 20,
@@ -3991,6 +4023,47 @@ const recipes: Recipes = {
       "Oyakodon is cooked in one pan where onions, chicken, and egg are simmered in an umami-rich, dashi-based sauce. It is then poured over a bowl of fluffy steamed rice. Simple, delicious, and utterly comforting, this is the kind of one-bowl meal you can cook in less than 30 minutes!",
     tags: ["chicken", "japanese"],
     title: "Oyakodon"
+  },
+  PastryGlaze: {
+    cookTime: 0,
+    ingredients: [
+      {
+        amount: 2.5,
+        name: "Powdered Sugar",
+        unit: "cup"
+      },
+      {
+        amount: 2,
+        name: "Butter, Softened",
+        unit: "tablespoon"
+      },
+      {
+        amount: 4,
+        name: "Hot Water",
+        unit: "tablespoon"
+      },
+      {
+        amount: 1,
+        name: "Milk",
+        unit: "tablespoon"
+      },
+      {
+        amount: 1.5,
+        name: "Vanilla Extract",
+        unit: "tablespoon"
+      },
+    ],
+    instructions: [
+      "Mix the wet ingredients in a bowl",
+      "Mix the dry ingredients in a different bowl",
+      "Combine"
+    ],
+    origin: "https://tastykitchen.com/recipes/breakfastbrunch/wisconsin-kringle/",
+    prepTime: 5,
+    servings: 10,
+    summary: "A classic pastry that originated in Racine, Wis., the American kringle has a flaky, buttery crust and a sweet, tender filling.",
+    tags: ["vegetarian", "wisconsin"],
+    title: "Pastry Glaze"
   },
   PennewithRadicchioSpinachandBacon: {
     cookTime: 20,
@@ -4898,6 +4971,51 @@ const recipes: Recipes = {
       "This easy, attractive dish has a mild flavor and tastes as good as it looks.",
     tags: ["vegetarian", "vegan", "appetizer"],
     title: "Steamed Cauliflower with Lemon Butter Sauce"
+  },
+  StrawberryPieFilling: {
+    cookTime: 20,
+    ingredients: [
+      {
+        amount: 1,
+        name: "granulated sugar",
+        unit: "cup"
+      },
+      {
+        amount: 0.5,
+        name: "cornstarch",
+        unit: "cup"
+      },
+      {
+        amount: 2,
+        name: "frozen strawberries",
+        unit: "pound"
+      },
+      {
+        amount: 2,
+        name: "lemon juice",
+        unit: "teaspoon"
+      },
+      {
+        amount: 0.5,
+        name: "vanilla extract",
+        unit: "teaspoon"
+      }
+    ],
+    instructions: [
+      "In a small bowl, whisk the sugar and cornstarch together.",
+      "Place the frozen strawberries, sugar and cornstarch mixture, lemon juice, and vanilla extract in a large saucepan. Cook on medium-low heat for 3 minutes.",
+      "Increase to medium heat and cook until the mixture has thickened, about 15-20 minutes, stirring every couple of minutes.",
+      "Remove from heat and cool for 1 hour. Pour into a fully baked pie shell and refrigerate until ready to serve.",
+      "NOTE: If using fresh strawberries (not frozen) mix all of the ingredients except for the strawberries with 1/3 cup of boiling water and simmer until the mixture has thickened. Then fold in the fresh fruit."
+    ],
+    origin:
+      "https://stateofdinner.com/strawberry-pie-filling/",
+    prepTime: 5,
+    progressPics: 4,
+    servings: 12,
+    summary: "Frozen berries and a few simple ingredients are all that you need to make this delicious dessert that can be enjoyed as a simple strawberry pie or as a topping on ice cream and cheesecakes!",
+    tags: ["vegetarian", "vegan", "dessert"],
+    title: "Strawberry Pie Filling"
   },
   TacoSeasoning: {
     cookTime: 0,
