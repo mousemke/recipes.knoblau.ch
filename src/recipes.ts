@@ -1578,6 +1578,62 @@ const recipes: Recipes = {
     tags: ["chicken"],
     title: "Chicken Pot Pies with Puff Pastry"
   },
+  ClassicDeviledEggs: {
+    cookTime: 10,
+    ingredients: [
+      {
+        amount: 12,
+        name: "large eggs"
+      },
+      {
+        amount: 2,
+        unit: "teaspoon",
+        name: "Dijon mustard"
+      },
+      {
+        amount: 0.333,
+        unit: "cup",
+        name: "mayonnaise"
+      },
+      {
+        amount: 1,
+        unit: "tablespoon",
+        name: "minced shallot or onion"
+      },
+      {
+        amount: 0.25,
+        unit: "teaspoon",
+        name: "Tabasco sauce"
+      },
+      {
+        name: "Salt"
+      },
+      {
+        name: "Freshly ground black pepper"
+      },
+      {
+        name: "Paprika"
+      }
+    ],
+    instructions: [
+      "Hard boi the eggs. Once they are cooked, put them in an ice bath (or a bowl with running cold water) for at least 10 min, or until they are fulled cooled down.",
+      "Peel the eggs. Using a sharp knife, slice each egg in half, lengthwise. Gently remove the yolk halves and place in a small mixing bowl. Arrange the egg white halves on a plate.",
+      "Using a fork, mash up the yolks and add mustard, mayonnaise, onion, tabasco, and a sprinkling of salt and pepper. Add more mayonnaise as necessary to get to the creamy consistency you want.",
+      "Pipe through a piping bag or simply use a spoon to put the egg yolk mixture into the egg white halves. Sprinkle with paprika.",
+      "Refrigerate before serving"
+    ],
+    origin:
+      "https://www.simplyrecipes.com/recipes/deviled_eggs/",
+    prepTime: 15,
+    progressPics: 5,
+    servings: 12,
+    summary:
+      "What's so \"deviled\" about deviled eggs? Just the little bit of spice from the paprika and either cayenne or Tabasco that you add to the filling.",
+    tags: ["vegetarian", "appetizer"],
+    title: "Classic Deviled Eggs"
+  },
+
+
   ColdSobaNoodleswithDippingSauce: {
     cookTime: 15,
     ingredients: [
@@ -2699,13 +2755,90 @@ const recipes: Recipes = {
       "Place fries on paper towels to soak up grease and salt immediately and generously with table salt. Fries can be kept warm in 200 degree oven while remaining fries cook."
     ],
     origin:
-      "https://www.allrecipes.com/recipe/59900/authentic-enchiladas-verdes/",
+      "https://www.foxvalleyfoodie.com/make-french-fries-scratch/",
     prepTime: 5,
     servings: 2,
     summary:
       "Want to make french fries from scratch but don't like the dark brown soggy fries? This recipe will yield perfectly crisp pale yellow fries that are guaranteed to please.",
     tags: ["vegetarian", "appetizer"],
     title: "French Fries"
+  },
+  FrenchOnionSoup: {
+    cookTime: 90,
+    ingredients: [
+      {
+        amount: 3,
+        name: "onions (large, peeled and sliced)"
+      },
+      {
+        amount: 0.5,
+        unit: "teaspoon",
+        name: "brown sugar (optional)"
+      },
+      {
+        amount: 0.3333333333,
+        unit: "cup",
+        name: "butter"
+      },
+      {
+        amount: 8,
+        unit: "cup",
+        name: "beef broth, important to use high quality"
+      },
+      {
+        amount: 0.3333333333,
+        unit: "cup",
+        name: "dry white wine"
+      },
+      {
+        amount: 3,
+        name: "sprigs fresh thyme"
+      },
+      {
+        amount: 1,
+        name: "bay leaf"
+      },
+      {
+        amount: 0.25,
+        unit: "teaspoon",
+        name: "pepper"
+      },
+      {
+        amount: 1,
+        unit: "tablespoon",
+        name: "Worcestershire sauce"
+      },
+      {
+        amount: 1,
+        name: "baguette"
+      },
+      {
+        amount: 3,
+        unit: "cup",
+        name: "Gruyere cheese"
+      },
+      {
+        amount: 6,
+        unit: "tablespoon",
+        name: "fresh Parmesan cheese"
+      }
+    ],
+    instructions: [
+      "On low heat, melt butter, then add onions and brown sugar and cook until onions are clear and starting to turn brown; until carmalized. This is arguably the most important step so take your time and stir often.",
+      "Add beef broth, white wine, thyme, bay leaf, pepper, and Worcestershire sauce. Simmer for at least 60 minutes. Note: this soup depends on the broth, I don't recommend a vegetarian broth substitution unless you can find something with similar depth of flavor.",
+      "Meanwhile, preheat the oven's broiler.",
+      "Ladle soup into oven-safe serving bowls and place one slice of bread on top of each (bread may be broken into pieces if you prefer). Layer each slice of bread with a mixture of Gruyere and Parmesan.",
+      "Place bowls on a cookie sheet and broil in the preheated oven until cheese bubbles and browns slightly, 2 to 3 minutes."
+    ],
+    origin:
+      "https://www.yummly.com/recipe/French-Onion-Soup-2607791#b8a2965a-62f8-46bf-b1ca-319ef9ffc449",
+    prepTime: 10,
+    progressPics: 3,
+    servings: 8,
+    summary:
+      "We have been trying French onion soup in restaurants for years, and my family and friends agree - none can compare to my recipe for taste and simplicity of preparation.",
+    tags: ["soup"],
+    title: "French Onion Soup"
   },
   FudgeBrownies: {
     cookTime: 25,
