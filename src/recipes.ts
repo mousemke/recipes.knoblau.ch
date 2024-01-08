@@ -23,6 +23,70 @@ export interface Recipes {
 }
 
 const recipes: Recipes = {
+  AjitsukeTamago: {
+    cookTime: 10,
+    ingredients: [
+      {
+        amount: 5,
+        name: "tsuyu sauce",
+        unit: "tablespoon"
+      },
+      {
+        amount: 5,
+        name: "soy sauce",
+        unit: "teaspoon"
+      },
+      {
+        amount: 5,
+        name: "water",
+        unit: "tablespoon"
+      },
+      {
+        amount: 5,
+        name: "mirin",
+        unit: "teaspoon"
+      },
+      {
+        amount: 2,
+        name: "sake",
+        unit: "teaspoon"
+      },
+      {
+        amount: 1,
+        name: "sugar",
+        unit: "teaspoon"
+      },
+      {
+        amount: 4,
+        name: "medium eggs",
+      },
+      {
+        amount: 1,
+        name: "salt",
+        unit: "teaspoon"
+      },
+      {
+        name: "A bowl of ice-cold water"
+      }
+    ],
+    instructions: [
+      "In a small pan, add tsuyu, soy sauce, water, mirin, sake and sugar. Mix and heat on medium high until it starts to boil.",
+      "Allow it to boil for 1-2 minutes to burn off the alcohol and leave to cool.",
+      "Next, bring a pan of water to a rolling boil and mix in salt. (It should be enough water to completely cover the eggs)",
+      "Add the eggs and boil for 6 - 7 minutes to make soft boiled eggs.",
+      "Once the time is up, immediately transfer the eggs into a bowl of ice water to stop the cooking process.",
+      "Allow the eggs to cool for about 10 minutes and then peel them.",
+      "Once the sauce is cool enough, put the eggs and sauce together in a zip lock bag and store in the fridge for 45 minutes. ",
+      "Enjoy with ramen or as a snack! ",
+      "Keep the ramen eggs in the fridge for up to 3 days (the flavor gets stronger each day) and discard the sauce after one use."
+    ],
+    origin: "https://sudachirecipes.com/ramen-egg-recipe/",
+    prepTime: 45,
+    tags: ["vegetarian", "japanese"],
+    servings: 4,
+    summary: "Ajitsuke Tamago (味付け卵) is a delicious soft boiled egg marinated in a umami rich sauce. It's super easy to make and perfect in a hot bowl of ramen or even to eat on its own as a snack!",
+    title :"Ajitsuke Tamago"
+  },
   AppleCiderTurkeyBrine: {
     cookTime: 5,
     ingredients: [
@@ -340,6 +404,53 @@ const recipes: Recipes = {
       "There's no easier way to cook fish than tucked in a foil package, alongside healthy vegetables. Barramundi, a sustainable fish, takes the starring role.",
     tags: ["fish"],
     title: "Barramundi Fish and Bok Choy in Foil"
+  },
+  BasicAwaseSobaSoup: {
+    cookTime: 10,
+    ingredients: [
+      {
+        amount: 2,
+        unit: "bundle",
+        name: "soba noodles",
+      },
+      {
+        amount: 1,
+        unit: "liter",
+        name: "awase dashi",
+        slug: "AwaseDashi"
+      },
+      {
+        amount: 2,
+        name: "mirin",
+        unit: "tablespoon"
+      },
+      {
+        amount: 2,
+        name: "soy sauce",
+        unit: "tablespoon"
+      },
+      {
+        amount: 1,
+        name: "sake",
+        unit: "tablespoon"
+      }
+    ],
+    instructions: [
+      "Bring a pot of water big enough for the noodles to a boil. Cook the soba noodles according to the package instructions. Drain and rinse under cold water. Set aside.",
+      "Bring the dashi to a boil over medium heat. Add the mirin, soy sauce, and sake. Stir to combine. Reduce the heat to low and keep the soup warm.",
+      "Divide the soba noodles into 2 bowls. Pour the soup over the noodles.",
+      "Top with your chosen ingredients. Serve immediately.",
+      "* For vegan/vegetarian, use kombu dashi or shiitake dashi instead of awase dashi."
+    ],
+    prepTime: 0,
+    origin:
+      "https://www.justonecookbook.com/soba-noodle-soup/",
+    progressPics: 3,
+    servings: 2,
+    summary:
+      "This steamy bowl of Soba Noodle Soup (温かいお蕎麦) will bring you extra comfort on cold days! Top it with crispy shrimp tempura, kamaboko fish cake, or sliced scallion.",
+    tags: ["japanese", "soup"],
+    title: "Basic Awase Soba Soup"
   },
   BeefBrisketwithBBQSauce: {
     cookTime: 600,
@@ -1088,6 +1199,63 @@ const recipes: Recipes = {
     tags: ["vegetarian"],
     title: "Buttery Flaky Pie Crust"
   },
+  CajunSeasoning: {
+    cookTime: 0,
+    ingredients: [
+      {
+        amount: 2,
+        name: "onion powder"
+      },
+      {
+        amount: 2,
+        name: "garlic powder"
+      },
+      {
+        amount: 2,
+        name: "dried oregano"
+      },
+      {
+        amount: 2,
+        name: "dried basil"
+      },
+      {
+        amount: 1,
+        name: "dried thyme"
+      },
+      {
+        amount: 1,
+        name: "black pepper"
+      },
+      {
+        amount: 1,
+        name: "white pepper"
+      },
+      {
+        amount: 1,
+        name: "cayenne pepper"
+      },
+      {
+        amount: 1,
+        name: "ground celery seed"
+      },
+      {
+        amount: 5,
+        name: "paprika"
+      },
+    ],
+    instructions: [
+      "There is no unit in the recipe itself, use a consistent unit of measurement for all ingredients.",
+      "Combine all ingredients in a bowl and mix well.",
+      "Store in an airtight container in a cool, dry place for up to 6 months."
+    ],
+    origin: "The Book",
+    prepTime: 5,
+    servings: 20,
+    summary:
+      "Cajun seasoning straight out of NOLA. This recipe is the perfect blend of spices and herbs that will give you that authentic cajun flavor.",
+    tags: ["vegetarian", "cajun"],
+    title: "Cajun Seasoning"
+  },
   Carnitas: {
     cookTime: 0,
     ingredients: [
@@ -1578,6 +1746,106 @@ const recipes: Recipes = {
     tags: ["chicken"],
     title: "Chicken Pot Pies with Puff Pastry"
   },
+  ChickenTortillaSoup: {
+    cookTime: 480,
+    ingredients: [
+      {
+        amount: 800,
+        unit: "gram",
+        name: "chicken breast"
+      },
+      {
+        amount: 2,
+        unit: "teaspoon",
+        name: "chili powder"
+      },
+      {
+        amount: 1,
+        unit: "teaspoon",
+        name: "cumin"
+      },
+      {
+        name: "salt"
+      },
+      {
+        name: "pepper"
+      },
+      {
+        amount: 1,
+        name: "medium onion, chopped"
+      },
+      {
+        amount: 1,
+        name: "red bell pepper, chopped"
+      },
+      {
+        amount: 1,
+        name: "yellow bell pepper, chopped"
+      },
+      {
+        amount: 800,
+        unit: "gram",
+        name: "whole or diced canned tomatoes, with juice"
+      },
+      {
+        amount: 200,
+        unit: "gram",
+        name: "canned salsa verde"
+      },
+      // was pretty great without this but leaving it in in case
+      // {
+      //   amount: 3,
+      //   unit: "cup",
+      //   name: "chicken broth"
+      // },
+      {
+        amount: 100,
+        unit: "gram",
+        name: "tomato paste"
+      },
+      {
+        amount: 2,
+        name: "whole chipotle pepper"
+      },
+      {
+        amount: 400,
+        unit: "gram",
+        name: "canned black beans, drained and rinsed"
+      },
+      {
+        amount: 1,
+        name: "Lime, Juiced"
+      },
+      {
+        name: "Sour Cream"
+      },
+      {
+        name: "Avocado"
+      },
+      {
+        name: "Cilantro Leaves"
+      },
+      {
+        name: "Cheddar, Grated"
+      },
+    ],
+    instructions: [
+      "Place the chicken in the slow cooker. Sprinkle on the chili powder, cumin, and salt and pepper.",
+      "Add the onion, bell pepper, tomatoes, chicken broth, tomato paste, chipotle, and black beans.",
+      "Stir, place the lid on the slow cooker, and cook on low for 8 hours",
+      "Stir in the lime juice.",
+      "Take out the chicken. Using 2 forks, shred the chicken.",
+      "While the chicken is out smash the whole tomatoes. They will basically fall apart",
+      "Serve with avocado, sour cream, cheddar, and cilantro leaves"
+    ],
+    origin: "https://www.thepioneerwoman.com/food-cooking/recipes/a82077/slow-cooker-chicken-tortilla-soup/",
+    prepTime: 10,
+    progressPics: 4,
+    servings: 12,
+    summary: "The best kind of slow cooker recipe in that it requires no pre-cooking or sauteing or browning. You literally throw everything in, turn it on, then go live your life until it's done.",
+    tags: ["chicken", "slow cooker"],
+    title: "Chicken Tortilla Soup"
+  },
   ClassicDeviledEggs: {
     cookTime: 10,
     ingredients: [
@@ -1632,8 +1900,6 @@ const recipes: Recipes = {
     tags: ["vegetarian", "appetizer"],
     title: "Classic Deviled Eggs"
   },
-
-
   ColdSobaNoodleswithDippingSauce: {
     cookTime: 15,
     ingredients: [
@@ -3173,7 +3439,106 @@ const recipes: Recipes = {
     tags: ["fish", "japanese"],
     title: "Iriko Dashi"
   },
-  KatsudonJapanesePorkCutletandEggRiceBowl: {
+  Jambalaya: {
+    cookTime: 150,
+    ingredients: [
+      {
+        amount: 1,
+        name: "oil",
+        unit: "tablespoon"
+      },
+      {
+        amount: 1,
+        name: "chicken breasts, cut into 1-inch pieces",
+        unit: "pound"
+      },
+      {
+        amount: 1,
+        name: "andouille sausage (can substitute chorizo), sliced thick",
+        unit: "pound"
+      },
+      {
+        amount: 1,
+        name: "medium shrimp, peeled and deveined",
+        unit: "pound"
+      },
+      {
+        amount: 2,
+        name: "jalapeno peppers, seeded and diced"
+      },
+      {
+        amount: 1,
+        name: "medium onion, diced"
+      },
+      {
+        amount: 3,
+        name: "red bell pepper, seeded and diced large"
+      },
+      {
+        amount: 2,
+        name: "stalks celery, diced"
+      },
+      {
+        amount: 1,
+        name: "okra, sliced into 1/2-inch pieces",
+        unit: "cup"
+      },
+      {
+        amount: 2,
+        name: "cloves garlic, minced"
+      },
+      {
+        amount: 1,
+        name: "15 oz (400ml) can diced tomatoes"
+      },
+      {
+        amount: 3.5,
+        name: "chicken broth",
+        unit: "cup"
+      },
+      {
+        amount: 2,
+        name: "Cajun seasoning",
+        unit: "tablespoon",
+        slug: "CajunSeasoning"
+      },
+      {
+        amount: 1,
+        name: "bay leaf"
+      },
+      {
+        amount: 0.5,
+        name: "thyme",
+        unit: "tablespoon"
+      },
+      {
+        name: "salt, freshly ground black pepper, and cayenne to taste"
+      },
+      {
+        amount: 2,
+        name: "white rice",
+        unit: "cup"
+      }
+    ],
+    instructions: [
+      "Heat the oil in a large pot over medium-high heat. Add the chicken and sausage and cook until browned, about 5 minutes. Remove the meat to a plate and set aside.",
+      "Add the shrimp to the pot and cook until pink, about 2 minutes. Remove the shrimp to a plate and set aside.",
+      "Add the jalapeno, onion, bell pepper, celery, and okra to the pot and cook until softened, about 5 minutes. Add the garlic and cook until fragrant, about 30 seconds.",
+      "Combine everything but shrimp and bring to a boil, cover, and reduce heat to low.",
+      "Simmer on low for 2 hours, stirring occasionally.",
+      "Add the rice and stir well. Cover and simmer for 20 minutes, or until the rice is tender.",
+      "Add the shrimp back to the pot and cook until heated through, about 2 minutes and serve.",
+      "* If using a slow cooker, add everything but the shrimp and rice and cook on low for 6-8 hours. Add the rice and cook for another 30 minutes. Add the shrimp and cook for another 10 minutes."
+    ],
+    origin: "The Book",
+    prepTime: 30,
+    servings: 8,
+    summary:
+      "A New Orleans classic, this jambalaya recipe is made with spicy sausage, chicken, and shrimp. Slow food is good food, and this dish is worth the wait!",
+    tags: ["cajun", "the book", "chicken", "shrimp", "sausage", "slow cooker"],
+    title: "Jambalaya"
+  },
+  KatsudonandEggRiceBowl: {
     cookTime: 20,
     ingredients: [
       {
@@ -3249,7 +3614,7 @@ const recipes: Recipes = {
     summary:
       "Katsudon is a fried, panko-breaded pork cutlet with egg over rice and a favorite of Japanese restaurant-goers. Our Katsudon recipe is easy to make at home!",
     tags: ["pork", "japanese"],
-    title: "Katsudon Japanese Pork Cutlet and Egg Rice Bowl"
+    title: "Katsudon and Egg Rice Bowl"
   },
   KatsuoDashi: {
     cookTime: 0,
@@ -5063,6 +5428,56 @@ const recipes: Recipes = {
       "Use this sauce to spice up any stir-fry. May bring a little sweat to your forehead. Marinate meat in sauce if desired. Stir-fry meat and veggies until almost cooked to desired doneness. Add sauce, toss to coat, and heat through. Adjust chile paste for more or less heat.",
     tags: ["vegetarian", "vegan", "japanese"],
     title: "Spicy Stir Fry Sauce"
+  },
+  SpinachArtichokeDip: {
+    cookTime: 0,
+    ingredients: [
+      {
+        amount: 300,
+        name: "fresh spinach, cooked, drained, rough cut",
+        unit: "gram"
+      },
+      {
+        amount: 500,
+        name: "canned Artichoke hearts",
+        unit: "gram"
+      },
+      {
+        amount: 450,
+        name: "cream cheese",
+        unit: "gram"
+      },
+      {
+        amount: 350,
+        name: "sour cream",
+        unit: "gram"
+      },
+      {
+        amount: 1,
+        name: "Parmasean",
+        unit: "cup"
+      },
+      {
+        amount: 4,
+        name: "Garlic",
+        unit: "clove"
+      },
+      {
+        name: "Pepper"
+      }
+    ],
+    instructions: [
+      "Combine all Ingredients at room temperature",
+      "Mix well",
+      "Refrigerate",
+      "Serve cold or heat up individual servings in the oven"
+    ],
+    origin: "The Book",
+    prepTime: 20,
+    servings: 20,
+    summary: "A classic and favorite of all who have tried it. I made this so much at restaurants I worked at. serve with thin cut french bread",
+    tags: ["vegetarian", "cajun"],
+    title: "Spinach Artichoke Dip"
   },
   SteamedCauliflowerwithLemonButterSauce: {
     cookTime: 20,

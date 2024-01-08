@@ -75,16 +75,6 @@ const IMPERIAL_UNITS: { [unit: string]: UnitConversionInfo | ((amount: number) =
     convertedUnit: "liter",
     conversionMultiplier: 0.946353,
     abbreviation: "qt"
-  },
-  tablespoon: {
-    convertedUnit: "milliliter",
-    conversionMultiplier: 14.78677,
-    abbreviation: "tbsp"
-  },
-  teaspoon: {
-    convertedUnit: "milliliter",
-    conversionMultiplier: 4.928922,
-    abbreviation: "tsp"
   }
 };
 
