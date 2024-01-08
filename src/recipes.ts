@@ -1253,7 +1253,7 @@ const recipes: Recipes = {
     servings: 20,
     summary:
       "Cajun seasoning straight out of NOLA. This recipe is the perfect blend of spices and herbs that will give you that authentic cajun flavor.",
-    tags: ["vegetarian", "cajun"],
+    tags: ["vegetarian", "cajun", "the book"],
     title: "Cajun Seasoning"
   },
   Carnitas: {
