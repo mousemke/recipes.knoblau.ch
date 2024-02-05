@@ -1,22 +1,36 @@
-export interface Recipe {
+type Only<T, U> = {
+  [P in keyof T]: T[P];
+} & {
+  [P in keyof U]?: never;
+};
+
+type Either<T, U> = Only<T, U> | Only<U, T>
+
+export interface RecipeIngrdient {
+  amount?: number;
+  name: string;
+  slug?: string;
+  unit?: string;
+}
+
+export interface RecipeYield {
+  amount: number;
+  unit?: string;
+}
+
+export type Recipe = {
   cookTime: number;
   converted?: boolean;
-  ingredients: {
-    amount?: number;
-    name: string;
-    slug?: string;
-    unit?: string;
-  }[];
+  ingredients: RecipeIngrdient[];
   instructions: string[];
   marinadeTime?: number;
   origin?: string;
   prepTime: number;
   progressPics?: number;
-  servings: number;
   summary: string;
   tags: string[];
   title: string;
-}
+} & Either<{ servings: number }, { yield: RecipeYield }>
 
 export interface Recipes {
   [name: string]: Recipe;
@@ -4634,6 +4648,40 @@ const recipes: Recipes = {
     tags: ["bacon"],
     title: "Penne with Radicchio, Spinach, and Bacon"
   },
+  PerfectSoftBoiledEggs: {
+    cookTime: 7,
+    ingredients: [
+      {
+        amount: 6,
+        name: "eggs"
+      },
+      {
+        name: "white vinegar"
+      },
+      {
+        name: "salt"
+      },
+      {
+        name: "ice water"
+      }
+    ],
+    instructions: [
+      "Place the eggs in a single layer at the bottom of a large saucepan or pot. Add enough water to cover the eggs. There should be at least an inch of water above them.",
+      "Add vinegar and sea salt to the pot. Stir gently.",
+      "Place the pan onto the stove over medium-high heat. Bring water to a rolling boil. Set a timer for the soft boiled egg time you prefer and boil eggs. 1 minute for very runny yolks or 2 minutes for slightly runny yolks — after the water is boiling",
+      "Meanwhile, prepare an ice water bath (ice in a bowl of cold water), or turn on the faucet on the coldest that it goes until the water is ice cold. Once the timer goes off, drain the boiling water. Immediately place the pan under the cold running water, letting the ice cold water fill the pan, or use a slotted spoon to transfer the eggs to the ice water bath.",
+      "If you plan to eat the soft boiled eggs in a cup, remove them from the water once they are warm but no longer hot. Place in an egg cup (or you can use shot glasses), peel off the top, season with salt and pepper, and enjoy. If you plan to peel them completely or eat them later, leave them in the pot until they reach room temperature before peeling."
+    ],
+    origin: "https://www.wholesomeyum.com/soft-boiled-eggs/",
+    prepTime: 0,
+    summary: "With this method for perfect soft boiled eggs, you'll never have to guess how long to soft boil an egg again!",
+    tags: ["vegetarian"],
+    title: "Perfect Soft Boiled Eggs",
+    yield: {
+      amount: 6,
+      unit: "eggs"
+    }
+  },
   PicodeGallo: {
     cookTime: 0,
     ingredients: [
@@ -5898,6 +5946,52 @@ const recipes: Recipes = {
       "Tonkotsu ramen broth is simply pork bones cooked at a rolling boil for 12 hours. The process extracts all the goodness of the pork and turns the broth creamy white.",
     tags: ["japanese"],
     title: "Tonkotsu Ramen Broth"
+  },
+  TsuyuSauce: {
+    cookTime: 7,
+    ingredients: [
+      {
+        amount: 1,
+        name: "dark soy sauce",
+        unit: "cup"
+      },
+      {
+        amount: 1,
+        name: "mirin",
+        unit: "cup"
+      },
+      {
+        amount: 0.5,
+        name: "sake",
+        unit: "cup"
+      },
+      {
+        amount: 1,
+        name: "kombu",
+        unit: "piece"
+      },
+      {
+        amount: 0.5,
+        name: "katsuobushi (substitute shiitake mushrooms to make this recipe vegan)",
+        unit: "cup"
+      },
+    ],
+    instructions: [
+      "Combine soy sauce, mirin, sake, kombu, and katsuobushi in a large saucepan. Adjust the stove to medium-high heat and bring the stock to a boil.",
+      "Once it's reached a boil, reduce the heat to low and let the tsuyu simmer for 5-7 minutes. The soup base should thicken slightly.",
+      "Remove the pan from the heat and strain the sauce using a fine mesh strainer to remove the kombu and katsuobushi.",
+      "Let the tsuyu sauce cool before using it in other recipes or storing it in the refrigerator. The tsuyu will stay fresh for a week in an airtight container in the refrigerator."
+    ],
+    origin: "https://www.masterclass.com/articles/tsuyu-sauce-recipe",
+    prepTime: 0,
+    yield: {
+      amount: 2.5,
+      unit: "cup"
+    },
+    summary:
+      "Tsuyu sauce is a common condiment or soup base for both hot and cold Japanese dishes. Made with soy sauce, rice wine, sake, and dried kelp and bonito flakes, tsuyu works well as both a dip or diluted like a broth.",
+    tags: ["japanese", "vegan"],
+    title: "Tsuyu Sauce"
   },
   TurkeyBrine: {
     cookTime: 5,

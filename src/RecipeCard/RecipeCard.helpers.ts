@@ -1,5 +1,9 @@
 import type { UnitConversionInfo } from "./RecipeCard.types"
-import type { Recipe } from "../recipes";
+import type { Recipe, RecipeIngrdient, RecipeYield } from "../recipes";
+
+const emptySymbol = Symbol('EmptyObject type')
+type EmptyObject = {[emptySymbol]?: never}
+const emptyObject:EmptyObject = {};
 
 const METRIC_UNITS: { [unit: string]: UnitConversionInfo | ((amount: number) => UnitConversionInfo) } = {
   liter: {
@@ -83,6 +87,35 @@ const IMPERIAL_UNITS_NAMES = Object.keys(IMPERIAL_UNITS);
 
 /**
  *
+ * @param oldUnits
+ * @returns
+ */
+const changeSingleIngedient = <T extends RecipeIngrdient | RecipeYield>(oldUnits: typeof IMPERIAL_UNITS | typeof METRIC_UNITS) => (ingredient: T): T => {
+  const { amount, unit } = ingredient;
+
+  if (!unit || !amount) {
+    return ingredient;
+  }
+
+  let unitInfo = oldUnits[unit];
+
+  if (!unitInfo) {
+    return ingredient;
+  }
+
+  if (typeof unitInfo === "function") {
+    unitInfo = unitInfo(amount);
+  }
+
+  return {
+    ...ingredient,
+    unit: unitInfo.convertedUnit,
+    amount: amount * unitInfo.conversionMultiplier
+  };
+};
+
+/**
+ *
  * @param recipe
  * @param isImperial
  * @returns
@@ -90,32 +123,12 @@ const IMPERIAL_UNITS_NAMES = Object.keys(IMPERIAL_UNITS);
 export const convertRecipeUnits = (recipe: Recipe, isImperial: boolean): Recipe => {
   const oldUnits = isImperial ? IMPERIAL_UNITS : METRIC_UNITS;
 
-  const convertedIngredients = recipe.ingredients.map(ingredient => {
-    const { amount, unit } = ingredient;
-
-    if (!unit || !amount) {
-      return ingredient;
-    }
-
-    let unitInfo = oldUnits[unit];
-
-    if (!unitInfo) {
-      return ingredient;
-    }
-
-    if (typeof unitInfo === "function") {
-      unitInfo = unitInfo(amount);
-    }
-
-    return {
-      ...ingredient,
-      unit: unitInfo.convertedUnit,
-      amount: amount * unitInfo.conversionMultiplier
-    };
-  });
+  const convertedIngredients = recipe.ingredients.map(changeSingleIngedient<RecipeIngrdient>(oldUnits));
+  const convertedYield = (recipe.yield ? { yield: changeSingleIngedient<RecipeYield>(oldUnits)(recipe.yield), servings: undefined } : emptyObject );
 
   return {
     ...recipe,
+    ...convertedYield,
     ingredients: convertedIngredients,
     converted: !Boolean(recipe.converted)
   };

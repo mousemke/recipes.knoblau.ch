@@ -22,39 +22,58 @@ const RecipeCard = (props: RecipeCardProps): JSX.Element => {
 
   const fromTheBook = recipe.origin === "The Book";
 
+  const {
+    cookTime,
+    converted,
+    ingredients,
+    instructions,
+    marinadeTime,
+    origin,
+    prepTime,
+    progressPics,
+    servings,
+    summary,
+    title,
+    yield: recipeYield
+  } = recipe;
+
+  const recipeAmount = servings || recipeYield?.amount || 0;
+
   return (
     <>
       <div className={classes.cardWrapper} onClick={(e) => e.stopPropagation()}>
         <div className={classes.header}>
           <div>
-            <h1 className={classes.title}>{recipe.title}</h1>
+            <h1 className={classes.title}>{title}</h1>
             <div className={classes.recipeInfoWrapper}>
               <div>
                 Yield:{" "}
                 <span className={classes.recipeInfo}>
-                  {recipe.servings * multiplier} Servings
+                  {recipeAmount * multiplier}{servings ? ` Servings`: ` ${recipeYield?.unit}`}
                 </span>
               </div>
-              {recipe.marinadeTime ? (
+              {marinadeTime ? (
                 <div>
                   Marinade Time:{" "}
                   <span className={classes.recipeInfo}>
-                    {minutesHoursDays(recipe.marinadeTime)}
+                    {minutesHoursDays(marinadeTime)}
+                    {multiplier !== 1 ? "*" : ""}
+                  </span>
+                </div>
+              ) : null}
+              {prepTime ? (
+                <div>
+                  Prep Time:{" "}
+                  <span className={classes.recipeInfo}>
+                    {minutesHoursDays(prepTime)}
                     {multiplier !== 1 ? "*" : ""}
                   </span>
                 </div>
               ) : null}
               <div>
-                Prep Time:{" "}
-                <span className={classes.recipeInfo}>
-                  {minutesHoursDays(recipe.prepTime)}
-                  {multiplier !== 1 ? "*" : ""}
-                </span>
-              </div>
-              <div>
                 Cook time:{" "}
                 <span className={classes.recipeInfo}>
-                  {minutesHoursDays(recipe.cookTime)}
+                  {minutesHoursDays(cookTime)}
                   {multiplier !== 1 ? "*" : ""}
                 </span>
               </div>
@@ -65,7 +84,7 @@ const RecipeCard = (props: RecipeCardProps): JSX.Element => {
                 </div>
               ) : null}
             </div>
-            <h4 className={classes.summary}>{recipe.summary}</h4>
+            <h4 className={classes.summary}>{summary}</h4>
           </div>
           <img
             className={classes.thumbnail}
@@ -75,10 +94,10 @@ const RecipeCard = (props: RecipeCardProps): JSX.Element => {
           />
         </div>
         <div className={classes.recipeSection}>
-          {recipe.origin ? (
+          {origin ? (
             <a
               className={classes.originLink}
-              href={fromTheBook ? undefined : recipe.origin}
+              href={fromTheBook ? undefined : origin}
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -86,15 +105,15 @@ const RecipeCard = (props: RecipeCardProps): JSX.Element => {
             </a>
           ) : null}
           <div className={classes.changeScale}>
-            Change recipe servings{" "}
+            Change recipe {servings ? "servings " : "yield "}
             <input
               min={1}
               type="number"
-              value={recipe.servings * multiplier}
+              value={recipeAmount * multiplier}
               onChange={(e) =>
                 e.target.value
                   ? setMultiplier(
-                      parseInt(e.target.value, 10) / recipe.servings
+                      parseInt(e.target.value, 10) / recipeAmount
                     )
                   : 1
               }
@@ -121,7 +140,7 @@ const RecipeCard = (props: RecipeCardProps): JSX.Element => {
                     width={48}
                   />
                   <span>{" "}Metric</span>
-                  {recipe.converted ? (
+                  {converted ? (
                     <span className={`${classes.changeWarning} ${classes.unitChangedWarning}`}>
                       Units have been converted. Be careful of unconverted units in the recipe text
                     </span>
@@ -135,7 +154,7 @@ const RecipeCard = (props: RecipeCardProps): JSX.Element => {
             <strong>Ingredients</strong>
           </p>
           <ul className={classes.ingredients}>
-            {recipe.ingredients.map((ingredient, i) => (
+            {ingredients.map((ingredient, i) => (
               <li key={i}>
                 {ingredient.amount
                   ? parseIngredientAmount(ingredient.amount * multiplier)
@@ -160,7 +179,7 @@ const RecipeCard = (props: RecipeCardProps): JSX.Element => {
             <strong>Directions</strong>
           </p>
           <div>
-            {recipe.instructions.map((instruction, i) => (
+            {instructions.map((instruction, i) => (
               <div key={i} className={classes.instruction}>
                 <strong>{i + 1}.</strong>
                 <p>{instruction}</p>
@@ -168,9 +187,9 @@ const RecipeCard = (props: RecipeCardProps): JSX.Element => {
             ))}
           </div>
         </div>
-        {recipe.progressPics && (
+        {progressPics && (
           <div className={classes.progressPics}>
-            {Array.from(Array(recipe.progressPics), (_, i) => (
+            {Array.from(Array(progressPics), (_, i) => (
               <img
                 key={i}
                 className={classes.progressPic}
