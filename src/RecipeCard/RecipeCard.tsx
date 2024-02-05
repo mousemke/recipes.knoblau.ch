@@ -5,6 +5,11 @@ import { convertRecipeUnits, isImperialUnits, minutesHoursDays, parseIngredientA
 
 import type { RecipeCardProps } from "./RecipeCard.types";
 
+const capitalize = (str: string) => str
+  .split(" ")
+  .map((word: string) => word.charAt(0).toUpperCase() + word.slice(1))
+  .join(" ");
+
 /**
  * A generalized recipe card
  */
@@ -166,10 +171,10 @@ const RecipeCard = (props: RecipeCardProps): JSX.Element => {
                     onClick={() => gotoRecipe(ingredient.slug as string)}
                     role="button"
                   >
-                    {ingredient.name}
+                    {capitalize(ingredient.name)}
                   </a>
                 ) : (
-                  ingredient.name
+                  capitalize(ingredient.name)
                 )}
               </li>
             ))}

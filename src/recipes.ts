@@ -43,7 +43,8 @@ const recipes: Recipes = {
       {
         amount: 5,
         name: "tsuyu sauce",
-        unit: "tablespoon"
+        unit: "tablespoon",
+        slug: "TsuyuSauce"
       },
       {
         amount: 5,
@@ -72,24 +73,14 @@ const recipes: Recipes = {
       },
       {
         amount: 4,
-        name: "medium eggs",
+        name: "soft boiled eggs",
+        slug: "PerfectSoftBoiledEggs"
       },
-      {
-        amount: 1,
-        name: "salt",
-        unit: "teaspoon"
-      },
-      {
-        name: "A bowl of ice-cold water"
-      }
     ],
     instructions: [
       "In a small pan, add tsuyu, soy sauce, water, mirin, sake and sugar. Mix and heat on medium high until it starts to boil.",
       "Allow it to boil for 1-2 minutes to burn off the alcohol and leave to cool.",
-      "Next, bring a pan of water to a rolling boil and mix in salt. (It should be enough water to completely cover the eggs)",
-      "Add the eggs and boil for 6 - 7 minutes to make soft boiled eggs.",
-      "Once the time is up, immediately transfer the eggs into a bowl of ice water to stop the cooking process.",
-      "Allow the eggs to cool for about 10 minutes and then peel them.",
+      "Peel them cooled eggs",
       "Once the sauce is cool enough, put the eggs and sauce together in a zip lock bag and store in the fridge for 45 minutes. ",
       "Enjoy with ramen or as a snack! ",
       "Keep the ramen eggs in the fridge for up to 3 days (the flavor gets stronger each day) and discard the sauce after one use."
