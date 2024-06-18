@@ -221,6 +221,111 @@ const recipes: Recipes = {
     tags: ["fish", "japanese"],
     title: "Awase Dashi"
   },
+  BakedMacandCheese: {
+    cookTime: 10,
+    ingredients: [
+      {
+        amount: 500,
+        name: "elbow or spiral macaroni",
+        unit: "gram"
+      },
+      {
+        amount: 150,
+        name: "lemon or lime juice",
+        unit: "milliliter"
+      },
+      {
+        amount: 1.5,
+        name: "baking soda",
+        unit: "teaspoon"
+      },
+      {
+        amount: 6,
+        name: "butter",
+        unit: "tablespoon"
+      },
+      {
+        amount: 5,
+        name: "flour",
+        unit: "tablespoon"
+      },
+      {
+        amount: 1,
+        name: "milk",
+        unit: "liter"
+      },
+      {
+        amount: 200,
+        name: "cream",
+        unit: "gram"
+      },
+      {
+        amount: 450,
+        name: "cheddar cheese",
+        unit: "gram"
+      },
+      {
+        amount: 250,
+        name: "gouda cheese",
+        unit: "gram"
+      },
+      {
+        amount: 2,
+        name: "salt",
+        unit: "teaspoon"
+      },
+      {
+        amount: 1.5,
+        name: "msg",
+        unit: "teaspoon"
+      },
+      {
+        amount: 1,
+        name: "paprika",
+        unit: "teaspoon"
+      },
+      {
+        amount: 1,
+        name: "cayenne",
+        unit: "teaspoon"
+      },
+      {
+        amount: 2,
+        name: "butter",
+        unit: "tablespoon"
+      },
+      {
+        amount: 75,
+        name: "panko",
+        unit: "gram"
+      }
+    ],
+    instructions: [
+      "Preheat oven to 200°C.",
+      "Boil macaroni in salted water until just before al dente. It should still have a bite to it. Drain and rinse in water until fully cooled down.",
+      "Meanwhile, in a bowl, mix together the lemon juice and baking soda. Set aside.",
+      "Mix cheddar and gouda together well. Set aside.",
+      "Melt butter over medium heat. Stir in flour until smooth. Cook until golden brown.",
+      "Gradually stir in milk. Bring to a boil; cook and stir for 2 minutes or until thickened. Reduce heat.",
+      "Add the baking soda mixture and cream",
+      "Add 3/4 of the cheese mixture; stir until mixed in.",
+      "Add msg, salt, paprika and cayenne.",
+      "Add macaroni and mix well.",
+      "Transfer to a baking dish (or 2).",
+      "Melt butter and mix with panko in a pan and cook until golden brown. Remove from heat.",
+      "Add the panko and butter mixture to a room temperature bowl and mix in the rest of the cheese mixture. Stir quickly. Sprinkle over the macaroni immediately, before the cheese starts to melt in the bowl.",
+      "Bake, uncovered, for 20-25 minutes or until the bread crumb mixture is golden brown.",
+      "Cover loosely with aluminum foil and bake for another 20-25 minutes or until the edges start to crisp.",
+      "Let stand for 10 minutes before serving."
+    ],
+    origin: "The Book",
+    prepTime: 60,
+    progressPics: 5,
+    servings: 10,
+    summary: "Baked every day in the cajun kitchens, this southern classic mac and cheese and it's creamy sauce is a must try!",
+    tags: ["american", "vegetarian", "the book"],
+    title: "Baked Mac and Cheese"
+  },
   BakedSalmoninFoilwithAsparagusandLemonGarlicButterSauce: {
     cookTime: 10,
     ingredients: [
@@ -1545,7 +1650,10 @@ const recipes: Recipes = {
         name: "saltine crackers (optional)"
       },
       {
-        name: "salt and pepper to taste"
+        name: "salt"
+      },
+      {
+        name: "pepper"
       }
     ],
     instructions: [
@@ -1637,7 +1745,10 @@ const recipes: Recipes = {
         unit: "teaspoon"
       },
       {
-        name: "salt and pepper to taste"
+        name: "salt"
+      },
+      {
+        name: "pepper"
       },
       {
         name: "Cilantro garnish"
@@ -2418,8 +2529,11 @@ const recipes: Recipes = {
         unit: "cup"
       },
       {
-        name: "salt and pepper"
-      }
+        name: "salt"
+      },
+      {
+        name: "pepper"
+      },
     ],
     instructions: [
       "In a large pot add the butter, onion and mushrooms. Sauté over medium high until tender. Add in the flour, Italian seasoning, thyme, garlic and salt, pepper and stir until coated.",
@@ -2444,7 +2558,10 @@ const recipes: Recipes = {
         unit: "pound"
       },
       {
-        name: "salt and pepper to taste"
+        name: "salt"
+      },
+      {
+        name: "pepper"
       },
       {
         amount: 5,
@@ -3289,8 +3406,11 @@ const recipes: Recipes = {
         unit: "cup"
       },
       {
-        name: "Salt and pepper to taste"
-      }
+        name: "Salt"
+      },
+      {
+        name: "pepper"
+      },
     ],
     instructions: [
       "In 2-quart saucepan, place giblets (except liver); add enough water to cover. Add celery, onion, 1 teaspoon salt and 1/4 teaspoon pepper. Heat to boiling; reduce heat to low. Cover and simmer 1 to 2 hours or until giblets are tender. Add liver during last 15 minutes of cooking.",
@@ -4291,7 +4411,10 @@ const recipes: Recipes = {
         unit: "tablespoon"
       },
       {
-        name: "salt and pepper to taste"
+        name: "salt"
+      },
+      {
+        name: "pepper"
       },
       {
         amount: 1,
@@ -5515,7 +5638,7 @@ const recipes: Recipes = {
     prepTime: 20,
     servings: 20,
     summary: "A classic and favorite of all who have tried it. I made this so much at restaurants I worked at. serve with thin cut french bread",
-    tags: ["vegetarian", "cajun"],
+    tags: ["vegetarian", "cajun", "the book"],
     title: "Spinach Artichoke Dip"
   },
   SteamedCauliflowerwithLemonButterSauce: {
